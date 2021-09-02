@@ -1,11 +1,32 @@
 {
-    "sections": {
-      "main": {
-        "type": "main-getstarted",
-        "settings": {}
+  "sections": {
+    "main": {
+      "type": "main-getstarted",
+      "settings": {
+        "show_title": true,
+        "show_content": true,
+        "text_align": "center"
       }
     },
-    "order": [
-      "main"
-    ]
-  }
+    "1630562259646c02d3": {
+      "type": "gryning-horizontal-scroll",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "manedlige-varer-friskt-sott",
+        "products_per_row": 5,
+        "products_to_show": 5,
+        "show_view_all": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1630562259646c02d3"
+  ]
+}
