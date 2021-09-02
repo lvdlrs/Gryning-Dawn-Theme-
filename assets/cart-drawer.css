@@ -58,6 +58,7 @@
   
   .drawer.is-visible .drawer__overlay {
     opacity: 0.5;
+    display: block;
   }
 
   .drawer__overlay {
