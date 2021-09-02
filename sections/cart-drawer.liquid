@@ -1,26 +1,28 @@
-<section class="drawer" id="drawer-name" data-drawer-target>
-    <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
-    <div class="drawer__wrapper">
-      <div class="drawer__header">
-        <div class="drawer__title">
-          Drawer Title Here
-        </div>
-        <button class="drawer__close" data-drawer-close aria-label="Close Drawer"></button>
-      </div>
-      <div class="drawer__content">
-        <div id="drawer__cart_bottom">
-            <div class="drawer_cart_sub_row">
-                <div class="cart__subtotal">{{ 'cart.general.subtotal'}}</div>
-                 <div>{{ cart.total_price | money }}</div>
+{% if settings.cart__drawer %}
+    <section class="drawer" id="drawer-name" data-drawer-target>
+        <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+        <div class="drawer__wrapper">
+            <div class="drawer__header">
+                <div class="drawer__title">
+                    Drawer Title Here
+                </div>
+                <button class="drawer__close" data-drawer-close aria-label="Close Drawer"></button>
             </div>
-            
+            <div class="drawer__content">
+                <div id="drawer__cart_bottom">
+                    <div class="drawer_cart_sub_row">
+                        <div class="cart__subtotal">{{ 'cart.general.subtotal'}}</div>
+                        <div>{{ cart.total_price | money }}</div>
+                    </div>
 
-            <div class="cart__checkout-wrapper">
-                <button type="submit" name="checkout" class="button">
-                  Checkout
-                </button>
+
+                    <div class="cart__checkout-wrapper">
+                        <button type="submit" name="checkout" class="button">
+                            Checkout
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
+{% endif %}
