@@ -328,5 +328,22 @@
         "default": true
       }
     ]
+  },
+  {
+    "name": "Cart",
+    "settings": [
+      {
+        "type": "color",
+        "id": "drawer_bg",
+        "label": "Drawer background",
+        "default": "#fff"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart__drawer",
+        "label": "Cart Drawer",
+        "default": false
+      }
+    ]
   }
 ]
