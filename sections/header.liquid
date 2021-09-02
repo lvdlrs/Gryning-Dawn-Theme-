@@ -479,7 +479,7 @@
         </a>
       {%- endif -%}
 
-      <a href="{% if settings.cart__drawer %} # {% else %} {{ routes.cart_url }} {% endif %}" {% if settings.cart__drawer %} data-drawer-trigger aria-controls="drawer-name" aria-expanded="false" {% endif %} class="header__icon header__icon--cart link link--text focus-inset" id="cart-icon-bubble">
+      <a href="{% if settings.cart__drawer %}#{% else %} {{ routes.cart_url }} {% endif %}" {% if settings.cart__drawer %} data-drawer-trigger aria-controls="drawer-name" aria-expanded="false" {% endif %} class="header__icon header__icon--cart link link--text focus-inset" id="cart-icon-bubble">
         {%- liquid
           if cart == empty
             render 'icon-cart-empty'
