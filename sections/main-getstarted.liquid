@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="{{ 'section-main-getstarted.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'section-main-getstarted.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+
+{% if section.settings.show_title or section.settings.show_content %}
+<div class="page-width page-width--narrow">
+
+  {% if section.settings.show_title %}
+  <h1 class="main-page-title page-title h0 text-align-{{ section.settings.text_align }}">
+    {{ page.title | escape }}
+  </h1>
+  {% endif %}
+
+  {% if section.settings.show_content %}
+  <div class="rte text-align-{{ section.settings.text_align }}">
+    {{ page.content }}
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Get Started",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_title",
+          "label": "Show Page Title",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_content",
+          "label": "Show Page Content",
+          "default": true
+        },
+        {
+          "type": "select",
+          "id": "text_align",
+          "label": "Text Alignment",
+          "default": "center",
+          "options": [
+                {
+                  "label": "Left",
+                  "value": "left"
+                },
+                {
+                  "label": "Center",
+                  "value": "center"
+                },
+                {
+                  "label": "Right",
+                  "value": "right"
+                }
+          ]
+        }
+  ]
+}
+{% endschema %}
