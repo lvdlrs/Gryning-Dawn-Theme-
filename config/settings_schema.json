@@ -339,6 +339,12 @@
         "default": "#fff"
       },
       {
+        "type": "color",
+        "id": "drawer_text",
+        "label": "Text Color",
+        "default": "#000"
+      },
+      {
         "type": "checkbox",
         "id": "cart__drawer",
         "label": "Cart Drawer",

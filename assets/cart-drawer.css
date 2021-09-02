@@ -29,7 +29,7 @@
     overflow: auto;
     transition: transform 0.3s;
     will-change: transform;
-    background-color: #fff;
+    background-color: var(--cart-drawer-background);
     display: flex;
     flex-direction: column;
     -webkit-transform: translateX(103%);
