@@ -37,10 +37,14 @@
     .then( (resp) => resp.json() )
     .then( (data) => {
         //console.log(data)
-
-        data.items.forEach(function(product, index){
-            document.getElementById('drawer_cart_items').innerHTML = '<img src="' + product.featured_image.url +'" alt="' + product.featured_image.alt +'"><h5>'+ product.title +'</h5><p>'+ product.quantity +' x ' + theme.Currency.formatMoney(product.line_price, theme.moneyFormat) +'</p>';
-        })
+        if(data.items.length > 0){
+            data.items.forEach(function(product, index){
+                document.getElementById('drawer_cart_items').innerHTML = '<img src="' + product.featured_image.url +'" alt="' + product.featured_image.alt +'"><h5>'+ product.title +'</h5><p>'+ product.quantity +' x ' + theme.Currency.formatMoney(product.line_price, theme.moneyFormat) +'</p>';
+            })
+        } else {
+            document.getElementById('drawer_cart_items').innerHTML = "<p>Cart is empty</p>"
+        }
+        
     })
 </script>
 
