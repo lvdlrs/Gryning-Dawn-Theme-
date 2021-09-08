@@ -8,8 +8,8 @@
     "16310832986be48b1f": {
       "type": "gryning-horizontal-scroll",
       "settings": {
-        "title": "Featured collection",
-        "collection": "manedlige-varer-friskt-sott",
+        "title": "1. Kaffe",
+        "collection": "kaffeartikler-for-manedlig-leveranse",
         "products_per_row": 5,
         "products_to_show": 5,
         "show_view_all": true,
