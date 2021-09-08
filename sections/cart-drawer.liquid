@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% if settings.cart__drawer %}
     {{ 'cart-drawer.css' | asset_url | stylesheet_tag }}
     {{ 'cart-drawer.js' | asset_url | script_tag }}
@@ -50,3 +51,57 @@
 
 {% endif %}
 
+=======
+{% if settings.cart__drawer %}
+    {{ 'cart-drawer.css' | asset_url | stylesheet_tag }}
+    {{ 'cart-drawer.js' | asset_url | script_tag }}
+
+    <section class="drawer" id="drawer-name" data-drawer-target>
+        <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+        <div class="drawer__wrapper">
+            <div class="drawer__header">
+                <div class="drawer__title">
+                    {{ 'sections.cart.title' | t }}
+                </div>
+                <button class="drawer__close" data-drawer-close aria-label="Close Drawer"></button>
+            </div>
+            <div class="drawer__content">
+                <div id="drawer_cart_items">
+                    <img src="" alt=""><h5></h5><p></p>
+                </div>
+                <div id="drawer__cart_bottom">
+                    <div class="drawer_cart_sub_row">
+                        <div class="cart__subtotal">Subtotal</div>
+                        <div>{{ cart.total_price | money }}</div>
+                    </div>
+
+
+                    <div class="cart__checkout-wrapper">
+                        <button type="submit" name="checkout" class="button">
+                            Checkout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+    fetch('/cart.js')
+    .then( (resp) => resp.json() )
+    .then( (data) => {
+        //console.log(data)
+        if(data.items.length > 0){
+            data.items.forEach(function(product, index){
+                document.getElementById('drawer_cart_items').innerHTML = '<img src="' + product.featured_image.url +'" alt="' + product.featured_image.alt +'"><h5>'+ product.title +'</h5><p>'+ product.quantity +' x ' + theme.Currency.formatMoney(product.line_price) +'</p>';
+            })
+        } else {
+            document.getElementById('drawer_cart_items').innerHTML = "<p>Cart is empty</p>"
+        }
+        
+    })
+</script>
+
+{% endif %}
+
+>>>>>>> 0d03cf35b924c96e0aa03a84ed509992259ab517
