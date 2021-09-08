@@ -52,12 +52,29 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "163108344655a1e2e7": {
+      "type": "gryning-horizontal-scroll",
+      "settings": {
+        "title": "4. Klar for dagen",
+        "collection": "manedlige-varer-klar-for-dagen",
+        "products_per_row": 12,
+        "products_to_show": 6,
+        "show_view_all": true,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
     }
   },
   "order": [
     "main",
     "16310832986be48b1f",
     "163108331107f01cd0",
-    "16310833895c13c906"
+    "16310833895c13c906",
+    "163108344655a1e2e7"
   ]
 }
