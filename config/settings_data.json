@@ -9,6 +9,7 @@
     "colors_background_2": "#3e5242",
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
+    "cart__drawer": true,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -25,6 +26,11 @@
         "block_order": [
           "announcement-bar-0"
         ],
+        "settings": {
+        }
+      },
+      "cart-drawer": {
+        "type": "cart-drawer",
         "settings": {
         }
       },

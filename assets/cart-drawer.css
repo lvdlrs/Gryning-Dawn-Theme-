@@ -78,3 +78,9 @@
     -ms-user-select: none;
     user-select: none;
   }
+
+  .drawer_cart_sub_row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
