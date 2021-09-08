@@ -39,7 +39,7 @@
         //console.log(data)
         if(data.items.length > 0){
             data.items.forEach(function(product, index){
-                document.getElementById('drawer_cart_items').innerHTML = '<img src="' + product.featured_image.url +'" alt="' + product.featured_image.alt +'"><h5>'+ product.title +'</h5><p>'+ product.quantity +' x ' + Shopify.formatMoney(product.line_price, "{{ shop.money_with_currency_format }}" ) +'</p>';
+                document.getElementById('drawer_cart_items').innerHTML = '<img src="' + product.featured_image.url +'" alt="' + product.featured_image.alt +'"><h5>'+ product.title +'</h5><p>'+ product.quantity +' x ' + Shopify.formatMoney(product.line_price, "{{ shop.money_with_currency_format }}" +'</p>' ) ;
             })
         } else {
             document.getElementById('drawer_cart_items').innerHTML = "<p>Cart is empty</p>"
