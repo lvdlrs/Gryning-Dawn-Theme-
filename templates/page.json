@@ -26,8 +26,8 @@
       "settings": {
         "title": "2. Sunt & Mettende",
         "collection": "manedlige-varer-frokostmat",
-        "products_per_row": 5,
-        "products_to_show": 5,
+        "products_per_row": 12,
+        "products_to_show": 6,
         "show_view_all": true,
         "image_ratio": "square",
         "show_secondary_image": false,
