@@ -39,7 +39,7 @@
         //console.log(data)
         if(data.items.length > 0){
             data.items.forEach(function(product, index){
-                document.getElementById('drawer_cart_items').innerHTML = '<img src="' + product.featured_image.url +'" alt="' + product.featured_image.alt +'"><h5>'+ product.title +'</h5><p>'+ product.quantity +' x ' + product.line_price +'</p>';
+                document.getElementById('drawer_cart_items').innerHTML = '<img class="cart-item__image" src="' + product.featured_image.url +'" alt="' + product.featured_image.alt +'"><h5>'+ product.title +'</h5><p>'+ product.quantity +' x ' + product.line_price +'</p>';
             })
         } else {
             document.getElementById('drawer_cart_items').innerHTML = "<p>Cart is empty</p>"
