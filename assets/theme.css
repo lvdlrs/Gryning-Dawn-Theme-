@@ -123,9 +123,9 @@
   display: table-cell;
 }
 .hero__text-content {
-    position: relative;
-    padding: 60px 0;
-    z-index: 4;
+  position: relative;
+  padding: 60px 0;
+  z-index: 4;
 }
 .hero__title {
   display: block;
@@ -140,6 +140,10 @@
   font-weight: 400;
   letter-spacing: .2em;
   line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: #fff;
+  margin-bottom: 20px;
 }
 .video-interactable .hero__link {
   pointer-events: auto;
