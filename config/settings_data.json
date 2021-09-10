@@ -19,6 +19,7 @@
     "type_base_font_family": "futura_n4",
     "type_base_accent_transform": true,
     "icon_weight": "3px",
+    "animate_page_transition_style": "page-slow-fade",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
