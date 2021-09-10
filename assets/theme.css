@@ -127,11 +127,6 @@
     padding: 60px 0;
     z-index: 4;
 }
-.hero__text-content {
-  position: relative;
-  padding: 20px 0;
-  z-index: 4;
-}
 .hero__title {
   display: block;
   margin-bottom: 0;
