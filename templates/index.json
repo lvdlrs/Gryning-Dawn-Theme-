@@ -14,9 +14,25 @@
         "section_height": "750px",
         "mobile_height": "auto"
       }
+    },
+    "16312909052a973426": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "Innsikt",
+        "title": "Troverdig klimainnsats!",
+        "text": "<p>Har du gitt opp å ta bærekraftige valg? Vi var også frustrert. Derfor startet vi Gryning.<\/p><p>Sammen skal vi troverdig redusere vårt fotavtrykk med 500.000 tonn CO2 innen utgangen av 2022!<\/p>",
+        "button_label": "Les mer",
+        "button_link": "https:\/\/blogg.gryning.no\/",
+        "image": "shopify:\/\/shop_images\/people_in_bokeh_street_of_London.jpg",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 650,
+        "parallax": true
+      }
     }
   },
   "order": [
-    "1631290729d01739bd"
+    "1631290729d01739bd",
+    "16312909052a973426"
   ]
 }
