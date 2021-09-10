@@ -255,6 +255,20 @@
         "layout": "left",
         "divider": false
       }
+    },
+    "16312933129259d98f": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/markus-spiske-n2HoOVk3tGY-unsplash.jpg",
+        "image_width": 800,
+        "subtitle": "Tørrvarer på Auto-Update",
+        "title": "Strøm kjedelige dagligvarer",
+        "text": "<p>Vi tror at tørrskapet ditt kan holde seg selv oppdatert, og hos oss får du akkurat det. Velg hvilke kvalitetsvarer du vil ha på plass, og vi sender deg en bærekraftig forsendelse med akkurat riktig volum hver måned. <\/p>",
+        "button_label": "Hold mitt tørrskap oppdatert!",
+        "button_link": "shopify:\/\/collections\/torre-varer-som-kan-strommes",
+        "layout": "right",
+        "divider": false
+      }
     }
   },
   "order": [
@@ -265,6 +279,7 @@
     "1631292413cc3473f7",
     "1631292663302a80b7",
     "1631292889b2258b06",
-    "16312932614316f23d"
+    "16312932614316f23d",
+    "16312933129259d98f"
   ]
 }
