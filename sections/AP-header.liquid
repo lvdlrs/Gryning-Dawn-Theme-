@@ -33,48 +33,48 @@
 
             </a>
           </div>
-          
+
           <div class="ap-header__menu">
-            
+
             <nav role="navigation">
-  <ul>
-    {%- for link in section.settings.menu.links -%}
-      <li>
-        <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
-          {{ link.title }}
-        </a>
+              <ul>
+                {%- for link in section.settings.menu.links -%}
+                <li>
+                  <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
+                    {{ link.title }}
+                  </a>
 
-        {%- if link.links != blank -%}
-          <ul>
-            {%- for child_link in link.links -%}
-              <li>
-                <a href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
-                  {{ child_link.title }}
-                </a>
-
-                {%- if child_link.links != blank -%}
+                  {%- if link.links != blank -%}
                   <ul>
-                    {%- for grandchild_link in child_link.links -%}
-                      <li>
-                        <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
-                          {{ grandchild_link.title }}
-                        </a>
-                      </li>
+                    {%- for child_link in link.links -%}
+                    <li>
+                      <a href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
+                        {{ child_link.title }}
+                      </a>
+
+                      {%- if child_link.links != blank -%}
+                      <ul>
+                        {%- for grandchild_link in child_link.links -%}
+                        <li>
+                          <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
+                            {{ grandchild_link.title }}
+                          </a>
+                        </li>
+                        {%- endfor -%}
+                      </ul>
+                      {%- endif -%}
+
+                    </li>
                     {%- endfor -%}
                   </ul>
-                {%- endif -%}
+                  {%- endif -%}
 
-              </li>
-            {%- endfor -%}
-          </ul>
-        {%- endif -%}
+                </li>
+                {%- endfor -%}
+              </ul>
+            </nav>
 
-      </li>
-    {%- endfor -%}
-  </ul>
-</nav>
 
- 
           </div>
         </div>
         <div class="ap-header__right">
@@ -95,9 +95,9 @@
               </span>
             </a>
             {%- endif -%}
-            
-           
-            
+
+
+
             <a href="{% if settings.cart__drawer %}#{% else %} {{ routes.cart_url }} {% endif %}" {% if settings.cart__drawer %} data-drawer-trigger aria-controls="drawer-name" aria-expanded="false" {% endif %} class="header__icon header__icon--cart link link--text focus-inset" id="cart-icon-bubble">
               {%- liquid
           if cart == empty
