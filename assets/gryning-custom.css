@@ -1,0 +1,150 @@
+
+    
+    
+/*  HOLUM DESIGN CUSTOM CSS    */
+       
+    .page-width{
+    	max-width: 95vw;
+      	margin: 0 auto;
+    } 
+    
+/*  Get Started    */
+    
+    #shopify-section-page-sections2-templates .grid-product__vendor{
+    	margin-bottom: 10px;
+    }
+    
+/*  Homepage Collection layout    */
+    #shopify-section-1623674961d5c677bd .page-width{
+    	max-width: 100vw;
+      padding: 0px;
+    }
+    #shopify-section-1623674961d5c677bd .section-header {
+      max-width: 95vw;
+      padding: 0 40px;
+      margin: 0 auto 50px auto;
+  }
+    
+    
+    #shopify-section-1623674961d5c677bd .section-header__title{
+    	text-align: center;
+    }
+    
+    
+/*  Footer layout newsletter    */
+    
+    #newsletter-footer .newsletter__input{
+    	width: 90%;
+      background-color: #fdfaf2;
+      margin-bottom: 20px;
+      
+    }
+    
+    #newsletter-footer .input-group-btn .btn{
+    	width: 90%;
+      background-color: #fdfaf2;
+      color:#3e5242;
+    }
+    
+    
+#newsletter-footer .newsletter__input::-webkit-input-placeholder{
+    color:#3e5242;
+    opacity:1;
+  }
+
+#newsletter-footer .newsletter__input:-moz-placeholder{
+    color:#3e5242;
+    opacity:1;
+  }
+
+#newsletter-footer .newsletter__input::-moz-placeholder{
+    color:#3e5242;
+    opacity:1;
+  }
+
+#newsletter-footer .newsletter__input:-ms-input-placeholder{
+    color:#3e5242;
+  }
+
+#newsletter-footer .newsletter__input::-ms-input-placeholder{
+    color:#3e5242;
+    opacity:1;
+  }
+    
+/*  All Products   */
+    
+    .hero__subtitle {
+    	margin-bottom: 8px;
+    }
+    .sale-price{
+    	color: #3e5242;
+    }
+
+.product__price--compare{
+  opacity: 0.75;
+}
+    
+    
+.page--81845616835{
+	overflow-x: hidden;
+}
+    
+    .page--82941640899 #shopify-section-footer-promotions{
+      display: none;
+    }
+
+    
+   .hero__link .btn--inverse {
+      background-color: #DBA583 !important;
+      border-color: #dba583;
+      color: #000 !important;
+  }
+    .hero__link .btn--inverse:hover {
+      background-color: rgba(219,165,131, 0.7) !important;
+      border-color: #dba583;
+      color: #000 !important;
+  }
+    
+/*   GET STARTED PAGE  */
+    .page--81845616835 .main-content {
+    background-color: #131f16;
+}
+    
+     .page--81845616835 .main-content p,
+    .page--81845616835 .main-content a,
+    .page--81845616835 .main-content h2{
+    color: #fdfaf2;
+}
+    
+    .page--81845616835  .grid-product__meta{
+    	background-color: #3e5242 !important;
+    }
+    
+   #page--81845616835 .grid-product__price--original{
+      	opacity: 0.8;
+    }
+    
+    #shopify-section-page-sections2-templates .page-blocks {
+    padding-bottom: 20px;
+}
+    
+/*   CART DRAWER   */
+    #CartDrawer{
+    	background-color: #fdfaf2 !important;
+    }
+
+  #CartDrawer .drawer__title, #CartDrawer .icon,
+  #CartDrawer .cart__item--name a, #CartDrawer .cart__variant-meta,
+  #CartDrawer .cart__item-sub, #CartDrawer .ajaxcart__note, #CartDrawer .cart__item--price,
+#CartDrawer .cart__item--name
+	{
+      color: #3e5242 !important;
+  }
+
+	#CartDrawer .js-qty__num {
+      color: #dba583 !Important;
+  }
+
+	#CartDrawer .js-qty__adjust{
+    	background-color: #dba583 !important;
+    }
