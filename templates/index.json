@@ -15,6 +15,19 @@
         "mobile_height": "auto"
       }
     },
+    "163129325259d93273": {
+      "type": "featured-content",
+      "settings": {
+        "title": "",
+        "text": "<p>Gryning er en ny måte å handle på med fokus på sirkularitet, bærekraft og smart forbruk. Hos oss får du mindre å bære, mer utvalg på kjøkkenet og bedre ernæring til din familie.<\/p>",
+        "link": "",
+        "link_text": "",
+        "align_text": "center",
+        "narrow_column": true,
+        "enlarge_text": true,
+        "divider": false
+      }
+    },
     "1631292402be865091": {
       "type": "testimonials",
       "blocks": {
@@ -229,27 +242,29 @@
         "enable_gutter": false
       }
     },
-    "163129325259d93273": {
-      "type": "featured-content",
+    "16312932614316f23d": {
+      "type": "text-and-image",
       "settings": {
-        "title": "",
-        "text": "<p>Gryning er en ny måte å handle på med fokus på sirkularitet, bærekraft og smart forbruk. Hos oss får du mindre å bære, mer utvalg på kjøkkenet og bedre ernæring til din familie.<\/p>",
-        "link": "",
-        "link_text": "",
-        "align_text": "center",
-        "narrow_column": true,
-        "enlarge_text": true,
+        "image": "shopify:\/\/shop_images\/family-eating_5943e5de-fa5d-420c-b0d5-7c998c2b8e71.jpg",
+        "image_width": 800,
+        "subtitle": "Quality Goods at your Closet",
+        "title": "Digg frokost - Alltid i skapet",
+        "text": "<p>Hvorfor skal du gå tom for god kaffe, eller noe godt å spise til frokost? Sett sammen din egen strøm av tørre kvalitetsvarer så er det alltid der i skapet når du trenger det!<\/p>",
+        "button_label": "Bygg din Gryning Frokost nå",
+        "button_link": "shopify:\/\/pages\/torrfrokost",
+        "layout": "left",
         "divider": false
       }
     }
   },
   "order": [
     "1631290729d01739bd",
+    "163129325259d93273",
     "1631292402be865091",
     "16312909052a973426",
     "1631292413cc3473f7",
     "1631292663302a80b7",
     "1631292889b2258b06",
-    "163129325259d93273"
+    "16312932614316f23d"
   ]
 }
