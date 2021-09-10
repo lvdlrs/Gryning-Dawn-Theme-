@@ -15,21 +15,6 @@
         "mobile_height": "auto"
       }
     },
-    "16312909052a973426": {
-      "type": "background-image-text",
-      "settings": {
-        "subtitle": "Innsikt",
-        "title": "Troverdig klimainnsats!",
-        "text": "<p>Har du gitt opp å ta bærekraftige valg? Vi var også frustrert. Derfor startet vi Gryning.<\/p><p>Sammen skal vi troverdig redusere vårt fotavtrykk med 500.000 tonn CO2 innen utgangen av 2022!<\/p>",
-        "button_label": "Les mer",
-        "button_link": "https:\/\/blogg.gryning.no\/",
-        "image": "shopify:\/\/shop_images\/people_in_bokeh_street_of_London.jpg",
-        "focal_point": "center",
-        "layout": "left",
-        "height": 650,
-        "parallax": true
-      }
-    },
     "1631292402be865091": {
       "type": "testimonials",
       "blocks": {
@@ -68,23 +53,13 @@
             "author": "Toppleder",
             "author_info": "Norsk Dagligvaregigant"
           }
-        },
-        "1631292402be865091-4": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author name",
-            "author_info": "Los Angeles, CA"
-          }
         }
       },
       "block_order": [
         "1631292402be865091-0",
         "1631292402be865091-1",
         "1631292402be865091-2",
-        "1631292402be865091-3",
-        "1631292402be865091-4"
+        "1631292402be865091-3"
       ],
       "settings": {
         "title": "Hva folk sier om oss",
@@ -92,11 +67,26 @@
         "color_background": "#fdfcf7",
         "color_text": "#3e5242"
       }
+    },
+    "16312909052a973426": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "Innsikt",
+        "title": "Troverdig klimainnsats!",
+        "text": "<p>Har du gitt opp å ta bærekraftige valg? Vi var også frustrert. Derfor startet vi Gryning.<\/p><p>Sammen skal vi troverdig redusere vårt fotavtrykk med 500.000 tonn CO2 innen utgangen av 2022!<\/p>",
+        "button_label": "Les mer",
+        "button_link": "https:\/\/blogg.gryning.no\/",
+        "image": "shopify:\/\/shop_images\/people_in_bokeh_street_of_London.jpg",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 650,
+        "parallax": true
+      }
     }
   },
   "order": [
     "1631290729d01739bd",
-    "16312909052a973426",
-    "1631292402be865091"
+    "1631292402be865091",
+    "16312909052a973426"
   ]
 }
