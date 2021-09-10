@@ -133,12 +133,109 @@
         "desktop_height": "650px",
         "mobile_height": "auto"
       }
+    },
+    "1631292663302a80b7": {
+      "type": "new-featured-collection",
+      "settings": {
+        "title": "Mer enn bare strømming",
+        "home_featured_products": "startpakker-for-gode-vaner",
+        "per_row": 4,
+        "rows": 1,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "1631292889b2258b06": {
+      "type": "new-feature-collections",
+      "blocks": {
+        "1631292889b2258b06-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "kaffe",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "1631292889b2258b06-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "frokostmat",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "1631292889b2258b06-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "mellom-mat-med-gryning",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "1631292889b2258b06-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "matboks-med-grying",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "1631292889b2258b06-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "middag-med-gryning",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "1631292889b2258b06-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "hold-det-rent-med-gryning",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "c9477445-82ca-45f3-9e13-7665cbc24b1b": {
+          "type": "collection",
+          "settings": {
+            "collection": "smakfulle-bakevaner-med-gryning",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "36dacd48-a37f-4c7e-bc99-98cd971ebeda": {
+          "type": "collection",
+          "settings": {
+            "collection": "ta-vare-pa-kroppen-med-gryning",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        }
+      },
+      "block_order": [
+        "1631292889b2258b06-0",
+        "1631292889b2258b06-1",
+        "1631292889b2258b06-2",
+        "1631292889b2258b06-3",
+        "1631292889b2258b06-4",
+        "1631292889b2258b06-5",
+        "c9477445-82ca-45f3-9e13-7665cbc24b1b",
+        "36dacd48-a37f-4c7e-bc99-98cd971ebeda"
+      ],
+      "settings": {
+        "title": "Våre kategorier for nye bedre vaner",
+        "divider": false,
+        "enable_gutter": false
+      }
     }
   },
   "order": [
     "1631290729d01739bd",
     "1631292402be865091",
     "16312909052a973426",
-    "1631292413cc3473f7"
+    "1631292413cc3473f7",
+    "1631292663302a80b7",
+    "1631292889b2258b06"
   ]
 }
