@@ -10,6 +10,15 @@
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
     "cart__drawer": true,
+    "type_header_font_family": "itc_avant_garde_gothic_n7",
+    "type_header_spacing": "0",
+    "type_header_base_size": 35,
+    "type_header_line_height": 1,
+    "type_header_accent_transform": true,
+    "type_headers_align_text": false,
+    "type_base_font_family": "futura_n4",
+    "type_base_accent_transform": true,
+    "icon_weight": "3px",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
