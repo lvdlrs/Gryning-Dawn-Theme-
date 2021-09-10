@@ -228,6 +228,19 @@
         "divider": false,
         "enable_gutter": false
       }
+    },
+    "163129325259d93273": {
+      "type": "featured-content",
+      "settings": {
+        "title": "",
+        "text": "<p>Gryning er en ny måte å handle på med fokus på sirkularitet, bærekraft og smart forbruk. Hos oss får du mindre å bære, mer utvalg på kjøkkenet og bedre ernæring til din familie.<\/p>",
+        "link": "",
+        "link_text": "",
+        "align_text": "center",
+        "narrow_column": true,
+        "enlarge_text": true,
+        "divider": false
+      }
     }
   },
   "order": [
@@ -236,6 +249,7 @@
     "16312909052a973426",
     "1631292413cc3473f7",
     "1631292663302a80b7",
-    "1631292889b2258b06"
+    "1631292889b2258b06",
+    "163129325259d93273"
   ]
 }
