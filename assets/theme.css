@@ -64,6 +64,10 @@
 .shopify-section-header-sticky .header {
   background: var(--gradient-background);
     }
+
+#shopify-section-header{
+	z-index: 999;
+}
 .index-section {
   margin: 100px 0;
 }
