@@ -4,7 +4,7 @@
 
   <div class="page-width">
     <div class="d-flex">
-      <div class="grid__item{% if section.settings.narrow_column %} medium-up--three-quarters medium-up--push-one-eighth{% endif %}">
+      <div>
         {%- if section.settings.title != blank -%}
           <h2>{{ section.settings.title }}</h2>
         {% endif %}
@@ -94,12 +94,6 @@
             "label": "Centered"
           }
         ]
-      },
-      {
-        "type": "checkbox",
-        "id": "narrow_column",
-        "label": "Narrow column",
-        "default": true
       },
       {
         "type": "checkbox",
