@@ -125,10 +125,11 @@
             "type": "promotion",
             "settings": {
               "enable_image": true,
+              "image": "shopify:\/\/shop_images\/sample-product-img_9ce3b4e8-80e0-4b67-8bbf-bb599195070d.jpg",
               "image_width": 650,
-              "title": "Site-wide promotion",
-              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
-              "button_label": "Optional button",
+              "title": "Riktig mengde - Alltid i skapet",
+              "text": "<p>Å strømme tørre varer fra oss sikrer at du alltid har riktig mengde i skapet, og at du aldri kaster mat fra oss.<\/p>",
+              "button_label": "Les mer",
               "button_link": ""
             }
           }
