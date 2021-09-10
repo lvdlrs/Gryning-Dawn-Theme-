@@ -88,6 +88,8 @@
 }
 .video-parent-section.video-interactable iframe, .video-parent-section.video-interactable video {
     pointer-events: auto;
+}.hero--750px {
+    height: 750px;
 }
 .hero__media video {
     position: relative;
