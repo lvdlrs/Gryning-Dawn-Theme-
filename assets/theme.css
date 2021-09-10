@@ -53,6 +53,10 @@
   margin-right: 0px;
 }
 
+.header{
+	z-index: 999;
+}
+
 
 
 .hero {
