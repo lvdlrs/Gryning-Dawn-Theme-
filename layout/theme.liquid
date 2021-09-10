@@ -72,6 +72,53 @@
 
         --cart-drawer-background: {{ settings.drawer_bg }};
       }
+    
+    
+    :root{
+  --colorBtnPrimary:{{ settings.color_button | default: "#000000" }};
+  --colorBtnPrimaryDim:{{ settings.color_button | default: "#000000" | color_darken: 5 }};
+  --colorBtnPrimaryText:{{ settings.color_button_text | default: "#ffffff" }};
+  --colorCartDot:{{ settings.color_cart_dot | default: "#ff4f33" }};
+
+  --colorLink:{{ settings.color_body_text | default: "#1c1d1d" }};
+
+  --colorTextBody:{{ settings.color_body_text | default: "#1c1d1d" }};
+  --colorSalePrice:{{ settings.color_sale_price | default: "#1c1d1d" }};
+  --colorSaleTag:{{ settings.color_sale_tag | default: "#1c1d1d" }};
+  --colorSaleTagText:{{ settings.color_sale_tag_text | default: "#ffffff" }};
+
+  --colorBody:{{ settings.color_body_bg | default: "#ffffff" }};
+  --colorBodyDim:{{ settings.color_body_bg | default: "#ffffff" | color_darken: 5 }};
+  --colorInputBg:{{ settings.color_body_bg | default: "#1c1d1d" }};
+  --colorInputBgDim:{{ settings.color_body_bg | default: "#1c1d1d" | color_darken: 5 }};
+  --colorInputBgDark:{{ settings.color_body_bg | default: "#1c1d1d" | color_darken: 10 }};
+  --colorInputText:{{ settings.color_body_text | default: "#1c1d1d" }};
+
+  --colorFooter:{{ settings.color_footer | default: "#111111" }};
+  --colorFooterText:{{ settings.color_footer_text | default: "#ffffff" }};
+
+  --colorBorder:{{ settings.color_borders | default: "#1c1d1d" }};
+
+  --colorNav:{{ settings.color_header | default: "#ffffff" }};
+  --colorNavText:{{ settings.color_header_text | default: "#000000" }};
+  --colorAnnouncement:{{ settings.color_announcement | default: "#1c1d1d" }};
+  --colorAnnouncementText:{{ settings.color_announcement_text | default: "#ffffff" }};
+
+  --colorHeroText:{{ settings.color_image_text | default: "#ffffff" }};
+
+  --colorModalBg:{{ settings.color_modal_overlays | default: "#000000" }};
+
+  --colorSmallImageBg:{{ settings.color_small_image_bg | default: "#eee" }};
+  --colorLargeImageBg:{{ settings.color_large_image_bg | default: "#1c1d1d" }};
+
+  --colorDrawers:{{ settings.color_drawer_background | default: "#1c1d1d" }};
+  --colorDrawersDim:{{ settings.color_drawer_background | default: "#1c1d1d" | color_darken: 5 }};
+  --colorDrawerBorder:{{ settings.color_drawer_border | default: "#343535" }};
+  --colorDrawerText:{{ settings.color_drawer_text | default: "#ffffff" }};
+  --colorDrawerTextDarken:{{ settings.color_drawer_text | default: "#ffffff" | color_darken: 15 }};
+  --colorDrawerButton:{{ settings.color_drawer_button | default: "#a26b25" }};
+  --colorDrawerButtonText:{{ settings.color_drawer_button_text | default: "#ffffff" }};
+}
 
       *,
       *::before,
