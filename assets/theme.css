@@ -22,6 +22,23 @@
   justify-content: space-between;
 }
 .ap-header__left{
-	display: flex;
+  display: flex;
   align-items: center;
+}
+.ap-header__menu ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.ap-header__menu li{
+	
+}
+.ap-header__menu a{
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  padding: 10px 20px;
+  white-space: nowrap;
+  color: #fdfaf2;
+  font-size: 16px;
 }
