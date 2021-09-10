@@ -1,56 +1,5 @@
 @charset "utf-8";
 
-/*!
-  Motion, by Archetype Themes
-  http://archetypethemes.co
-*/
-
-:root{
-  --colorBtnPrimary:#dba583;
-  --colorBtnPrimaryDim:#d5976f;
-  --colorBtnPrimaryText:#fdfaf2;
-  --colorCartDot:#dba583;
-
-  --colorLink:#3e5242;
-
-  --colorTextBody:#3e5242;
-  --colorSalePrice:#fdfaf2;
-  --colorSaleTag:#dba583;
-  --colorSaleTagText:#fdfaf2;
-
-  --colorBody:#fdfaf2;
-  --colorBodyDim:#faf2dc;
-  --colorInputBg:#fdfaf2;
-  --colorInputBgDim:#faf2dc;
-  --colorInputBgDark:#f6e9c6;
-  --colorInputText:#3e5242;
-
-  --colorFooter:#3e5242;
-  --colorFooterText:#fdfaf2;
-
-  --colorBorder:#dba583;
-
-  --colorNav:#3e5242;
-  --colorNavText:#fdfaf2;
-  --colorAnnouncement:#3e5242;
-  --colorAnnouncementText:#fdfaf2;
-
-  --colorHeroText:#fdfaf2;
-
-  --colorModalBg:#fdfaf2;
-
-  --colorSmallImageBg:#fdfaf2;
-  --colorLargeImageBg:#3e5242;
-
-  --colorDrawers:#3e5242;
-  --colorDrawersDim:#334336;
-  --colorDrawerBorder:#dba583;
-  --colorDrawerText:#fdfaf2;
-  --colorDrawerTextDarken:#f3e0b0;
-  --colorDrawerButton:#3e5242;
-  --colorDrawerButtonText:#fdfaf2;
-}
-
 @keyframes placeholder-shimmer{
   0%{
     background-position:-150% 0;
