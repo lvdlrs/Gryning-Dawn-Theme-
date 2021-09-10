@@ -46,3 +46,12 @@
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
 }
+.ap-header__icons{
+	display: flex;
+  align-items: center;
+}
+.ap-header__icons a{
+	color: #fff;
+  fill: #fff;
+  margin-right: 0px;
+}
