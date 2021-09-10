@@ -101,10 +101,11 @@
             "type": "promotion",
             "settings": {
               "enable_image": true,
+              "image": "shopify:\/\/shop_images\/community.jpg",
               "image_width": 650,
-              "title": "Site-wide promotion",
-              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
-              "button_label": "Optional button",
+              "title": "Økologisk og lokalt når mulig",
+              "text": "<p>Vi er opptatt av god helse, rene råvarer som er dyrket med hensyn til planeten. Vår seleksjon av varer og leverandører har dette som standard.<\/p>",
+              "button_label": "Les mer",
               "button_link": ""
             }
           },
