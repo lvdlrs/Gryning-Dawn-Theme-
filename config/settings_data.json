@@ -113,10 +113,11 @@
             "type": "promotion",
             "settings": {
               "enable_image": true,
+              "image": "shopify:\/\/shop_images\/relaxing-in-the-forest.jpg",
               "image_width": 650,
-              "title": "Site-wide promotion",
-              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
-              "button_label": "Optional button",
+              "title": "Sirkulært med troverdig CO2-gevinst",
+              "text": "<p>I hele vårt utvalg gjør vi relevante og troverdige beregninger på innsparinger i CO2 fotavtrykk som din familie realiserer med å handle litt annerledes hos oss.<\/p>",
+              "button_label": "Les mer",
               "button_link": ""
             }
           },
