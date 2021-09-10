@@ -28,133 +28,31 @@
         "divider": false
       }
     },
-    "1631292402be865091": {
-      "type": "testimonials",
-      "blocks": {
-        "1631292402be865091-0": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>Gryning og OneFoodChain tar fatt i problemstillingen på en måte ingen andre i Norge gjør akkurat nå. Dette heier vi på!<\/p>",
-            "author": "Jørgen Ingeberg",
-            "author_info": "Circular Packaging Cluster"
-          }
-        },
-        "1631292402be865091-1": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>Gryning utfordrer med en spennede visjon om bærekraftig forbrukerisme.<\/p>",
-            "author": "Profilert Investor",
-            "author_info": "Oslo"
-          }
-        },
-        "1631292402be865091-2": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>Dette er en sånn \"hvorfor har ingen tenkt på det før\" startup. Smartere enn herreklippen til Cutters!<\/p>",
-            "author": "Startup-personlighet",
-            "author_info": "Oslo"
-          }
-        },
-        "1631292402be865091-3": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>Gryning endrer mer på mine kjøkkenskuffer enn sist gang jeg flyttet. Banalt enkelt og helt genialt!<\/p>",
-            "author": "Toppleder",
-            "author_info": "Norsk Dagligvaregigant"
-          }
-        }
-      },
-      "block_order": [
-        "1631292402be865091-0",
-        "1631292402be865091-1",
-        "1631292402be865091-2",
-        "1631292402be865091-3"
-      ],
+    "16312932614316f23d": {
+      "type": "text-and-image",
       "settings": {
-        "title": "Hva folk sier om oss",
-        "round_images": true,
-        "color_background": "#fdfcf7",
-        "color_text": "#3e5242"
-      }
-    },
-    "16312909052a973426": {
-      "type": "background-image-text",
-      "settings": {
-        "subtitle": "Innsikt",
-        "title": "Troverdig klimainnsats!",
-        "text": "<p>Har du gitt opp å ta bærekraftige valg? Vi var også frustrert. Derfor startet vi Gryning.<\/p><p>Sammen skal vi troverdig redusere vårt fotavtrykk med 500.000 tonn CO2 innen utgangen av 2022!<\/p>",
-        "button_label": "Les mer",
-        "button_link": "https:\/\/blogg.gryning.no\/",
-        "image": "shopify:\/\/shop_images\/people_in_bokeh_street_of_London.jpg",
-        "focal_point": "center",
+        "image": "shopify:\/\/shop_images\/family-eating_5943e5de-fa5d-420c-b0d5-7c998c2b8e71.jpg",
+        "image_width": 800,
+        "subtitle": "Quality Goods at your Closet",
+        "title": "Digg frokost - Alltid i skapet",
+        "text": "<p>Hvorfor skal du gå tom for god kaffe, eller noe godt å spise til frokost? Sett sammen din egen strøm av tørre kvalitetsvarer så er det alltid der i skapet når du trenger det!<\/p>",
+        "button_label": "Bygg din Gryning Frokost nå",
+        "button_link": "shopify:\/\/pages\/torrfrokost",
         "layout": "left",
-        "height": 650,
-        "parallax": true
+        "divider": false
       }
     },
-    "1631292413cc3473f7": {
-      "type": "fading-images",
-      "blocks": {
-        "1631292413cc3473f7-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Bright_Future.jpg",
-            "focal_point": "center center",
-            "slide_title1": "Vårt tankesett",
-            "slide_title2": "Moderne med tanke på fremtiden."
-          }
-        },
-        "1631292413cc3473f7-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/family-eating.jpg",
-            "focal_point": "center center",
-            "slide_title1": "Use this section",
-            "slide_title2": "to impress customers"
-          }
-        },
-        "1631292413cc3473f7-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/presentation.jpg",
-            "focal_point": "center center",
-            "slide_title1": "And highlight",
-            "slide_title2": "important details"
-          }
-        }
-      },
-      "block_order": [
-        "1631292413cc3473f7-0",
-        "1631292413cc3473f7-1",
-        "1631292413cc3473f7-2"
-      ],
+    "16312933129259d98f": {
+      "type": "text-and-image",
       "settings": {
-        "title_lines": "2",
-        "title_font": "heading",
-        "title_size": 45,
-        "title_color": "#fdfaf2",
-        "title_bg_color": "rgba(0,0,0,0)",
-        "text_align": "vertical-center horizontal-center",
-        "link": "",
-        "slide_speed": 5,
-        "color_overlay": "#000",
-        "color_overlay_opacity": 30,
-        "desktop_height": "650px",
-        "mobile_height": "auto"
-      }
-    },
-    "1631292663302a80b7": {
-      "type": "new-featured-collection",
-      "settings": {
-        "title": "Mer enn bare strømming",
-        "home_featured_products": "startpakker-for-gode-vaner",
-        "per_row": 4,
-        "rows": 1,
-        "view_all": true,
+        "image": "shopify:\/\/shop_images\/markus-spiske-n2HoOVk3tGY-unsplash.jpg",
+        "image_width": 800,
+        "subtitle": "Tørrvarer på Auto-Update",
+        "title": "Strøm kjedelige dagligvarer",
+        "text": "<p>Vi tror at tørrskapet ditt kan holde seg selv oppdatert, og hos oss får du akkurat det. Velg hvilke kvalitetsvarer du vil ha på plass, og vi sender deg en bærekraftig forsendelse med akkurat riktig volum hver måned. <\/p>",
+        "button_label": "Hold mitt tørrskap oppdatert!",
+        "button_link": "shopify:\/\/collections\/torre-varer-som-kan-strommes",
+        "layout": "right",
         "divider": false
       }
     },
@@ -242,44 +140,146 @@
         "enable_gutter": false
       }
     },
-    "16312932614316f23d": {
-      "type": "text-and-image",
+    "1631292663302a80b7": {
+      "type": "new-featured-collection",
       "settings": {
-        "image": "shopify:\/\/shop_images\/family-eating_5943e5de-fa5d-420c-b0d5-7c998c2b8e71.jpg",
-        "image_width": 800,
-        "subtitle": "Quality Goods at your Closet",
-        "title": "Digg frokost - Alltid i skapet",
-        "text": "<p>Hvorfor skal du gå tom for god kaffe, eller noe godt å spise til frokost? Sett sammen din egen strøm av tørre kvalitetsvarer så er det alltid der i skapet når du trenger det!<\/p>",
-        "button_label": "Bygg din Gryning Frokost nå",
-        "button_link": "shopify:\/\/pages\/torrfrokost",
-        "layout": "left",
+        "title": "Mer enn bare strømming",
+        "home_featured_products": "startpakker-for-gode-vaner",
+        "per_row": 4,
+        "rows": 1,
+        "view_all": true,
         "divider": false
       }
     },
-    "16312933129259d98f": {
-      "type": "text-and-image",
+    "1631292413cc3473f7": {
+      "type": "fading-images",
+      "blocks": {
+        "1631292413cc3473f7-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bright_Future.jpg",
+            "focal_point": "center center",
+            "slide_title1": "Vårt tankesett",
+            "slide_title2": "Moderne med tanke på fremtiden."
+          }
+        },
+        "1631292413cc3473f7-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/family-eating.jpg",
+            "focal_point": "center center",
+            "slide_title1": "Use this section",
+            "slide_title2": "to impress customers"
+          }
+        },
+        "1631292413cc3473f7-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/presentation.jpg",
+            "focal_point": "center center",
+            "slide_title1": "And highlight",
+            "slide_title2": "important details"
+          }
+        }
+      },
+      "block_order": [
+        "1631292413cc3473f7-0",
+        "1631292413cc3473f7-1",
+        "1631292413cc3473f7-2"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/markus-spiske-n2HoOVk3tGY-unsplash.jpg",
-        "image_width": 800,
-        "subtitle": "Tørrvarer på Auto-Update",
-        "title": "Strøm kjedelige dagligvarer",
-        "text": "<p>Vi tror at tørrskapet ditt kan holde seg selv oppdatert, og hos oss får du akkurat det. Velg hvilke kvalitetsvarer du vil ha på plass, og vi sender deg en bærekraftig forsendelse med akkurat riktig volum hver måned. <\/p>",
-        "button_label": "Hold mitt tørrskap oppdatert!",
-        "button_link": "shopify:\/\/collections\/torre-varer-som-kan-strommes",
-        "layout": "right",
-        "divider": false
+        "title_lines": "2",
+        "title_font": "heading",
+        "title_size": 45,
+        "title_color": "#fdfaf2",
+        "title_bg_color": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "link": "",
+        "slide_speed": 5,
+        "color_overlay": "#000",
+        "color_overlay_opacity": 30,
+        "desktop_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
+    "1631292402be865091": {
+      "type": "testimonials",
+      "blocks": {
+        "1631292402be865091-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Gryning og OneFoodChain tar fatt i problemstillingen på en måte ingen andre i Norge gjør akkurat nå. Dette heier vi på!<\/p>",
+            "author": "Jørgen Ingeberg",
+            "author_info": "Circular Packaging Cluster"
+          }
+        },
+        "1631292402be865091-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Gryning utfordrer med en spennede visjon om bærekraftig forbrukerisme.<\/p>",
+            "author": "Profilert Investor",
+            "author_info": "Oslo"
+          }
+        },
+        "1631292402be865091-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Dette er en sånn \"hvorfor har ingen tenkt på det før\" startup. Smartere enn herreklippen til Cutters!<\/p>",
+            "author": "Startup-personlighet",
+            "author_info": "Oslo"
+          }
+        },
+        "1631292402be865091-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Gryning endrer mer på mine kjøkkenskuffer enn sist gang jeg flyttet. Banalt enkelt og helt genialt!<\/p>",
+            "author": "Toppleder",
+            "author_info": "Norsk Dagligvaregigant"
+          }
+        }
+      },
+      "block_order": [
+        "1631292402be865091-0",
+        "1631292402be865091-1",
+        "1631292402be865091-2",
+        "1631292402be865091-3"
+      ],
+      "settings": {
+        "title": "Hva folk sier om oss",
+        "round_images": true,
+        "color_background": "#fdfcf7",
+        "color_text": "#3e5242"
+      }
+    },
+    "16312909052a973426": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "Innsikt",
+        "title": "Troverdig klimainnsats!",
+        "text": "<p>Har du gitt opp å ta bærekraftige valg? Vi var også frustrert. Derfor startet vi Gryning.<\/p><p>Sammen skal vi troverdig redusere vårt fotavtrykk med 500.000 tonn CO2 innen utgangen av 2022!<\/p>",
+        "button_label": "Les mer",
+        "button_link": "https:\/\/blogg.gryning.no\/",
+        "image": "shopify:\/\/shop_images\/people_in_bokeh_street_of_London.jpg",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 650,
+        "parallax": true
       }
     }
   },
   "order": [
     "1631290729d01739bd",
     "163129325259d93273",
-    "1631292402be865091",
-    "16312909052a973426",
-    "1631292413cc3473f7",
-    "1631292663302a80b7",
-    "1631292889b2258b06",
     "16312932614316f23d",
-    "16312933129259d98f"
+    "16312933129259d98f",
+    "1631292889b2258b06",
+    "1631292663302a80b7",
+    "1631292413cc3473f7",
+    "1631292402be865091",
+    "16312909052a973426"
   ]
 }
