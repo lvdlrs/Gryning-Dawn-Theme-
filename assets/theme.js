@@ -6967,5 +6967,22 @@ if (Shopify && Shopify.PaymentButton) {
     theme.pageTransitions();
 
     document.dispatchEvent(new CustomEvent('page:loaded'));
+
+
+
+    // Sticky header
+    $(window).scroll(function(){
+      if ($(window).scrollTop() >= 100) {
+        $('.header').addClass('is-sticky');
+      }
+      else {
+        $('.header').removeClass('is-sticky');
+      }
+    });
+
+
+
+
+
   });
 })();
