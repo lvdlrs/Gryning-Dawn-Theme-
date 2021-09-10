@@ -122,7 +122,7 @@
 
         </div>
       </div>
-    </div>
+    </sticky-header>{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
   </header>
 </section>
 
@@ -141,7 +141,14 @@
 "id": "menu",
 "default": "main-menu",
 "label": "Select Menu"
-}
+},
+{
+      "type": "checkbox",
+      "id": "enable_sticky_header",
+      "default": true,
+      "label": "t:sections.header.settings.enable_sticky_header.label",
+      "info": "t:sections.header.settings.enable_sticky_header.info"
+    }
 ]
 }
 {% endschema %}
