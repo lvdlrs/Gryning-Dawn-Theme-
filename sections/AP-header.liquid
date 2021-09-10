@@ -16,7 +16,7 @@
 
 <section>
   <header>
-    <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper">
+    <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="ap-header">
       <div class="ap-header__inner">
         <div class="ap-header__left">
 
@@ -120,7 +120,7 @@
 
         </div>
       </div>
-    </sticky-header>{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
+    </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
   </header>
 </section>
 
