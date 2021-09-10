@@ -123,11 +123,8 @@
   display: table-cell;
 }
 .hero__text-content {
-    padding: 60px 0;
-}
-.hero__text-content {
     position: relative;
-    padding: 20px 0;
+    padding: 60px 0;
     z-index: 4;
 }
 .hero__text-content {
