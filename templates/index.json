@@ -82,11 +82,63 @@
         "height": 650,
         "parallax": true
       }
+    },
+    "1631292413cc3473f7": {
+      "type": "fading-images",
+      "blocks": {
+        "1631292413cc3473f7-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bright_Future.jpg",
+            "focal_point": "center center",
+            "slide_title1": "Vårt tankesett",
+            "slide_title2": "Moderne med tanke på fremtiden."
+          }
+        },
+        "1631292413cc3473f7-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/family-eating.jpg",
+            "focal_point": "center center",
+            "slide_title1": "Use this section",
+            "slide_title2": "to impress customers"
+          }
+        },
+        "1631292413cc3473f7-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/presentation.jpg",
+            "focal_point": "center center",
+            "slide_title1": "And highlight",
+            "slide_title2": "important details"
+          }
+        }
+      },
+      "block_order": [
+        "1631292413cc3473f7-0",
+        "1631292413cc3473f7-1",
+        "1631292413cc3473f7-2"
+      ],
+      "settings": {
+        "title_lines": "2",
+        "title_font": "heading",
+        "title_size": 45,
+        "title_color": "#fdfaf2",
+        "title_bg_color": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "link": "",
+        "slide_speed": 5,
+        "color_overlay": "#000",
+        "color_overlay_opacity": 30,
+        "desktop_height": "650px",
+        "mobile_height": "auto"
+      }
     }
   },
   "order": [
     "1631290729d01739bd",
     "1631292402be865091",
-    "16312909052a973426"
+    "16312909052a973426",
+    "1631292413cc3473f7"
   ]
 }
