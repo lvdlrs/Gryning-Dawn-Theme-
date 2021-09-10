@@ -12,6 +12,7 @@
   right: 0;
   width: 100%;
   display: block;
+  z-index: 999;
 }
 .ap-header__inner{
   display: flex;
