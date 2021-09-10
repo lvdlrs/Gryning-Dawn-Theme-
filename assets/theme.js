@@ -6973,11 +6973,11 @@ if (Shopify && Shopify.PaymentButton) {
 
 
 // Sticky header
-    $(window).scroll(function(){
-      if ($(window).scrollTop() >= 100) {
-        $('.ap-header').addClass('is-sticky');
-      }
-      else {
-        $('.ap-header').removeClass('is-sticky');
-      }
-    });
+$(window).scroll(function(){
+  if ($(window).scrollTop() >= 100) {
+    $('.ap-header').addClass('is-sticky');
+  }
+  else {
+    $('.ap-header').removeClass('is-sticky');
+  }
+});
