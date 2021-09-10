@@ -11,6 +11,7 @@
   left: 0;
   right: 0;
   width: 100px;
+  display: block;
 }
 .ap-header__inner{
   display: flex;
