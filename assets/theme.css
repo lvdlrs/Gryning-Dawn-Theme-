@@ -122,10 +122,13 @@
 .hero__text-content {
   display: table-cell;
 }
-@media only screen and (min-width: 590px){
-  .hero__text-content {
+.hero__text-content {
     padding: 60px 0;
-  }
+}
+.hero__text-content {
+    position: relative;
+    padding: 20px 0;
+    z-index: 4;
 }
 .hero__text-content {
   position: relative;
