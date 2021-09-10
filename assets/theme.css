@@ -12,3 +12,7 @@
   align-items: center;
   justify-content: space-between;
 }
+.ap-header__left{
+	display: flex;
+  align-items: center;
+}
