@@ -70,8 +70,10 @@
           "1f395ab6-d0e4-4e11-b09f-faf367ce52bb": {
             "type": "logo",
             "settings": {
-              "desktop_logo_width": 200,
-              "mobile_logo_width": 140
+              "logo": "shopify:\/\/shop_images\/Gryning_logo_72dpi_off-white.png",
+              "logo-inverted": "shopify:\/\/shop_images\/Gryning_logo_72dpi_off-white.png",
+              "desktop_logo_width": 150,
+              "mobile_logo_width": 120
             }
           }
         },
