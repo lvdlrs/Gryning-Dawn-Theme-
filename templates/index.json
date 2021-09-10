@@ -29,10 +29,74 @@
         "height": 650,
         "parallax": true
       }
+    },
+    "1631292402be865091": {
+      "type": "testimonials",
+      "blocks": {
+        "1631292402be865091-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Gryning og OneFoodChain tar fatt i problemstillingen på en måte ingen andre i Norge gjør akkurat nå. Dette heier vi på!<\/p>",
+            "author": "Jørgen Ingeberg",
+            "author_info": "Circular Packaging Cluster"
+          }
+        },
+        "1631292402be865091-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "1631292402be865091-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "1631292402be865091-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "1631292402be865091-4": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        }
+      },
+      "block_order": [
+        "1631292402be865091-0",
+        "1631292402be865091-1",
+        "1631292402be865091-2",
+        "1631292402be865091-3",
+        "1631292402be865091-4"
+      ],
+      "settings": {
+        "title": "Hva folk sier om oss",
+        "round_images": true,
+        "color_background": "#fdfcf7",
+        "color_text": "#3e5242"
+      }
     }
   },
   "order": [
     "1631290729d01739bd",
-    "16312909052a973426"
+    "16312909052a973426",
+    "1631292402be865091"
   ]
 }
