@@ -6969,15 +6969,3 @@ if (Shopify && Shopify.PaymentButton) {
     document.dispatchEvent(new CustomEvent('page:loaded'));
   });
 })();
-
-
-
-// Sticky header
-$(window).scroll(function(){
-  if ($(window).scrollTop() >= 100) {
-    $('.ap-header').addClass('is-sticky');
-  }
-  else {
-    $('.ap-header').removeClass('is-sticky');
-  }
-});
