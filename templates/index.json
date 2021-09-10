@@ -2,6 +2,7 @@
   "sections": {
     "1631290729d01739bd": {
       "type": "hero-video",
+      "disabled": true,
       "settings": {
         "title": "Strøm tørre ting",
         "title_size": 80,
@@ -196,7 +197,7 @@
         "text_align": "vertical-center horizontal-center",
         "link": "",
         "slide_speed": 5,
-        "color_overlay": "#000",
+        "color_overlay": "#000000",
         "color_overlay_opacity": 30,
         "desktop_height": "650px",
         "mobile_height": "auto"
