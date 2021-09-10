@@ -13,19 +13,6 @@
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
-        "blocks": {
-          "announcement-bar-0": {
-            "type": "announcement",
-            "settings": {
-              "text": "Welcome to our store",
-              "color_scheme": "background-1",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "announcement-bar-0"
-        ],
         "settings": {
         }
       },
@@ -75,6 +62,22 @@
           "enable_country_selector": true,
           "enable_language_selector": true,
           "payment_enable": true
+        }
+      },
+      "new-header": {
+        "type": "new-header",
+        "settings": {
+          "main_menu_link_list": "main-menu",
+          "main_menu_alignment": "left-center",
+          "header_style": "normal",
+          "sticky_index": false,
+          "sticky_collection": false,
+          "type_navigation_size": 18,
+          "type_navigation_style": false,
+          "show_announcement": false,
+          "announcement_text": "Free shipping and returns",
+          "announcement_link": "",
+          "announcement_closable": false
         }
       }
     },
