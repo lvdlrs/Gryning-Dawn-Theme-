@@ -53,8 +53,16 @@
   margin-right: 0px;
 }
 
-.header{
-	z-index: 999;
+.header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: absolute;
+  width: 100%;
+  display: grid;
+  max-width: 100%;
+}
+.shopify-section-header-sticky .header {
+	background: var(--gradient-background);
 }
 
 
