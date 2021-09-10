@@ -106,14 +106,13 @@
             {%- endif -%}
 
 
-            {%- if settings.search_enable -%}
+
             <div class="site-nav medium-down--hide">
               <a href="{{ routes.search_url }}" class="site-nav__link site-nav__link--icon js-search-header js-no-transition">
                 <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64"><path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"/></svg>
                 <span class="icon__fallback-text">{{ 'general.search.title' | t }}</span>
               </a>
             </div>
-            {%- endif -%}
 
 
             <a href="{% if settings.cart__drawer %}#{% else %} {{ routes.cart_url }} {% endif %}" {% if settings.cart__drawer %} data-drawer-trigger aria-controls="drawer-name" aria-expanded="false" {% endif %} class="header__icon header__icon--cart link link--text focus-inset" id="cart-icon-bubble">
