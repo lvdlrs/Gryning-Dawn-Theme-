@@ -1,10 +1,10 @@
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
-<div class="text-{{ section.settings.align_text }}">
+<div class="custom-text-box text-{{ section.settings.align_text }}">
 
   <div class="page-width">
     <div class="d-flex">
-      <div>
+      <div class="w-75">
         {%- if section.settings.title != blank -%}
           <h2>{{ section.settings.title }}</h2>
         {% endif %}
