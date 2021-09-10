@@ -79,19 +79,19 @@
   justify-content: center;
 }
 .w-25{
-	width: 25%;
+  width: 25%;
 }
 .w-50{
-	width: 50%;
+  width: 50%;
 }
 .w-75{
-	width: 75%;
+  width: 75%;
 }
 .w-100{
-	width: 100%;
+  width: 100%;
 }
 .mx-auto{
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 
@@ -232,6 +232,7 @@ svg:not(:root) {
 }
 .custom-text-box p{
   color: #3e5242;
-  line-height: 14px;
-  font-size: (16 *1.4);
+  font-size: 22px;
+  line-height: 34px;
+
 }
