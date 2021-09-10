@@ -180,13 +180,6 @@
 svg:not(:root) {
   overflow: hidden;
 }
-.icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  fill: currentColor;
-}
 @media only screen and (min-width: 590px){
   .hero__link .btn {
     margin-top: 5px;
