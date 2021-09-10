@@ -66,13 +66,25 @@
       },
       "new-header": {
         "type": "new-header",
+        "blocks": {
+          "1f395ab6-d0e4-4e11-b09f-faf367ce52bb": {
+            "type": "logo",
+            "settings": {
+              "desktop_logo_width": 200,
+              "mobile_logo_width": 140
+            }
+          }
+        },
+        "block_order": [
+          "1f395ab6-d0e4-4e11-b09f-faf367ce52bb"
+        ],
         "settings": {
           "main_menu_link_list": "main-menu",
           "main_menu_alignment": "left-center",
-          "header_style": "normal",
-          "sticky_index": false,
+          "header_style": "sticky",
+          "sticky_index": true,
           "sticky_collection": false,
-          "type_navigation_size": 18,
+          "type_navigation_size": 16,
           "type_navigation_style": false,
           "show_announcement": false,
           "announcement_text": "Free shipping and returns",
