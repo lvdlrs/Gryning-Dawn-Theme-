@@ -251,7 +251,12 @@
     "1631388073a336ab82": {
       "type": "parallax-section",
       "settings": {
-        "title": "Collection Title"
+        "image": "shopify:\/\/shop_images\/people_in_bokeh_street_of_London.jpg",
+        "subtitle": "Sub Title",
+        "title": "Collection Title",
+        "text": "Some text here",
+        "btn_text": "",
+        "btn_link": ""
       }
     },
     "16312909052a973426": {
