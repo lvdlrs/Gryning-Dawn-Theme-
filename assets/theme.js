@@ -29,10 +29,6 @@ if (theme.config.isTouch) {
   document.documentElement.className += ' supports-touch';
 }
 
-if (console && console.log) {
-  console.log('Motion theme ('+theme.settings.themeVersion+') by ARCHΞTYPE | Learn more at https://archetypethemes.co');
-}
-
 window.lazySizesConfig = window.lazySizesConfig || {};
 lazySizesConfig.expFactor = 2.2;
 
