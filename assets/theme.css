@@ -338,13 +338,11 @@ svg:not(:root) {
   justify-content: flex-start;
   padding: 30px;
 }
-.custom-collections__link{
-  margin-bottom: 10px;
-}
 .custom-collections__link a{
   display: inline-block;
   color: #fff;
   font-size: 30px;
+  transition: all 500ms;
 }
 .custom-collections__link a:hover{
   transform: scale(1);
