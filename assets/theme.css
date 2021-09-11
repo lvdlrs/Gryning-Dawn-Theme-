@@ -234,6 +234,7 @@
 }
 .hero__link .animation-contents .btn{
 	border: 0px solid #fff;
+  font-weight: 500;
 }
 svg:not(:root) {
   overflow: hidden;
