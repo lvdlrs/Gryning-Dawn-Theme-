@@ -310,6 +310,6 @@ svg:not(:root) {
   line-height: 32px;
   color: rgb(62, 82, 66);
 }
-.skrim__overlay img{
+.skrim__overlay .image-fit{
 	width: 100%;
 }
