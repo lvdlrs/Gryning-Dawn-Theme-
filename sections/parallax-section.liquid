@@ -28,7 +28,7 @@
   var initScrollTop = $(window).scrollTop();
   
   // Set the image's vertical background position based on the scroll top when the page is loaded.
-  $(parallax1).css({'background-position-y' : (initScrollTop/25)+'%'});
+  $(parallax1).css({'background-position-y' : (initScrollTop/0)+'%'});
   
   // When the user scrolls...
   $(window).scroll(function() {
@@ -37,7 +37,7 @@
     var scrollTop = $(window).scrollTop();
     
     // Set the new background position.
-    $(parallax1).css({'background-position-y' : (scrollTop/50)+'%'});
+    $(parallax1).css({'background-position-y' : (scrollTop/100)+'%'});
     
   });
   
