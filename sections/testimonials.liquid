@@ -8,33 +8,23 @@
 
 
 <script>
-  
-  $('.testimonials-slider').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
-  
+
+  jQuery(document).ready(function ($) {
+    $('.testimonials-slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: !0,
+      cssEase: 'linear',
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 8000,
+      draggable: true,
+      arrows: false,
+    });
+  });		
+
 </script>
 
 <div
