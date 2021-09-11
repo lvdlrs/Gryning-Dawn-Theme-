@@ -4,6 +4,11 @@
 <section>
   <div class="custom-collections">
   <div class="container-fluid">
+    
+    <div class="custom-collections__title">
+      <h2>{{ section.settings.title }}</h2>
+    </div>
+    
     <div class="row">
     
       {% for block in section.blocks %}
@@ -33,10 +38,37 @@
 
 
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+ {
+    "name":"Custom Collection list",
+    "max_blocks":15,
+    "settings":[
+        {
+            "type":"text",
+            "id":"title",
+            "label":"Heading",
+            "default":"Collection Title"
+        }
+    ],
+    "blocks":[
+        {
+            "type":"collection",
+            "name":"Collection",
+            "settings":[
+                {
+                    "id":"collection",
+                    "type":"collection",
+                    "label":"Collection"
+                }
+            ]
+        }
+    ],
+    "presets":[
+        {
+            "name":"Custom Collection list",
+            "category":"Collection"
+        }
+    ]
+}
 {% endschema %}
 
 {% stylesheet %}
