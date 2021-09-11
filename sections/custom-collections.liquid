@@ -27,11 +27,13 @@
           <div class="custom-collections__box-img">
           	<img class="image" src="{{ collection_image | img_url: 'master' }}" data-src="{{ img_url }}" alt="{{ collection_image.alt | escape }}">
           </div>
+          <a href="{{ collection_url }}">
           <div class="custom-collections__overlay">
           	<div class="custom-collections__link">
               <a href="{{ collection_url }}">{{ collection_title }}</a>
             </div>
           </div>
+          </a>
         </div>
       </div>
       {% endfor %}
