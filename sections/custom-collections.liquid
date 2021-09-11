@@ -3,41 +3,41 @@
 
 <section>
   <div class="custom-collections">
-  <div class="container-fluid">
-    
-    <div class="custom-collections__title">
-      <h2>{{ section.settings.title }}</h2>
-    </div>
-    
-    <div class="row no-gutters">
-    
-      {% for block in section.blocks %}
-      {% assign collection = collections[block.settings.collection] %}
-      {% assign collection_title = collection.title | escape %}
-      {% assign collection_url = collection.url %}
-      
-      {% if collection.image %}
-      	{% assign collection_image = collection.image %}
-      {% else %}
-      	{% assign collection_image = collection.products.first.featured_media.preview_image %}
-      {% endif %}
-      
-      <div class="col-lg-3 col-md-3 col-12">
-        <div class="custom-collections__box">
-          <div class="custom-collections__box-img">
-          	<img class="image" src="{{ collection_image | img_url: 'master' }}" data-src="{{ img_url }}" alt="{{ collection_image.alt | escape }}">
-          </div>
-          <div class="custom-collections__overlay">
-          	<div class="custom-collections__link">
-              <a href="{{ collection_url }}">{{ collection_title }}</a>
-            </div>
+    <div class="container-fluid">
+
+      <div class="custom-collections__title">
+        <h2>{{ section.settings.title }}</h2>
+      </div>
+
+      <div class="row no-gutters">
+
+        {% for block in section.blocks %}
+        {% assign collection = collections[block.settings.collection] %}
+        {% assign collection_title = collection.title | escape %}
+        {% assign collection_url = collection.url %}
+
+        {% if collection.image %}
+        {% assign collection_image = collection.image %}
+        {% else %}
+        {% assign collection_image = collection.products.first.featured_media.preview_image %}
+        {% endif %}
+
+        <div class="col-lg-3 col-md-3 col-12">
+          <div class="custom-collections__box">
+            <a href="{{ collection_url }}">
+              <div class="custom-collections__box-img">
+                <img class="image" src="{{ collection_image | img_url: 'master' }}" data-src="{{ img_url }}" alt="{{ collection_image.alt | escape }}">
+              </div>
+              <div class="custom-collections__overlay">
+                <div class="custom-collections__link">{{ collection_title }}</div>
+              </div>
+            </a>
           </div>
         </div>
+        {% endfor %}
+
       </div>
-      {% endfor %}
-      
     </div>
-  </div>
   </div>
 </section>
 
