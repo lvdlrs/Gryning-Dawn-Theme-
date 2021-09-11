@@ -74,32 +74,45 @@
 {% schema %}
  {
     "name":"Custom parallax section",
-    "max_blocks":15,
     "settings":[
         {
+            "type":"image_picker",
+            "id":"image",
+            "label":"Background Image"
+        },
+{
+            "type":"text",
+            "id":"subtitle",
+            "label":"Sub Title",
+            "default":"Sub Title"
+        },
+{
             "type":"text",
             "id":"title",
-            "label":"Heading",
-            "default":"Collection Title"
-        }
-    ],
-    "blocks":[
-        {
-            "type":"collection",
-            "name":"Collection",
-            "settings":[
-                {
-                    "id":"collection",
-                    "type":"collection",
-                    "label":"Collection"
-                }
-            ]
+            "label":"Title",
+            "default":"Title"
+        },
+{
+            "type":"textarea",
+            "id":"text",
+            "label":"Text",
+            "default":"Some text here"
+        },
+{
+            "type":"text",
+            "id":"btn_text",
+            "label":"Button Text"
+        },
+{
+            "type":"url",
+            "id":"btn_link",
+            "label":"Button URL"
         }
     ],
     "presets":[
         {
             "name":"Custom parallax section",
-            "category":"Collection"
+            "category":"custom"
         }
     ]
 }
