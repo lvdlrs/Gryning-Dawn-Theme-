@@ -195,6 +195,11 @@
   color: #fff;
   margin-bottom: 20px;
 }
+.hero__subtitle .animation-contents{
+	font-size: 18px;
+  line-height: 22px;
+  color:#fdfaf2;
+}
 .video-interactable .hero__link {
   pointer-events: auto;
 }
