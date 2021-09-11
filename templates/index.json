@@ -139,6 +139,22 @@
         "divider": false
       }
     },
+    "1631386419433636c0": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Mer enn bare strømming",
+        "collection": "startpakker-for-gode-vaner",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
     "1631292413cc3473f7": {
       "type": "fading-images",
       "blocks": {
@@ -265,6 +281,7 @@
     "16313755260218adae",
     "16313839067904c324",
     "1631292663302a80b7",
+    "1631386419433636c0",
     "1631292413cc3473f7",
     "1631292402be865091",
     "16312909052a973426"
