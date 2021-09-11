@@ -1,251 +1,233 @@
-
-
-
-<style>
-  
-  header {
-  overflow: hidden;
-}
-
-.hero-text h2 {
-  margin-bottom: 50px;
-}
-
-.hero-text .hero {
-  position: relative;
-}
-
-.hero-text .hero .hero-slide a:hover span {
-  color: #033a71;
-}
-
-.hero .hero-slide img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-  object-position: top center;
-}
-
-.hero .hero-slide .header-content {
-  top: 20%;
-  margin-left: 8rem;
-  max-width: 550px;
-  width: 100%;
-  padding: 2rem;
-}
-
-.slide-content {
-  padding: 10px 20px 10px 0;
-}
-
-.slide-content .h1 {
-  font-size: 62px;
-}
-
-.btn-primary {
-  background-color: #5302FE;
-  border: #111;
-  border-radius: 0;
-}
-
-/** Text Animation **/
-
-@-webkit-keyframes fadeInUpSD {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
+{%- style -%}
+  .testimonials-{{ section.id }} {
+    background-color: {{ section.settings.color_background }};
+    color: {{ section.settings.color_text }};
   }
 }
-
-@keyframes fadeInUpSD {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-.fadeInUpSD {
-  -webkit-animation-name: fadeInUpSD;
-  animation-name: fadeInUpSD;
-}
-
-.slick-active .slide-content {
-  animation-name: fadeInUpSD;
-  animation-duration: 1s;
-  opacity: 1;
-  width: 100%;
-  padding: 10px 20px 30px 0;
-}
-
-/* Text Animation End **/
-
-.slick-dots {
-  position: absolute;
-  bottom: 10px;
-  display: block;
-  width: 100%;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-}
-
-.slick-dots li {
-  position: relative;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  padding: 0;
-  cursor: pointer;
-}
-
-.slick-active button {
-  background: #d60e96;
-}
-
-.slick-dots li button {
-  font-size: 0;
-  line-height: 0;
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 50%;
-  border: 0;
-  outline: none;
-}
-
-.slick-dots li button::before {
-  font-size: 18px;
-  color: #fff;
-  opacity: 1;
-}
-
-
-/* Media Queries */
-
-@media (max-width: 768px) {
-  .hero-text .hero .hero-slide a {
-    padding-top: 0.8rem;
-  }
-
-  .hero-text .hero .hero-slide a span {
-    font-size: 20px;
-    margin-top: 0.5rem;
-  }
-
-  .hero .hero-slide .header-content {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    margin: 0 auto;
-  }
-}
-
-</style>
-
-
+{%- endstyle -%}
 
 
 <script>
   
-  jQuery(document).ready(function ($) {
-	  $('.hero').slick({
-		dots: true,
-        infinite: true,
-        speed: 500,
-        fade: !0,
-        cssEase: 'linear',
-		slidesToShow: 1,
-		slidesToScroll: 1,
-        autoplay: true,
-		autoplaySpeed: 8000,
-        draggable: false,
-		arrows: false,
-		responsive: [
-	    {
-		breakpoint: 1024,
-		settings: {
-		slidesToShow: 1,
-		slidesToScroll: 1,
-        infinite: true
-		          }
-        },
-        {
-		breakpoint: 768,
-		settings: {
-        draggable: true,
-		          }
-		},
-		{
-		breakpoint: 600,
-		settings: {
-        slidesToShow: 1,
-        draggable: true,
-		slidesToScroll: 1
-			      }
-		},
-		{
-		breakpoint: 480,
-		settings: {
-        slidesToShow: 1,
-        draggable: true,
-		slidesToScroll: 1
-		          }
-		}
-	
-			      ]
-                  });
-        });		
+  $('.testimonials-slider').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
   
 </script>
 
-
-<header class="hero-text">
-  <div class="hero" data-arrows="true" data-autoplay="true">
-    <!--.hero-slide-->
-
-    <div class="hero-slide">
-      <img alt="Mars Image" class="img-responsive cover" src="https://raw.githubusercontent.com/solodev/text-animations-slick-slider/master/images/rocket.jpg">
-      <div class="header-content text-white position-absolute slide-content col-lg-4">
-        <h1 class="mb-4">Be part of the <span class="d-block font-weight-bold">Lunar XPerience</span></h1>
-        <a class="btn btn-primary btn-lg w-max mt-2" href="#" tabindex="0">Tour Our Ships</a>
+<div
+  class="text-center testimonials-section testimonials-{{ section.id }}{% if section.settings.color_background == settings.color_body_bg %} testimonials-section--with-divider{% endif %}"
+  data-section-id="{{ section.id }}"
+  data-section-type="testimonials"
+  data-aos>
+  {%- if section.settings.title != blank -%}
+    <div class="page-width">
+      <div class="section-header">
+        <h2>{{ section.settings.title | escape }}</h2>
       </div>
     </div>
-    <!--.hero-slide-->
+  {%- endif -%}
 
-    <div class="hero-slide">
-      <img alt="Mars Image" class="img-responsive cover" src="https://raw.githubusercontent.com/solodev/text-animations-slick-slider/master/images/mars-mission.jpg">
-      <div class="header-content text-white position-absolute slide-content col-lg-4">
-        <h1 class="mb-4">LunarXP Voted Best Mars Mission</h1>
-        <p class="font-weight-bold">Inc. magazine today ranked LunarXP as the fastest growing company in the Mars Mission category.</p>
-        <a class="btn btn-primary btn-lg w-max mt-2" href="#" tabindex="0">Read More</a>
+  {%- if section.blocks.size > 0 -%}
+    <div class="slideshow-wrapper">
+      <div class="testimonials-slider" id="Testimonials-{{ section.id }}" data-count="{{ section.blocks.size }}">
+        {%- for block in section.blocks -%}
+          <div
+            class="testimonials-slide testimonials-slide--{{ block.id }}"
+            data-index="{{ forloop.index0 }}"
+            {{ block.shopify_attributes }}>
+            <blockquote class="testimonials-slider__text">
+
+              {%- if block.settings.icon == 'quote' -%}
+                <span class="quote-icon"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-quote" viewBox="0 0 41 35"><path d="M10.208 17.711h6.124v16.332H0V21.684C0 8.184 5.444.956 16.332 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766zm24.498 0h6.124v16.332H24.498V21.684C24.498 8.184 29.942.956 40.83 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766z" fill="#000" fill-rule="evenodd"/></svg></span>
+              {%- elsif block.settings.icon == '5-stars' -%}
+                <span class="testimonial-stars">★★★★★</span>
+              {%- elsif block.settings.icon == '4-stars' -%}
+                <span class="testimonial-stars">★★★★</span>
+              {%- elsif block.settings.icon == '3-stars' -%}
+                <span class="testimonial-stars">★★★</span>
+              {%- elsif block.settings.icon == '2-stars' -%}
+                <span class="testimonial-stars">★★</span>
+              {%- elsif block.settings.icon == '1-star' -%}
+                <span class="testimonial-stars">★</span>
+              {%- endif -%}
+
+              {%- if block.settings.testimonial != blank -%}
+                <div class="rte-setting text-spacing">{{ block.settings.testimonial }}</div>
+              {%- endif -%}
+
+              {%- if block.settings.image != blank or block.settings.author != blank or block.settings.author_info != blank -%}
+                <div class="testimonial-meta">
+                  {%- if block.settings.image != blank -%}
+                    <div
+                      class="image-wrap testimonail-image{% if section.settings.round_images %} testimonail-image--round{% endif %}">
+                      {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                      <img class="lazyload"
+                          data-src="{{ img_url }}"
+                          data-widths="[180, 360, 540, 720]"
+                          data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                          data-sizes="auto"
+                          alt="{{ block.settings.image.alt }}">
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.author != blank -%}
+                    <cite>{{ block.settings.author | escape }}</cite>
+                  {%- endif -%}
+                  {%- if block.settings.author_info != blank -%}
+                    <p>{{ block.settings.author_info | escape }}</p>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+
+            </blockquote>
+          </div>
+        {%- endfor -%}
       </div>
     </div>
-    <!--.hero-slide-->
+  {%- endif -%}
+</div>
 
-    <div class="hero-slide">
-      <img alt="Mars Image" class="img-responsive cover" src="https://raw.githubusercontent.com/solodev/text-animations-slick-slider/master/images/cosmos.jpg">
-      <div class="header-content text-white position-absolute slide-content col-lg-4">
-        <p>Our fleet of advanced spacecraft have revolutionized the lunar economy and provided safe travel for thousands of scientists, engineers, technicians, medical staff and civilians. These amazing vessels are also paving the way for reaching Mars in the next decade.</p>
-        <a class="btn btn-primary btn-lg w-max mt-2" href="#" tabindex="0">Read More</a>
-      </div>
-    </div>
-  </div>
-  <!--.hero-->
-</header>
+{% schema %}
+  {
+    "name": "Customer testimonials",
+    "max_blocks": 9,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Don't take our word for it"
+      },
+      {
+        "type": "checkbox",
+        "id": "round_images",
+        "label": "Circular images",
+        "default": true
+      },
+      {
+        "type": "color",
+        "id": "color_background",
+        "label": "Background",
+        "default": "#f9f9f9"
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Text",
+        "default": "#1c1d1d"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "testimonial",
+        "name": "Testimonial",
+        "settings": [
+          {
+            "type": "select",
+            "id": "icon",
+            "label": "Icon",
+            "default": "5-stars",
+            "options": [
+              {
+                "value": "none",
+                "label": "None"
+              },
+              {
+                "value": "quote",
+                "label": "Quote"
+              },
+              {
+                "value": "5-stars",
+                "label": "5 stars"
+              },
+              {
+                "value": "4-stars",
+                "label": "4 stars"
+              },
+              {
+                "value": "3-stars",
+                "label": "3 stars"
+              },
+              {
+                "value": "2-stars",
+                "label": "2 stars"
+              },
+              {
+                "value": "1-star",
+                "label": "1 star"
+              }
+            ]
+          },
+          {
+            "type": "richtext",
+            "id": "testimonial",
+            "label": "Text",
+            "default": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Author's image"
+          },
+          {
+            "type": "text",
+            "id": "author",
+            "label": "Author",
+            "default": "Author name"
+          },
+          {
+            "type": "text",
+            "id": "author_info",
+            "label": "Author info",
+            "default": "Los Angeles, CA"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Customer testimonials",
+        "category": "Text",
+        "blocks": [
+          {
+            "type": "testimonial"
+          },
+          {
+            "type": "testimonial"
+          },
+          {
+            "type": "testimonial"
+          },
+          {
+            "type": "testimonial"
+          },
+          {
+            "type": "testimonial"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
