@@ -210,7 +210,7 @@
 }
 .hero__link .btn--inverse {
   background-color: #dba583!important;
-  border-color: #dba583;
+  border-color: #dba583; 
   color: #000!important;
   display: inline-block;
   padding: 11px 20px;
