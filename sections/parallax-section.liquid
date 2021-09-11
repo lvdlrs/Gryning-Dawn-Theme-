@@ -88,10 +88,37 @@
 
 
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+ {
+    "name":"Custom parallax section",
+    "max_blocks":15,
+    "settings":[
+        {
+            "type":"text",
+            "id":"title",
+            "label":"Heading",
+            "default":"Collection Title"
+        }
+    ],
+    "blocks":[
+        {
+            "type":"collection",
+            "name":"Collection",
+            "settings":[
+                {
+                    "id":"collection",
+                    "type":"collection",
+                    "label":"Collection"
+                }
+            ]
+        }
+    ],
+    "presets":[
+        {
+            "name":"Custom parallax section",
+            "category":"Collection"
+        }
+    ]
+}
 {% endschema %}
 
 {% stylesheet %}
