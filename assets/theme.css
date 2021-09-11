@@ -322,7 +322,7 @@ svg:not(:root) {
 .custom-collections__box{
   position: relative;
 }
-custom-collections__box-img img{
+.custom-collections__box-img img{
   width: 100%;
   object-fit: cover;
   object-position: center;
