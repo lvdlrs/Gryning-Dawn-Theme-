@@ -21,7 +21,23 @@
     padding: 0 15px;
     margin: 0 auto 30px auto;
   }
-  
+  .testimonials-slide.is-selected .testimonials-slider__text {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgb(0 0 0 / 10%);
+    position: relative;
+    z-index: 10;
+  }
+
+  .testimonials-slide {
+    display: none;
+    opacity: 0;
+    padding: 40px 0 55px;
+    width: 33%;
+  }
+  .flickity-slider .testimonials-slide {
+    display: block;
+    opacity: 1;
+  }
 </style>
 
 
