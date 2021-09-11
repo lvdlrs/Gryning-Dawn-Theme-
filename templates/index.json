@@ -62,34 +62,6 @@
       "settings": {
       }
     },
-    "16312932614316f23d": {
-      "type": "text-and-image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/family-eating_5943e5de-fa5d-420c-b0d5-7c998c2b8e71.jpg",
-        "image_width": 800,
-        "subtitle": "Quality Goods at your Closet",
-        "title": "Digg frokost - Alltid i skapet",
-        "text": "<p>Hvorfor skal du gå tom for god kaffe, eller noe godt å spise til frokost? Sett sammen din egen strøm av tørre kvalitetsvarer så er det alltid der i skapet når du trenger det!<\/p>",
-        "button_label": "Bygg din Gryning Frokost nå",
-        "button_link": "shopify:\/\/pages\/torrfrokost",
-        "layout": "left",
-        "divider": false
-      }
-    },
-    "16312933129259d98f": {
-      "type": "text-and-image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/markus-spiske-n2HoOVk3tGY-unsplash.jpg",
-        "image_width": 800,
-        "subtitle": "Tørrvarer på Auto-Update",
-        "title": "Strøm kjedelige dagligvarer",
-        "text": "<p>Vi tror at tørrskapet ditt kan holde seg selv oppdatert, og hos oss får du akkurat det. Velg hvilke kvalitetsvarer du vil ha på plass, og vi sender deg en bærekraftig forsendelse med akkurat riktig volum hver måned. <\/p>",
-        "button_label": "Hold mitt tørrskap oppdatert!",
-        "button_link": "shopify:\/\/collections\/torre-varer-som-kan-strommes",
-        "layout": "right",
-        "divider": false
-      }
-    },
     "1631292889b2258b06": {
       "type": "new-feature-collections",
       "blocks": {
@@ -309,8 +281,6 @@
     "1631290729d01739bd",
     "163129325259d93273",
     "16313755260218adae",
-    "16312932614316f23d",
-    "16312933129259d98f",
     "1631292889b2258b06",
     "1631292663302a80b7",
     "1631292413cc3473f7",
