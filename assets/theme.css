@@ -227,10 +227,13 @@
 }
 .hero__link .btn .icon-play {
   position: relative;
-  top: -2px;
+  top: 0px;
   width: 16px;
   height: 16px;
   margin-right: 15px;
+}
+.hero__link .animation-contents .btn{
+	border: 0px solid #fff;
 }
 svg:not(:root) {
   overflow: hidden;
