@@ -41,10 +41,23 @@
             "zig-zag_a__link_text": "Bygg din Gryning Frokost nå",
             "zig-zag_a__link": "#"
           }
+        },
+        "6f056617-4ecc-468a-af8a-16779c9cadcf": {
+          "type": "Imagewithtext",
+          "settings": {
+            "position": "right",
+            "zig-zag_a__img": "shopify:\/\/shop_images\/markus-spiske-n2HoOVk3tGY-unsplash.jpg",
+            "zig-zag_a__title": "Strøm kjedelige dagligvarer",
+            "zig-zag_a__subtitle": "TØRRVARER PÅ AUTO-UPDATE",
+            "zig-zag_a__text": "Vi tror at tørrskapet ditt kan holde seg selv oppdatert, og hos oss får du akkurat det. Velg hvilke kvalitetsvarer du vil ha på plass, og vi sender deg en bærekraftig forsendelse med akkurat riktig volum hver måned.",
+            "zig-zag_a__link_text": "Hold mitt tørrskap oppdatert!",
+            "zig-zag_a__link": "#"
+          }
         }
       },
       "block_order": [
-        "043ece74-0a73-439d-9231-220b0d88f122"
+        "043ece74-0a73-439d-9231-220b0d88f122",
+        "6f056617-4ecc-468a-af8a-16779c9cadcf"
       ],
       "settings": {
       }
