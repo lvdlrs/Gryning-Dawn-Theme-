@@ -1,7 +1,7 @@
 <script>
 
   jQuery(document).ready(function ($) {
-    $('.hero').slick({
+    $('.hero-slider').slick({
       dots: true,
       infinite: true,
       speed: 500,
@@ -87,7 +87,7 @@
         data-natural="true"
       {% endif %}
       data-mobile-natural="{{ natural_mobile_height }}"
-      class="hero hero--{{ section.id }} hero--{{ section.settings.desktop_height }} hero--mobile--{{ section.settings.mobile_height }} fading-images fading-images--{{ section.id }} fading-images-overlay__overlay loading">
+      class="hero hero-slider hero--{{ section.id }} hero--{{ section.settings.desktop_height }} hero--mobile--{{ section.settings.mobile_height }} fading-images fading-images--{{ section.id }} fading-images-overlay__overlay loading">
       {%- if section.settings.link -%}
         <a href="{{ section.settings.link }}" class="hero__slide-link">
       {%- endif -%}
@@ -123,7 +123,13 @@
             alt="{{ block.settings.image.alt | escape }}"
             style="object-position: {{ block.settings.focal_point }};">
         {%- else -%}
-          
+          {%- capture placeholder -%}lifestyle-{% cycle 1, 2 %}{%- endcapture -%}
+          <div class="fading-images__item fading-images__item--{{ block.id }} lazyloaded"
+            data-slide-index="{{ forloop.index }}"
+            data-slide-title1="{{ block.settings.slide_title1 }}"
+            data-slide-title2="{{ block.settings.slide_title2 }}">
+              {{ placeholder | placeholder_svg_tag: 'placeholder-svg' }}
+          </div>
         {%- endif -%}
       {%- endfor -%}
 
