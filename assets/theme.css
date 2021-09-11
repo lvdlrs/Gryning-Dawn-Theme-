@@ -349,7 +349,7 @@ svg:not(:root) {
   transition: all 500ms;
   
 }
-.custom-collections__link:hover{
+.custom-collections__box a:hover{
   border-bottom: 3px solid #fff;
   padding-bottom: 5px;
 }
