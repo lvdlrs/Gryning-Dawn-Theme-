@@ -1,12 +1,57 @@
+{% assign new_collection = collections[section.settings.my_collection] %}
+
+<section>
+  <div class="collist">
+    <div class="collist__one">
+      <div class="collist__one-up">
+        <h1 class="collist__one-title">{{ section.settings.my_collection }}</h1>
+        <a class="collist__one-show" href="{{ section.settings.my_collection }}">Show All</a>
+      </div>
+    </div>
+    <div class="collist__two">
+      <div class="collist__two-inner hello row">
+        {% for product in new_collection.products %}
+        <div class="asd col-2">
+          <div class="col__products">
+            <img class="col__products-img" src="{{ product.featured_image | product_img_url: 'thumbnail' }}">
+            <div class="col__products-tag">
+              <h3 class="col__products-price">{{ country.currency.symbol }}{{ product.price | money_without_trailing_zeros }}</h3>
+              <a href="{{ product.url }}" class="col__products-name">{{ product.title }}</a>
+              <div class="hoverclick">
+
+                <form method="post" action="/cart/add">
+                  <input name="id" value="{{ product.variants.first.id }}" type="hidden" />
+                  <input name="add" value="Add to Cart" type="submit"  class="cart-add-button">
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name":"Section Collection",
+    "settings":[
+        {
+            "type":"collection",
+            "id":"my_collection",
+            "label":"Select Collection"
+        }
+    ],
+    "presets":[
+        {
+            "name":"Section Collection"
+        }
+    ]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
