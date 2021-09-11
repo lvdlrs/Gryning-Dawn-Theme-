@@ -1,3 +1,37 @@
+
+
+
+<section>
+  <div class="custom-collections">
+  <div class="container-fluid">
+    <div class="row">
+    
+      {% for block in section.blocks %}
+      {% assign collection = collections[block.settings.collection] %}
+      <div class="col-lg-3 col-md-3 col-12">
+        <div class="custom-collections__box">
+          <div class="custom-collections__box-img">
+          	<img class="image lazyload" src="{{ collection_image | img_url: 'master' }}" data-src="{{ img_url }}" alt="{{ collection_image.alt | escape }}">
+          </div>
+          <div class="custom-collections__overlay">
+          	<div class="custom-collections__link">
+              <a href="{{ block.settings.link }}">{{ block.settings.text }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+
+
+
 {% schema %}
   {
     "name": "Section name",
