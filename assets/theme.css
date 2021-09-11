@@ -199,6 +199,7 @@
 	font-size: 18px;
   line-height: 22px;
   color:#fdfaf2;
+  font-weight: 600;
 }
 .video-interactable .hero__link {
   pointer-events: auto;
