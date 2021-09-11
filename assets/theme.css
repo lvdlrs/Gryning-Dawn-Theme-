@@ -360,5 +360,5 @@ svg:not(:root) {
 }
 .custom-collections__link a:hover{
   border-bottom: 3px solid #fff;
-  padding-bottom: 5px;
+  padding-bottom: 35px;
 }
