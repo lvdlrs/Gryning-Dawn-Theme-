@@ -23,9 +23,30 @@
         "link": "",
         "link_text": "",
         "align_text": "center",
-        "narrow_column": true,
         "enlarge_text": true,
         "divider": false
+      }
+    },
+    "16313755260218adae": {
+      "type": "zig-zag",
+      "blocks": {
+        "043ece74-0a73-439d-9231-220b0d88f122": {
+          "type": "Imagewithtext",
+          "settings": {
+            "position": "left",
+            "zig-zag_a__img": "shopify:\/\/shop_images\/family-eating_5943e5de-fa5d-420c-b0d5-7c998c2b8e71.jpg",
+            "zig-zag_a__title": "Digg frokost - Alltid i skapet",
+            "zig-zag_a__subtitle": "QUALITY GOODS AT YOUR CLOSET",
+            "zig-zag_a__text": "Hvorfor skal du gå tom for god kaffe, eller noe godt å spise til frokost? Sett sammen din egen strøm av tørre kvalitetsvarer så er det alltid der i skapet når du trenger det!",
+            "zig-zag_a__link_text": "Bygg din Gryning Frokost nå",
+            "zig-zag_a__link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "043ece74-0a73-439d-9231-220b0d88f122"
+      ],
+      "settings": {
       }
     },
     "16312932614316f23d": {
@@ -274,6 +295,7 @@
   "order": [
     "1631290729d01739bd",
     "163129325259d93273",
+    "16313755260218adae",
     "16312932614316f23d",
     "16312933129259d98f",
     "1631292889b2258b06",
