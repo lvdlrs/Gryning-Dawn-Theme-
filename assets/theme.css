@@ -327,7 +327,7 @@ svg:not(:root) {
   object-fit: cover;
   object-position: center;
 }
-.custom-collections__overlay {
+/* .custom-collections__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -338,7 +338,7 @@ svg:not(:root) {
   justify-content: flex-start;
   padding: 30px;
   background-image: linear-gradient(to bottom, rgba(62, 82, 66, 0.08) 30%, rgba(62, 82, 66, 0.62) 100%);
-}
+} */
 .custom-collections__link a{
   display: inline-block;
   color: #fff;
@@ -346,6 +346,16 @@ svg:not(:root) {
   font-weight: 600;
   text-decoration: none;
   transition: all 500ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 30px;
+  background-image: linear-gradient(to bottom, rgba(62, 82, 66, 0.08) 30%, rgba(62, 82, 66, 0.62) 100%);
   
 }
 .custom-collections__link a:hover{
