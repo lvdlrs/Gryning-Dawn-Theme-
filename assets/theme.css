@@ -342,8 +342,11 @@ svg:not(:root) {
   display: inline-block;
   color: #fff;
   font-size: 30px;
+  text-decoration: none;
   transition: all 500ms;
+  
 }
 .custom-collections__link a:hover{
-  transform: scale(1);
+  border-bottom: 3px solid #fff;
+  padding-bottom: 5px;
 }
