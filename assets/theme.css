@@ -309,13 +309,21 @@ svg:not(:root) {
 
 /* custom-collections */
 .custom-collections{
-	width: 100%;
+  width: 100%;
 }
 .custom-collections__title h2{
-	text-align: center;
+  text-align: center;
   font-size: 35px;
   line-height: 42px;
   color: #3e5242;
   padding: 0 15px; 
-    margin: 0 auto 50px auto;
+  margin: 0 auto 50px auto;
+}
+.custom-collections__box{
+  position: relative;
+}
+custom-collections__box-img img{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
