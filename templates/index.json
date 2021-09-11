@@ -62,6 +62,72 @@
       "settings": {
       }
     },
+    "16313839067904c324": {
+      "type": "custom-collections",
+      "blocks": {
+        "7eb4559b-659a-40df-9150-18471b07b236": {
+          "type": "collection",
+          "settings": {
+            "collection": "helgefrokost-stor-familie"
+          }
+        },
+        "399193a4-c2eb-4504-8567-fef479d935dd": {
+          "type": "collection",
+          "settings": {
+            "collection": "hold-det-rent-med-gryning"
+          }
+        },
+        "ee43e5bd-7cb9-4888-a879-c65e5a3ef3b7": {
+          "type": "collection",
+          "settings": {
+            "collection": "kaffe"
+          }
+        },
+        "1aec6891-e3bf-465a-80b8-268411b087d1": {
+          "type": "collection",
+          "settings": {
+            "collection": "matboks-med-grying"
+          }
+        },
+        "6dcc053f-5aaa-4a66-8208-a1ce10abdee9": {
+          "type": "collection",
+          "settings": {
+            "collection": "smakfulle-bakevaner-med-gryning"
+          }
+        },
+        "99d1dca2-a2a3-4b7a-95ba-728a1bd6793c": {
+          "type": "collection",
+          "settings": {
+            "collection": "ta-vare-pa-kroppen-med-gryning"
+          }
+        },
+        "6c93e1c4-992c-428d-a8f6-7a8b19a3fa32": {
+          "type": "collection",
+          "settings": {
+            "collection": "hold-det-rent-med-gryning"
+          }
+        },
+        "26e20914-35bf-436e-ae2b-a1c5dd9f5b12": {
+          "type": "collection",
+          "settings": {
+            "collection": "frokostmat"
+          }
+        }
+      },
+      "block_order": [
+        "7eb4559b-659a-40df-9150-18471b07b236",
+        "399193a4-c2eb-4504-8567-fef479d935dd",
+        "ee43e5bd-7cb9-4888-a879-c65e5a3ef3b7",
+        "1aec6891-e3bf-465a-80b8-268411b087d1",
+        "6dcc053f-5aaa-4a66-8208-a1ce10abdee9",
+        "99d1dca2-a2a3-4b7a-95ba-728a1bd6793c",
+        "6c93e1c4-992c-428d-a8f6-7a8b19a3fa32",
+        "26e20914-35bf-436e-ae2b-a1c5dd9f5b12"
+      ],
+      "settings": {
+        "title": "Collection Title"
+      }
+    },
     "1631292889b2258b06": {
       "type": "new-feature-collections",
       "blocks": {
@@ -281,6 +347,7 @@
     "1631290729d01739bd",
     "163129325259d93273",
     "16313755260218adae",
+    "16313839067904c324",
     "1631292889b2258b06",
     "1631292663302a80b7",
     "1631292413cc3473f7",
