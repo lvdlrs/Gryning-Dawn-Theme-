@@ -345,9 +345,6 @@ svg:not(:root) {
   display: inline-block;
   color: #fff;
   font-size: 30px;
-  transform: scale(0);
-  transition-delay: 0.25s;
-  transition: opacity 1s cubic-bezier(.44, .13, .48, .87),transform 1.5s cubic-bezier(.44, .13, .48, .87);
 }
 .custom-collections__link a:hover{
   transform: scale(1);
