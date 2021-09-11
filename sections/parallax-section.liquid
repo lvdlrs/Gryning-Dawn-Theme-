@@ -1,21 +1,14 @@
 <style>
-
+  .custom-parallax{
+  	width: 100%;
+  }
   .custom-parallax__inner {
-    background: url(https://cdn.tutsplus.com/net/uploads/legacy/2138_SimpleParallax/Demo/images/home.jpg) 50% 0 repeat fixed; min-height: 1000px;
+    background-image: url({{ section.settings.image | img_url: 'master' }});
     height: 1000px;
     margin: 0 auto;
     width: 100%;
     max-width: 1920px;
     position: relative;
-  }
-
-  .custom-parallax__inner article {
-    background: url("https://cdn.tutsplus.com/net/uploads/legacy/2138_SimpleParallax/Demo/images/intro.png") no-repeat scroll center top transparent;
-    height: 458px; 
-    position: absolute; 
-    text-indent: -9999px; 
-    top: 291px; 
-    width: 100%;
   }
 
 </style>
