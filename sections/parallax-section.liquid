@@ -45,16 +45,16 @@
 
         <div class="custom-parallax__box">
           <div class="custom-parallax__box-subtitle">
-            <p>subtitle</p>
+            <p>{{ section.settings.subtitle }}</p>
           </div>
           <div class="custom-parallax__box-title">
-            <h2>title</h2>
+            <h2>{{ section.settings.title }}</h2>
           </div>
           <div class="custom-parallax__box-text">
-            <p>text</p>
+            <p>{{ section.settings.text }}</p>
           </div>
           <div class="custom-parallax__box-link">
-            <a href=""></a>
+            <a href="{{ section.settings.btn_link }}">{{ section.settings.btn_text }}</a>
           </div>
         </div>
 
