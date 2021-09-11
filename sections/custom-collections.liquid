@@ -14,7 +14,7 @@
       {% for block in section.blocks %}
       {% assign collection = collections[block.settings.collection] %}
       {% assign collection_title = collection.title | escape %}
-      {% assign collection_title = collection.url %}
+      {% assign collection_url = collection.url %}
       
       {% if collection.image %}
       	{% assign collection_image = collection.image %}
