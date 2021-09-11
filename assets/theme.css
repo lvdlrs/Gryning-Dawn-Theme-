@@ -310,6 +310,7 @@ svg:not(:root) {
 /* custom-collections */
 .custom-collections{
   width: 100%;
+  margin: 40px 0;
 }
 .custom-collections__title h2{
   text-align: center;
