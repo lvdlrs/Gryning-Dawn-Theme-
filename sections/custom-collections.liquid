@@ -26,7 +26,7 @@
           <div class="custom-collections__box">
             
               <div class="custom-collections__box-img">
-                <img class="image" src="{{ collection_image | img_url: 'master' }}" data-src="{{ img_url }}" alt="{{ collection_image.alt | escape }}">
+                <img class="image lazyload" src="{{ collection_image | img_url: 'master' }}" data-src="{{ img_url }}" alt="{{ collection_image.alt | escape }}">
               </div>
               <div class="custom-collections__overlay">
                 <a href="{{ collection_url }}">
