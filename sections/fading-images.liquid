@@ -123,13 +123,7 @@
             alt="{{ block.settings.image.alt | escape }}"
             style="object-position: {{ block.settings.focal_point }};">
         {%- else -%}
-          {%- capture placeholder -%}lifestyle-{% cycle 1, 2 %}{%- endcapture -%}
-          <div class="fading-images__item fading-images__item--{{ block.id }} lazyloaded"
-            data-slide-index="{{ forloop.index }}"
-            data-slide-title1="{{ block.settings.slide_title1 }}"
-            data-slide-title2="{{ block.settings.slide_title2 }}">
-              {{ placeholder | placeholder_svg_tag: 'placeholder-svg' }}
-          </div>
+          
         {%- endif -%}
       {%- endfor -%}
 
