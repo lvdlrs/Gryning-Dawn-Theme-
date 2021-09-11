@@ -128,17 +128,6 @@
         "title": "Våre kategorier for nye bedre vaner"
       }
     },
-    "1631292663302a80b7": {
-      "type": "new-featured-collection",
-      "settings": {
-        "title": "Mer enn bare strømming",
-        "home_featured_products": "startpakker-for-gode-vaner",
-        "per_row": 4,
-        "rows": 1,
-        "view_all": true,
-        "divider": false
-      }
-    },
     "1631386419433636c0": {
       "type": "featured-collection",
       "settings": {
@@ -280,7 +269,6 @@
     "163129325259d93273",
     "16313755260218adae",
     "16313839067904c324",
-    "1631292663302a80b7",
     "1631386419433636c0",
     "1631292413cc3473f7",
     "1631292402be865091",
