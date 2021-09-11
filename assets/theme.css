@@ -177,10 +177,10 @@
   font-size: 80px;
 }
 .h1.hero__title .animation-contents{ 
-	font-size: 80px;
+  font-size: 80px;
   color: #fff;
-  font-weight: 600;
-  line-height: 88px;
+  font-weight: 700;
+  line-height: 110px;
 }
 .hero__subtitle {
   display: inline-block;
