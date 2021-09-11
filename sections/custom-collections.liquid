@@ -13,6 +13,15 @@
     
       {% for block in section.blocks %}
       {% assign collection = collections[block.settings.collection] %}
+      {% assign collection_title = collection.title | escape %}
+      {% assign collection_title = collection.url %}
+      
+      {% if collection.image %}
+      	{% assign collection_image = collection.image %}
+      {% else %}
+      	{% assign collection_image = collection.products.first.featured_media.preview_image %}
+      {% endif %}
+      
       <div class="col-lg-3 col-md-3 col-12">
         <div class="custom-collections__box">
           <div class="custom-collections__box-img">
@@ -20,7 +29,7 @@
           </div>
           <div class="custom-collections__overlay">
           	<div class="custom-collections__link">
-              <a href="{{ block.settings.link }}">{{ block.settings.text }}</a>
+              <a href="{{ collection_url }}">{{ collection_title }}</a>
             </div>
           </div>
         </div>
