@@ -4,10 +4,12 @@
   }
   .custom-parallax__inner {
     background-image: url({{ section.settings.image | img_url: 'master' }});
-    height: 1000px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
     margin: 0 auto;
     width: 100%;
-    max-width: 1920px;
     position: relative;
   }
 
