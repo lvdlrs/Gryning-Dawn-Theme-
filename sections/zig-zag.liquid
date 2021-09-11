@@ -1,31 +1,31 @@
 {%- assign item = section.settings -%}
 
 <style>
-.zig-zag_a__inner {
+  .zig-zag_a__inner {
     padding: 40px 0;
-}
-.zig-zag_a__img img {
+  }
+  .zig-zag_a__img img {
     width: 100%;
     border: 10px solid #fff;
     border-radius: 5px;
-}
-.zig-zag_a__content {
+  }
+  .zig-zag_a__content {
     padding: 10px;
     height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-.zig-zag_a__subtitle h3 {
+  }
+  .zig-zag_a__subtitle h3 {
     font-size: 16px;
     line-height: 24px;
-  	text-transform: uppercase;
+    text-transform: uppercase;
     letter-spacing: .2em;
     color: #3e5242;
     margin: 0;
     padding-bottom: 5px;
-}
-.zig-zag_a__title h2 {
+  }
+  .zig-zag_a__title h2 {
     margin: 0;
     padding-bottom: 20px;
     font-size: 35px;
@@ -33,15 +33,15 @@
     text-transform: none;
     letter-spacing: unset;
     color: #3e5242;
-}
-.zig-zag_a__text p {
+  }
+  .zig-zag_a__text p {
     margin: 0;
     padding: 0 0 20px 0;
     font-size: 18px;
     line-height: 26px;
     color: #3e5242;
-}
-.zig-zag_a__btn a {
+  }
+  .zig-zag_a__btn a {
     padding: 5px 20px;
     background: #dba583;
     font-size: 16px;
@@ -51,11 +51,27 @@
     border-radius: 0px;
     text-decoration: none;
     color: #FFFFFF;
-}
-.zig-zag_a__btn a:hover {
+
+    display: inline-block;
+    padding: 11px 20px;
+    margin: 0;
+    width: auto;
+    min-width: 90px;
+    line-height: 1.42;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    white-space: normal;
+    cursor: pointer;
+    border: 1px solid transparent;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .zig-zag_a__btn a:hover {
     color: #d2d2d2;
     background: #010101;
-}
+  }
 
 </style>
 
@@ -63,7 +79,7 @@
 
 <!-- zig-zag Design A start -->
 
-  
+
 <section>
   <div class="zig-zag_a">
     <div class="page-width">
@@ -120,68 +136,68 @@
 
 {% schema %}
 {
-    "name": "Zig-zag",
-    "settings": [],
-    "blocks": [
-        {
-            "type": "Imagewithtext",
-            "name": "Image with Text",
-            "settings": [
-                {
-                    "type": "select",
-                    "id": "position",
-                    "label": "Image Position",
-                    "default": "left",
-                    "options": [
-                        {
-                            "value": "left",
-                            "label": "Left"
-                        },
-                        {
-                            "value": "right",
-                            "label": "Right"
-                        }
-                    ]
-                },
-                {
-                    "type": "image_picker",
-                    "id": "zig-zag_a__img",
-                    "label": "Image"
-                },
-                {
-                    "type": "text",
-                    "id": "zig-zag_a__title",
-                    "label": "Title"
-                },
-                {
-                    "type": "text",
-                    "id": "zig-zag_a__subtitle",
-                    "label": "Subtitle"                        
-                },
-                {
-                    "type": "textarea",
-                    "id": "zig-zag_a__text",
-                    "label": "Text"                        
-                },
-                {
-                    "type": "text",
-                    "id": "zig-zag_a__link_text",
-                    "label": "Button Text"                        
-                },
-                {
-                    "type": "url",
-                    "id": "zig-zag_a__link",
-                    "label": "Button Link"                         
-                }
-            ]
-        }
-    ],
-    "presets": [
-        {
-            "name": "Zig-zag",
-            "category": "Zig-zag"
-        }
-    ]
+"name": "Zig-zag",
+"settings": [],
+"blocks": [
+{
+"type": "Imagewithtext",
+"name": "Image with Text",
+"settings": [
+{
+"type": "select",
+"id": "position",
+"label": "Image Position",
+"default": "left",
+"options": [
+{
+"value": "left",
+"label": "Left"
+},
+{
+"value": "right",
+"label": "Right"
+}
+]
+},
+{
+"type": "image_picker",
+"id": "zig-zag_a__img",
+"label": "Image"
+},
+{
+"type": "text",
+"id": "zig-zag_a__title",
+"label": "Title"
+},
+{
+"type": "text",
+"id": "zig-zag_a__subtitle",
+"label": "Subtitle"                        
+},
+{
+"type": "textarea",
+"id": "zig-zag_a__text",
+"label": "Text"                        
+},
+{
+"type": "text",
+"id": "zig-zag_a__link_text",
+"label": "Button Text"                        
+},
+{
+"type": "url",
+"id": "zig-zag_a__link",
+"label": "Button Link"                         
+}
+]
+}
+],
+"presets": [
+{
+"name": "Zig-zag",
+"category": "Zig-zag"
+}
+]
 }
 {% endschema %}
 
