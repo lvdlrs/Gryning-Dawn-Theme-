@@ -6885,12 +6885,12 @@ if (Shopify && Shopify.PaymentButton) {
     Things that don't require DOM to be ready
   ==============================================================================*/
   theme.config.hasSessionStorage = theme.isSessionStorageSupported();
-//   AOS.init({
-//     easing: 'ease-out-quad',
-//     once: true,
-//     offset: 60,
-//     disableMutationObserver: true
-//   });
+  AOS.init({
+    easing: 'ease-out-quad',
+    once: true,
+    offset: 60,
+    disableMutationObserver: true
+  });
 
   // Trigger events when going between breakpoints
   theme.config.bpSmall = matchMedia(theme.config.mediaQuerySmall).matches;
