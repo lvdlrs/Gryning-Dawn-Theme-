@@ -1,45 +1,38 @@
 {%- liquid
   assign isEmpty = true
+
+  if section.blocks.size > 0
+    assign isEmpty = false
+  endif
 -%}
 
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
-<div class="new-feature-collections container-fluid">
+<div class="page-width">
   {%- if section.settings.title != blank -%}
-  <div class="section-header">
-    <h2 class="section-header__title">{{ section.settings.title }}</h2>
-  </div>
+    <div class="section-header">
+      <h2 class="section-header__title">{{ section.settings.title }}</h2>
+    </div>
   {% endif %}
 
   <div class="grid{% if section.settings.enable_gutter %} grid--small-gutters{%else%} grid--no-gutters{% endif %}">
 
     {%- for block in section.blocks -%}
-    <div class="grid__item {{ grid_item_width }} skrim__item" data-aos="skrim__animation">
-      <a href="{{ collection.url }}" class="skrim__link skrim__item-content">
-        {%- if collection.empty? -%}
-        {% capture placeholder %}collection-{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
-        <div class="skrim__overlay grid__image">{{ placeholder | placeholder_svg_tag: 'placeholder-svg' }}</div>
-        {%- else -%}
-        <div
-             class="skrim__overlay grid__image">
-          {%- assign img_url = collection_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-          <img class="image-fit lazyload"
-               src="{{ collection_image | img_url: 'master' }}"
-               data-src="{{ img_url }}"
-               data-aspectratio="{{ collection_image.aspect_ratio }}"
-               data-sizes="auto"
-               alt="{{ collection_image.alt | escape }}"
-               style="object-position: {{ background_position }};">
-        </div>
-        {%- endif -%}
-
-        <div class="skrim__title">
-          <div class="skrim__underline-me">
-        {{ collection_title }}
-      </div>
-    </div>
-  </a>
-</div>
+      {%- liquid
+        assign collection = collections[block.settings.collection]
+        case block.settings.size
+          when 'square-small'
+            assign grid_item_width = 'medium-up--one-quarter small--one-half collection--square-small'
+          when 'wide'
+            assign grid_item_width = 'medium-up--one-half collection--wide'
+          when 'tall'
+            assign grid_item_width = 'medium-up--one-quarter small--one-half collection--tall'
+          when 'square-large'
+            assign grid_item_width = 'medium-up--one-half collection--square-large'
+        endcase
+        assign background_position = block.settings.focal_point
+      -%}
+      {%- render 'collection-grid-item', collection: collection, grid_item_width: grid_item_width, background_position: background_position -%}
     {%- endfor -%}
 
     {% if isEmpty %}
@@ -89,7 +82,10 @@
       "category": "Collection",
       "blocks": [
         {
-          "type": "collection"
+          "type": "collection",
+          "settings": {
+            "size": "wide"
+          }
         },
         {
           "type": "collection"
@@ -99,6 +95,15 @@
         },
         {
           "type": "collection"
+        },
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection",
+          "settings": {
+            "size": "wide"
+          }
         }
       ]
     }],
@@ -154,6 +159,30 @@
               {
                 "value": "80% 100%",
                 "label": "Bottom right"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "size",
+            "label": "Size",
+            "default": "square-small",
+            "options": [
+              {
+                "label": "Square (small)",
+                "value": "square-small"
+              },
+              {
+                "label": "Wide",
+                "value": "wide"
+              },
+              {
+                "label": "Tall",
+                "value": "tall"
+              },
+              {
+                "label": "Square (large)",
+                "value": "square-large"
               }
             ]
           }
