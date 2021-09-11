@@ -248,6 +248,12 @@
         "color_text": "#3e5242"
       }
     },
+    "1631388073a336ab82": {
+      "type": "parallax-section",
+      "settings": {
+        "title": "Collection Title"
+      }
+    },
     "16312909052a973426": {
       "type": "background-image-text",
       "settings": {
@@ -262,12 +268,6 @@
         "height": 650,
         "parallax": true
       }
-    },
-    "1631388073a336ab82": {
-      "type": "parallax-section",
-      "settings": {
-        "title": "Collection Title"
-      }
     }
   },
   "order": [
@@ -278,7 +278,7 @@
     "1631386419433636c0",
     "1631292413cc3473f7",
     "1631292402be865091",
-    "16312909052a973426",
-    "1631388073a336ab82"
+    "1631388073a336ab82",
+    "16312909052a973426"
   ]
 }
