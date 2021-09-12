@@ -458,7 +458,7 @@ svg:not(:root) {
     margin: 0 auto 0px auto !important;
   }
   .testimonials-slide{
-    padding: 20px 0 !!important;
+    padding: 20px 0 !important;
   }
   .testimonials-slider__text {
     margin: 0 0 !important;
