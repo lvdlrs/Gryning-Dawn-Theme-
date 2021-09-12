@@ -252,3 +252,51 @@
   </div>
   <!--.hero-->
 </header>
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Custom Fading slider",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "slide",
+        "name": "slide",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "testimonial",
+            "label": "Text",
+            "default": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Author's image"
+          },
+          {
+            "type": "text",
+            "id": "author",
+            "label": "Author",
+            "default": "Author name"
+          },
+          {
+            "type": "text",
+            "id": "author_info",
+            "label": "Author info",
+            "default": "Los Angeles, CA"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Fading slider",
+        "category": "slider"
+      }
+    ]
+  }
+{% endschema %}
