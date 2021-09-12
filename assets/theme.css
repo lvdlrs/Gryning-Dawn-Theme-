@@ -396,6 +396,13 @@ svg:not(:root) {
 .index-section {
     margin: 50px 0;
 }
+  .index-section .w-75{
+  	width: 100%;
+  }
+  .custom-text-box p {
+    font-size: 14px;
+    line-height: 20px;
+}
 
 
 
