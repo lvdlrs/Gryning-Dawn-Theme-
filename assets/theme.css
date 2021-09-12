@@ -427,6 +427,9 @@ svg:not(:root) {
     width: 100%;
     font-size: 14px;
   }
+  .zig-zag_a_right .row{
+  	flex-direction: column-reverse;
+  }
 
 
 
