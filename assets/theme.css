@@ -393,7 +393,9 @@ svg:not(:root) {
     line-height: 16px;
   }
 
-
+.index-section {
+    margin: 50px 0;
+}
 
 
 
