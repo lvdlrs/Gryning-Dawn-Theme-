@@ -7,16 +7,15 @@
 
       <div class="promotions__inner">
         <div class="row">
-
-          {% assign item = block.settings %}
-
+          
           {% for block in section.blocks %}
+          {% assign item = block.settings %}
           <div class="col-lg-3 col-md-3 col-12">
             <div class="promotions__box">
 
               <div class="promotions__box-img">
                 <a href="{{ item.url }}">
-                  <img class="image lazyload" src="{{ block.settings.image | img_url: 'master' }}" data-src="{{ item.image }}" alt="{{ item.alt | escape }}">
+                  <img class="image lazyload" src="{{ item.image | img_url: 'master' }}" data-src="{{ item.image }}" alt="{{ item.alt | escape }}">
                 </a>
               </div>
               <div class="promotions__overlay">
