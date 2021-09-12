@@ -179,6 +179,7 @@
     },
     "1631292413cc3473f7": {
       "type": "fading-images",
+      "disabled": true,
       "blocks": {
         "1631292413cc3473f7-0": {
           "type": "image",
