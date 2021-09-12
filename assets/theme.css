@@ -435,6 +435,13 @@ svg:not(:root) {
     line-height: 25px;
     margin: 0 auto 20px auto;
   }
+  .custom-collections__link{
+  	font-size: 16px;
+  }
+  .custom-collections__box a:hover .custom-collections__link {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+}
 
 
 
