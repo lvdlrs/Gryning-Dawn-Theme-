@@ -146,6 +146,18 @@
     },
     "1631386419433636c8": {
       "type": "new-fading-slider",
+      "blocks": {
+        "f8f54dcb-0d50-4aba-9853-bc504fcee930": {
+          "type": "slide",
+          "settings": {
+            "text1": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "image": "shopify:\/\/shop_images\/Bright_Future.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "f8f54dcb-0d50-4aba-9853-bc504fcee930"
+      ],
       "settings": {
       }
     },
