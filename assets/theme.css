@@ -382,6 +382,9 @@ svg:not(:root) {
   	font-size: 40px;
     line-height: 50px;
   }
+  .hero--750px{
+  	height: 100vh;
+  }
   .hero__subtitle{
   	margin-bottom: 10px;
   }
