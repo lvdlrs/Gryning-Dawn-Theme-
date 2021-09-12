@@ -521,6 +521,9 @@ svg:not(:root) {
   .promotions{
   	margin: 50px 0 !important;
   }
+  .footer__inner{
+  	padding: 0 !important;
+  }
 
 
 
