@@ -319,10 +319,11 @@
         "bca57df6-bd4b-43bf-8948-6b35e391f4a2": {
           "type": "item",
           "settings": {
-            "title": "",
-            "text": "",
-            "url": "",
-            "btn": ""
+            "image": "shopify:\/\/shop_images\/sample-product-img_9ce3b4e8-80e0-4b67-8bbf-bb599195070d.jpg",
+            "title": "Riktig mengde - Alltid i skapet",
+            "text": "Å strømme tørre varer fra oss sikrer at du alltid har riktig mengde i skapet, og at du aldri kaster mat fra oss.",
+            "url": "#",
+            "btn": "Les mer"
           }
         }
       },
