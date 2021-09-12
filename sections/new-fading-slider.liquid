@@ -61,6 +61,15 @@
       transform: none;
     }
   }
+  @keyframes zoom {
+    0% {
+      transform: scale(1.5);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
 
   .fadeInUpSD {
     -webkit-animation-name: fadeInUpSD;
@@ -74,50 +83,9 @@
     width: 100%;
     padding: 10px 20px 30px 0;
   }
-
-  /* Text Animation End **/
-
-  .new-fading .slick-dots {
-    position: absolute;
-    bottom: 10px;
-    display: block;
-    width: 100%;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-  }
-
-  .new-fading .slick-dots li {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
-    cursor: pointer;
-  }
-
-  .new-fading .slick-active button {
-    background: #d60e96;
-  }
-
-  .new-fading .slick-dots li button {
-    font-size: 0;
-    line-height: 0;
-    display: block;
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 0;
-    outline: none;
-  }
-
-  .new-fading .slick-dots li button::before {
-    font-size: 18px;
-    color: #fff;
-    opacity: 1;
+  .new-fading .hero-slide img{
+  	animation-name: zoom;
+    animation-duration: 1s;
   }
 </style>
 
