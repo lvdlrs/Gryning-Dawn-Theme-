@@ -27,7 +27,7 @@
             <div class="footer__box">
               <div class="footer__box-inner">
                 <div class="footer__box-title">
-                  <h3></h3>
+                  <h3>{{ section.settings.menu_title }}</h3>
                 </div>
                 <div class="footer__box-menu">
 
@@ -134,3 +134,51 @@
   </div>
 
 </footer>
+
+
+
+
+{% schema %}
+ {
+    "name":"New Footer",
+    "settings":[
+        {
+            "type":"image_picker",
+            "id":"logo",
+            "label":"Logo"
+        },
+{
+            "type":"text",
+            "id":"menu_title",
+            "label":"Menu Title"
+        },
+{
+            "type":"link_list",
+            "id":"menu",
+            "label":"Footer Menu"
+        },
+{
+            "type":"text",
+            "id":"newstitle",
+            "label":"News Title"
+        },
+{
+            "type":"text",
+            "id":"newstext",
+            "label":"News Title"
+        }
+    ],
+    "presets":[
+        {
+            "name":"New Footer",
+            "category":"Footer"
+        }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
