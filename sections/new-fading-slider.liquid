@@ -164,53 +164,53 @@
 <script>
 
   jQuery(document).ready(function ($) {
-	  $('.custom-hero').slick({
-		dots: true,
-        infinite: true,
-        speed: 500,
-        fade: !0,
-        cssEase: 'linear',
-		slidesToShow: 1,
-		slidesToScroll: 1,
-        autoplay: true,
-		autoplaySpeed: 8000,
-        draggable: false,
-		arrows: false,
-		responsive: [
-	    {
-		breakpoint: 1024,
-		settings: {
-		slidesToShow: 1,
-		slidesToScroll: 1,
-        infinite: true
-		          }
+    $('.new-fading').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: !0,
+      cssEase: 'linear',
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 8000,
+      draggable: false,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true
+          }
         },
         {
-		breakpoint: 768,
-		settings: {
-        draggable: true,
-		          }
-		},
-		{
-		breakpoint: 600,
-		settings: {
-        slidesToShow: 1,
-        draggable: true,
-		slidesToScroll: 1
-			      }
-		},
-		{
-		breakpoint: 480,
-		settings: {
-        slidesToShow: 1,
-        draggable: true,
-		slidesToScroll: 1
-		          }
-		}
-	
-			      ]
-                  });
-        });		
+          breakpoint: 768,
+          settings: {
+            draggable: true,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            draggable: true,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            draggable: true,
+            slidesToScroll: 1
+          }
+        }
+
+      ]
+    });
+  });		
 
 </script>
 
@@ -219,39 +219,21 @@
 
 
 
-<header class="hero-text">
-  <div class="hero custom-hero" data-arrows="true" data-autoplay="true">
-    <!--.hero-slide-->
+<section>
+  <div class="new-fading" data-arrows="true" data-autoplay="true">
 
+    {% for block in section.blocks %}
     <div class="hero-slide">
-      <img alt="Mars Image" class="img-responsive cover" src="https://raw.githubusercontent.com/solodev/text-animations-slick-slider/master/images/rocket.jpg">
-      <div class="header-content text-white position-absolute slide-content col-lg-4">
-        <h1 class="mb-4">Be part of the <span class="d-block font-weight-bold">Lunar XPerience</span></h1>
-        <a class="btn btn-primary btn-lg w-max mt-2" href="#" tabindex="0">Tour Our Ships</a>
+      <img class="image lazyload" src="{{ block.settings.image | img_url: 'master' }}">
+      <div class="header-content text-white position-absolute slide-content col-lg-4 mx-auto">
+        <h1 class="mb-4"><span class="d-block font-weight-bold">{{ block.settings.text1 }}</span></h1>
+        <h1 class="mb-4"><span class="d-block font-weight-bold">{{ block.settings.text1 }}</span></h1>
       </div>
     </div>
-    <!--.hero-slide-->
-
-    <div class="hero-slide">
-      <img alt="Mars Image" class="img-responsive cover" src="https://raw.githubusercontent.com/solodev/text-animations-slick-slider/master/images/mars-mission.jpg">
-      <div class="header-content text-white position-absolute slide-content col-lg-4">
-        <h1 class="mb-4">LunarXP Voted Best Mars Mission</h1>
-        <p class="font-weight-bold">Inc. magazine today ranked LunarXP as the fastest growing company in the Mars Mission category.</p>
-        <a class="btn btn-primary btn-lg w-max mt-2" href="#" tabindex="0">Read More</a>
-      </div>
-    </div>
-    <!--.hero-slide-->
-
-    <div class="hero-slide">
-      <img alt="Mars Image" class="img-responsive cover" src="https://raw.githubusercontent.com/solodev/text-animations-slick-slider/master/images/cosmos.jpg">
-      <div class="header-content text-white position-absolute slide-content col-lg-4">
-        <p>Our fleet of advanced spacecraft have revolutionized the lunar economy and provided safe travel for thousands of scientists, engineers, technicians, medical staff and civilians. These amazing vessels are also paving the way for reaching Mars in the next decade.</p>
-        <a class="btn btn-primary btn-lg w-max mt-2" href="#" tabindex="0">Read More</a>
-      </div>
-    </div>
+    {% endfor %}
+    
   </div>
-  <!--.hero-->
-</header>
+</section>
 
 
 
@@ -268,26 +250,14 @@
         "settings": [
           {
             "type": "richtext",
-            "id": "testimonial",
+            "id": "text1",
             "label": "Text",
             "default": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>"
           },
           {
             "type": "image_picker",
             "id": "image",
-            "label": "Author's image"
-          },
-          {
-            "type": "text",
-            "id": "author",
-            "label": "Author",
-            "default": "Author name"
-          },
-          {
-            "type": "text",
-            "id": "author_info",
-            "label": "Author info",
-            "default": "Los Angeles, CA"
+            "label": "Background Image"
           }
         ]
       }
