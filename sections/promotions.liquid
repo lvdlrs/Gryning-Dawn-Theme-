@@ -1,18 +1,21 @@
-
+<style>
+.promotions{
+	margin: 60px 0;
+  padding: 0 30px;
+}
+</style>
 
 
 <section>
   <div class="promotions">
     <div class="container-fluid">
-
       <div class="promotions__inner">
         <div class="row">
-          
+
           {% for block in section.blocks %}
           {% assign item = block.settings %}
           <div class="col-lg-3 col-md-3 col-12">
             <div class="promotions__box">
-
               <div class="promotions__box-img">
                 <a href="{{ item.url }}">
                   <img class="image lazyload" src="{{ item.image | img_url: 'master' }}" data-src="{{ item.image }}" alt="{{ item.alt | escape }}">
@@ -23,7 +26,6 @@
                 <div class="promotions__text"><p>{{ item.text }}</p></div>
                 <div class="promotions__link"><a href="{{ item.url }}">{{ item.btn }}</a></div>
               </div>
-
             </div>
           </div>
           {% endfor %}
