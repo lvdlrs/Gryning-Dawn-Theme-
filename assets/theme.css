@@ -465,6 +465,15 @@ svg:not(:root) {
     padding: 20px 20px !important;
     margin-bottom: 30px !important;
 }
+  .custom-parallax__inner{
+    display: flex;
+    align-items: center;
+  	padding: 15px !important;
+  }
+  .custom-parallax__box{
+  	padding: 20px !important;
+    width: 100% !important;;
+  }
 
 
 
