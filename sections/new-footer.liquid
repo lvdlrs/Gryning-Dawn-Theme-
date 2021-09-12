@@ -45,6 +45,27 @@
     color: #fdfaf2;
     padding: 4px 0;
   }
+  .newsletter-form__box{
+  	display: block;
+  }
+  .newsletter-form__box input{
+  	width: 100%;
+    border: 1px solid;
+    border-color: rgba(253,250,242,.12);
+    background-color: #fdfaf2;
+    padding: 8px 10px;
+    color: #3e5242;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+    .newsletter-form__box button{
+  	width: 100%;
+    background-color: #fdfaf2;
+    padding: 11px 20px;
+    color: #3e5242;
+    font-size: 16px;
+      cursor: pointer;
+  }
 </style>
 
 <footer>
@@ -136,7 +157,6 @@
                   {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
                   <input type="hidden" name="contact[tags]" value="newsletter">
                   <div class="newsletter-form__box">
-                    <div class="field">
                       <input
                              id="NewsletterForm--{{ section.id }}"
                              type="email"
@@ -160,7 +180,6 @@
                       <button type="submit" class="news-btn" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
                         {% render 'icon-arrow' %}
                       </button>
-                    </div>
                     {%- if form.errors -%}
                     <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
                     {%- endif -%}
