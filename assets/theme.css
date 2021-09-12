@@ -370,3 +370,23 @@ svg:not(:root) {
   border-bottom: 3px solid #fff;
   padding-bottom: 5px;
 }
+
+
+
+
+
+
+@media only screen and (max-width: 991px){
+
+  .h1.hero__title .animation-contents{
+  	font-size: 40px;
+    line-height: 50px;
+  }
+
+
+
+
+
+
+
+}
