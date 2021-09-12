@@ -436,22 +436,35 @@ svg:not(:root) {
     margin: 0 auto 20px auto;
   }
   .custom-collections__link{
-  	font-size: 16px;
+    font-size: 16px;
   }
   .custom-collections__box a:hover .custom-collections__link {
     border-bottom: 1px solid #fff;
     padding-bottom: 3px;
-}
+  }
   .new-fading .slide-content{
-  	padding: 0 15px !important;
+    padding: 0 15px !important;
   }
   .new-fading .slide-content h1{
-  	font-size: 22px !important;
+    font-size: 22px !important;
     line-height: 28px !important;
   }
   .testimonials-section{
-  	padding: 10px 0 50px !important;
+    padding: 10px 0 50px !important;
   }
+  testimonials-section .section-header h2 {
+    font-size: 22px !important;
+    line-height: 28px !important;
+    margin: 0 auto 0px auto !important;
+  }
+  .testimonials-slide{
+    padding: 20px 0;
+  }
+  .testimonials-slider__text {
+    margin: 0 0 !important;
+    padding: 20px 20px !important;
+    margin-bottom: 30px !important;
+}
 
 
 
