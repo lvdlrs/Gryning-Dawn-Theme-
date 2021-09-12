@@ -449,6 +449,9 @@ svg:not(:root) {
   	font-size: 22px !important;
     line-height: 28px !important;
   }
+  .testimonials-section{
+  	padding: 10px 0 50px !important;
+  }
 
 
 
