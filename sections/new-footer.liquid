@@ -33,7 +33,7 @@
 
                   <nav role="navigation">
                     <ul>
-                      {%- for link in linklists.main-menu.links -%}
+                      {%- for link in section.settings.menu.links -%}
                       <li>
                         <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
                           {{ link.title }}
