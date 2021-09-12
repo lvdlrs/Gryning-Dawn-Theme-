@@ -190,6 +190,16 @@
           "logo": "shopify:\/\/shop_images\/Gryning_logo_72dpi_off-white.png",
           "menu": "main-menu"
         }
+      },
+      "new-footer": {
+        "type": "new-footer",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/Gryning_logo_72dpi_off-white.png",
+          "menu_title": "QUICK LINKS",
+          "menu": "footer",
+          "newstitle": "MOTTA NYHETSBREV",
+          "newstext": "Meld deg på for nyheter, tips, oppskrifter og gode tilbud."
+        }
       }
     },
     "content_for_index": [
