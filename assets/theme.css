@@ -403,6 +403,9 @@ svg:not(:root) {
     font-size: 14px;
     line-height: 20px;
 }
+  .zig-zag_a__inner{
+  	padding-bottom: 0;
+  }
 
 
 
