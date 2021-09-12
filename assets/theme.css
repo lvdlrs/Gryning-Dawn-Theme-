@@ -443,11 +443,11 @@ svg:not(:root) {
     padding-bottom: 3px;
 }
   .new-fading .slide-content{
-  	padding: 0;
+  	padding: 0 15px !important;
   }
   .new-fading .slide-content h1{
-  	font-size: 22px;
-    line-height: 28px;
+  	font-size: 22px !important;
+    line-height: 28px !important;
   }
 
 
