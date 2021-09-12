@@ -412,6 +412,9 @@ svg:not(:root) {
     padding-bottom: 0;
     letter-spacing: 0;
   }
+  .zig-zag_a__content{
+  	padding: 10px 0;
+  }
   .zig-zag_a__title h2 {
     padding-bottom: 10px;
     font-size: 22px;
