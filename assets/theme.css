@@ -442,6 +442,10 @@ svg:not(:root) {
     border-bottom: 1px solid #fff;
     padding-bottom: 3px;
 }
+  .new-fading .slide-content h1{
+  	font-size: 22px;
+    line-height: 28px;
+  }
 
 
 
