@@ -198,7 +198,9 @@
           "menu_title": "QUICK LINKS",
           "menu": "footer",
           "newstitle": "MOTTA NYHETSBREV",
-          "newstext": "Meld deg på for nyheter, tips, oppskrifter og gode tilbud."
+          "newstext": "Meld deg på for nyheter, tips, oppskrifter og gode tilbud.",
+          "show_copyright": true,
+          "copyright_text": "Gryning. Alle rettigheter forbeholdt"
         }
       }
     },
