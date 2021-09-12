@@ -428,7 +428,12 @@ svg:not(:root) {
     font-size: 14px;
   }
   .zig-zag_a_right .row{
-  	flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .custom-collections__title h2 {
+    font-size: 22px;
+    line-height: 25px;
+    margin: 0 auto 20px auto;
   }
 
 
