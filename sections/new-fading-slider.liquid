@@ -30,7 +30,7 @@
     padding: 2rem;
   }
   .new-fading  .slide-content h1 {
-    font-size: 62px;
+    font-size: 35px;
   }
 
   /** Text Animation **/
@@ -68,7 +68,7 @@
     animation-name: fadeInUpSD;
   }
 
-  .slick-active .slide-content {
+  .new-fading .slick-active .slide-content {
     animation-name: fadeInUpSD;
     animation-duration: 1s;
     opacity: 1;
@@ -78,7 +78,7 @@
 
   /* Text Animation End **/
 
-  .slick-dots {
+  .new-fading .slick-dots {
     position: absolute;
     bottom: 10px;
     display: block;
@@ -88,7 +88,7 @@
     text-align: center;
   }
 
-  .slick-dots li {
+  .new-fading .slick-dots li {
     position: relative;
     display: inline-block;
     width: 20px;
@@ -98,11 +98,11 @@
     cursor: pointer;
   }
 
-  .slick-active button {
+  .new-fading .slick-active button {
     background: #d60e96;
   }
 
-  .slick-dots li button {
+  .new-fading .slick-dots li button {
     font-size: 0;
     line-height: 0;
     display: block;
@@ -115,34 +115,11 @@
     outline: none;
   }
 
-  .slick-dots li button::before {
+  .new-fading .slick-dots li button::before {
     font-size: 18px;
     color: #fff;
     opacity: 1;
   }
-
-
-  /* Media Queries */
-
-  @media (max-width: 768px) {
-    .hero-text .hero .hero-slide a {
-      padding-top: 0.8rem;
-    }
-
-    .hero-text .hero .hero-slide a span {
-      font-size: 20px;
-      margin-top: 0.5rem;
-    }
-
-    .hero .hero-slide .header-content {
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
-      margin: 0 auto;
-    }
-  }
-
-
 </style>
 
 
