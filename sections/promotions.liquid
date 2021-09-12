@@ -40,33 +40,45 @@
 
 {% schema %}
  {
-    "name":"Custom Collection list",
-    "max_blocks":15,
-    "settings":[
-        {
-            "type":"text",
-            "id":"title",
-            "label":"Heading",
-            "default":"Collection Title"
-        }
-    ],
+    "name":"Promotions",
+    "settings":[],
     "blocks":[
         {
-            "type":"collection",
-            "name":"Collection",
+            "type":"item",
+            "name":"item",
             "settings":[
                 {
-                    "id":"collection",
-                    "type":"collection",
-                    "label":"Collection"
+                    "type":"image_picker",
+                    "id":"image",
+                    "label":"Image"
+                },
+{
+                    "type":"text",
+                    "id":"title",
+                    "label":"Title"
+                },
+{
+                    "type":"text",
+                    "id":"text",
+                    "label":"Text"
+                },
+{
+                    "type":"url",
+                    "id":"url",
+                    "label":"Button URL"
+                },
+{
+                    "type":"text",
+                    "id":"btn",
+                    "label":"Button Text"
                 }
             ]
         }
     ],
     "presets":[
         {
-            "name":"Custom Collection list",
-            "category":"Collection"
+            "name":"Promotions",
+            "category":"custom"
         }
     ]
 }
