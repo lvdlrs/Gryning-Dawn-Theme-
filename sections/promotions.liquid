@@ -1,8 +1,75 @@
+
+
+
+<section>
+  <div class="promotions">
+    <div class="container-fluid">
+
+      <div class="promotions__inner">
+        <div class="row">
+
+          {% assign item = block.settings %}
+
+          {% for block in section.blocks %}
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="promotions__box">
+
+              <div class="promotions__box-img">
+                <img class="image lazyload" src="{{ item.image | img_url: 'master' }}" data-src="{{ item.image }}" alt="{{ item.alt | escape }}">
+              </div>
+              <div class="promotions__overlay">
+                <div class="promotions__title"><h3>{{ item.title }}</h3></div>
+                <div class="promotions__text"><p>{{ item.text }}</p></div>
+                <div class="promotions__link"><a href="{{ item.url }}">{{ item.btn }}</a></div>
+              </div>
+
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+ {
+    "name":"Custom Collection list",
+    "max_blocks":15,
+    "settings":[
+        {
+            "type":"text",
+            "id":"title",
+            "label":"Heading",
+            "default":"Collection Title"
+        }
+    ],
+    "blocks":[
+        {
+            "type":"collection",
+            "name":"Collection",
+            "settings":[
+                {
+                    "id":"collection",
+                    "type":"collection",
+                    "label":"Collection"
+                }
+            ]
+        }
+    ],
+    "presets":[
+        {
+            "name":"Custom Collection list",
+            "category":"Collection"
+        }
+    ]
+}
 {% endschema %}
 
 {% stylesheet %}
