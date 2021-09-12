@@ -202,67 +202,8 @@
         </div>
 
         <div class="row">
-          <div class="site-footer__bottom">
-            {%- form 'localization', class: 'multi-selectors site-footer__bottom-block', data-disclosure-form: '' -%}
-          
-            <div class="multi-selectors__item">
-              <h2 class="visually-hidden" id="LangHeading">
-                {{ 'general.language.dropdown_label' | t }}
-              </h2>
 
-              <div id="FooterLocale" class="disclosure">
-                <button type="button" class="faux-select disclosure__toggle" aria-expanded="false" aria-controls="LangList" aria-describedby="LangHeading" data-disclosure-toggle>
-                  {{ form.current_locale.endonym_name }}
-                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
-                </button>
-                <ul id="LangList" class="disclosure-list" data-disclosure-list>
-                  {%- for locale in form.available_locales -%}
-                  <li class="disclosure-list__item {% if locale.iso_code == form.current_locale.iso_code %}disclosure-list__item--current{% endif %}">
-                    <a class="disclosure-list__option" href="#" lang="{{ locale.iso_code }}" {% if locale.iso_code == form.current_locale.iso_code %}aria-current="true"{% endif %} data-value="{{ locale.iso_code }}" data-disclosure-option>
-                      {{ locale.endonym_name }}
-                    </a>
-                  </li>
-                  {%- endfor -%}
-                </ul>
-                <input type="hidden" name="locale_code" id="LocaleSelector" value="{{ form.current_locale.iso_code }}" data-disclosure-input/>
-              </div>
-            </div>
-
-            <div class="multi-selectors__item">
-              <h2 class="visually-hidden" id="CurrencyHeading">
-                {{ 'general.currency.dropdown_label' | t }}
-              </h2>
-
-              <div id="FooterCurrency" class="disclosure">
-                <button type="button" class="faux-select disclosure__toggle" aria-expanded="false" aria-controls="CurrencyList" aria-describedby="CurrencyHeading" data-disclosure-toggle>
-                  {%- if section.settings.show_currency_flags -%}
-                  <span class="currency-flag currency-flag--small" data-flag="{{ form.current_currency.iso_code }}" aria-hidden="true"></span>
-                  {%- endif -%}
-                  <span class="currency-options__label currency-options__label--inline">
-                    {{ form.current_currency.iso_code }} {%- if form.current_currency.symbol -%}{{ form.current_currency.symbol }}{%- endif -%}
-                  </span>
-                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
-                </button>
-                <ul id="CurrencyList" class="disclosure-list" data-disclosure-list>
-                  {%- for currency in form.available_currencies -%}
-                  <li class="disclosure-list__item {% if currency.iso_code == form.current_currency.iso_code %}disclosure-list__item--current{% endif %}">
-                    <a class="disclosure-list__option" href="#" {% if currency.iso_code == form.current_currency.iso_code %}aria-current="true"{% endif %} data-value="{{ currency.iso_code }}" data-disclosure-option>
-                      {%- if section.settings.show_currency_flags -%}
-                      <span class="currency-flag currency-flag--small" data-flag="{{ currency.iso_code }}" aria-hidden="true"></span>
-                      {%- endif -%}
-                      <span class="currency-options__label currency-options__label--inline">
-                        {{ currency.iso_code }} {%- if currency.symbol -%}{{ currency.symbol }}{%- endif -%}
-                      </span>
-                    </a>
-                  </li>
-                  {%- endfor -%}
-                </ul>
-                <input type="hidden" name="currency_code" value="{{ form.current_currency.iso_code }}" data-disclosure-input>
-              </div>
-            </div>
-            {%- endform -%}
-
-            <div class="footer__copyright site-footer__bottom-block">
+            <div class="footer__copyright">
               {%- if section.settings.show_copyright -%}
               <span>
                 &copy; {{ 'now' | date: '%Y' }} {{ shop.name }}
@@ -273,7 +214,6 @@
               {%- endif -%}
               {% comment %} <span class="footer__powered_by">{{ powered_by_link }}</span> {% endcomment %}
             </div>
-          </div>
         </div>
       </div>
     </div>
