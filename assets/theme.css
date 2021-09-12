@@ -525,6 +525,7 @@ svg:not(:root) {
   	padding: 0 !important;
   }
   .footer__box-inner{
+    margin-top: 20px;
   	padding: 0 !important;
   }
 
