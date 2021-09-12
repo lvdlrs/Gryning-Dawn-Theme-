@@ -452,7 +452,7 @@ svg:not(:root) {
   .testimonials-section{
     padding: 10px 0 50px !important;
   }
-  testimonials-section .section-header h2 {
+  .testimonials-section .section-header h2 {
     font-size: 22px !important;
     line-height: 28px !important;
     margin: 0 auto 0px auto !important;
