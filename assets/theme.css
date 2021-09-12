@@ -499,6 +499,17 @@ svg:not(:root) {
   .promotions__box{
   	margin-bottom: 20px;
   }
+  .promotions__title h3 {
+    font-size: 18px !important;
+    line-height: 20px !important;
+    margin-bottom: 10px !important;
+}
+  .promotions__text p {
+    font-size: 14px !important;
+    line-height: 20px !important;
+    padding-right: 0px !important;
+    margin-bottom: 10px !important;
+}
 
 
 
