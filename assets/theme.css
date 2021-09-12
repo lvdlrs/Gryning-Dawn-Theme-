@@ -496,6 +496,9 @@ svg:not(:root) {
   .promotions__inner{
   	padding: 0 !important;
   }
+  .promotions__box{
+  	margin-bottom: 20px;
+  }
 
 
 
