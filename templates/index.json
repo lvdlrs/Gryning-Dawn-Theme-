@@ -309,10 +309,11 @@
         "329d5e13-3752-40fa-9c3e-d2a998116846": {
           "type": "item",
           "settings": {
-            "title": "",
-            "text": "",
-            "url": "",
-            "btn": ""
+            "image": "shopify:\/\/shop_images\/relaxing-in-the-forest.jpg",
+            "title": "Sirkulært med troverdig CO2-gevinst",
+            "text": "I hele vårt utvalg gjør vi relevante og troverdige beregninger på innsparinger i CO2 fotavtrykk som din familie realiserer med å handle litt annerledes hos oss.",
+            "url": "#",
+            "btn": "Les mer"
           }
         },
         "bca57df6-bd4b-43bf-8948-6b35e391f4a2": {
