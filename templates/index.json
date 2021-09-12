@@ -292,6 +292,46 @@
         "btn_text": "Les mer",
         "btn_link": "#"
       }
+    },
+    "1631462133a3619aee": {
+      "type": "promotions",
+      "blocks": {
+        "e473aade-97b6-43b8-bc2f-0847b9134547": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/community.jpg",
+            "title": "Økologisk og lokalt når mulig",
+            "text": "Vi er opptatt av god helse, rene råvarer som er dyrket med hensyn til planeten. Vår seleksjon av varer og leverandører har dette som standard.",
+            "url": "#",
+            "btn": "Les mer"
+          }
+        },
+        "329d5e13-3752-40fa-9c3e-d2a998116846": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "text": "",
+            "url": "",
+            "btn": ""
+          }
+        },
+        "bca57df6-bd4b-43bf-8948-6b35e391f4a2": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "text": "",
+            "url": "",
+            "btn": ""
+          }
+        }
+      },
+      "block_order": [
+        "e473aade-97b6-43b8-bc2f-0847b9134547",
+        "329d5e13-3752-40fa-9c3e-d2a998116846",
+        "bca57df6-bd4b-43bf-8948-6b35e391f4a2"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -303,6 +343,7 @@
     "1631386419433636c8",
     "1631292413cc3473f7",
     "1631292402be865091",
-    "1631388073a336ab82"
+    "1631388073a336ab82",
+    "1631462133a3619aee"
   ]
 }
