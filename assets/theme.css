@@ -418,9 +418,14 @@ svg:not(:root) {
     line-height: 28px;
   }
   .zig-zag_a__text p {
-    padding: 0 0 20px 0;
+    padding: 0 0 10px 0;
     font-size: 14px;
     line-height: 20px;
+  }
+  .zig-zag_a__btn a{
+  	margin: 0;
+    width: 100%;
+    font-size: 14px;
   }
 
 
