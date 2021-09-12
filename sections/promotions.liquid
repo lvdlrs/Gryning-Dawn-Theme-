@@ -15,7 +15,9 @@
             <div class="promotions__box">
 
               <div class="promotions__box-img">
-                <img class="image lazyload" src="{{ item.image | img_url: 'master' }}" data-src="{{ item.image }}" alt="{{ item.alt | escape }}">
+                <a href="{{ item.url }}">
+                  <img class="image lazyload" src="{{ item.image | img_url: 'master' }}" data-src="{{ item.image }}" alt="{{ item.alt | escape }}">
+                </a>
               </div>
               <div class="promotions__overlay">
                 <div class="promotions__title"><h3>{{ item.title }}</h3></div>
