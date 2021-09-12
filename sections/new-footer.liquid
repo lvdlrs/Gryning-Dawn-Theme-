@@ -1,11 +1,11 @@
 <style>
-.footer{
-  padding: 80px 0 40px;
-  background-color: #3e5242;
-  color: #fdfaf2;
-}
+  .footer{
+    padding: 80px 0 40px;
+    background-color: #3e5242;
+    color: #fdfaf2;
+  }
   .footer__inner{
-  	padding: 0 60px;
+    padding: 0 60px;
   }
   .footer__box-logo{
     padding-bottom: 20px;
@@ -24,14 +24,14 @@
     text-transform: uppercase;
   }
   .footer__box-inner.menu ul{
-  	padding: 0;
+    padding: 0;
     list-style: none;
   }
   .footer__box-inner.menu li{
-  	margin-bottom: .25em;
+    margin-bottom: .25em;
   }
   .footer__box-inner.menu li a{
-  	font-size: 15px;
+    font-size: 15px;
     line-height: 20px;
     font-weight: 400;
     color: #fdfaf2;
@@ -39,20 +39,20 @@
     padding: 4px 0;
   }
   .footer__box-inner.news{
-  	padding-left: 30px;
+    padding-left: 30px;
   }
   .footer__box-inner.news p{
-  	font-size: 15px;
+    font-size: 15px;
     line-height: 20px;
     font-weight: 400;
     color: #fdfaf2;
     padding: 4px 0;
   }
   .newsletter-form__box{
-  	display: block;
+    display: block;
   }
   .newsletter-form__box input{
-  	width: 100%;
+    width: 100%;
     border: 1px solid;
     border-color: rgba(253,250,242,.12);
     background-color: #fdfaf2;
@@ -84,17 +84,17 @@
             <div class="footer__box">
               <div class="footer__box-inner">
                 <div class="footer__box-logo">
-                  
+
                   <a href="{{ routes.root_url }}">
-                    
+
                     {% if section.settings.logo != blank %}
                     <img class="lazyload" src="{{ section.settings.logo | img_url: 'x50' }}">
                     {% else %}
                     <span class="h2">{{ shop.name }}</span>
                     {% endif %}
-                    
+
                   </a>
-                  
+
                 </div>
               </div>
             </div>
@@ -163,29 +163,29 @@
                   {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
                   <input type="hidden" name="contact[tags]" value="newsletter">
                   <div class="newsletter-form__box">
-                      <input
-                             id="NewsletterForm--{{ section.id }}"
-                             type="email"
-                             name="contact[email]"
-                             class="news-input"
-                             value="{{ form.email }}"
-                             aria-required="true"
-                             autocorrect="off"
-                             autocapitalize="off"
-                             autocomplete="email"
-                             {% if form.errors %}
-                             autofocus
-                             aria-invalid="true"
-                             aria-describedby="ContactFooter-error"
-                             {% elsif form.posted_successfully? %}
-                             aria-describedby="ContactFooter-success"
-                             {% endif %}
-                             placeholder="Oppgi din e-post"
-                             required
-                             >
-                      <button type="submit" class="news-btn" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-                        Meld på
-                      </button>
+                    <input
+                           id="NewsletterForm--{{ section.id }}"
+                           type="email"
+                           name="contact[email]"
+                           class="news-input"
+                           value="{{ form.email }}"
+                           aria-required="true"
+                           autocorrect="off"
+                           autocapitalize="off"
+                           autocomplete="email"
+                           {% if form.errors %}
+                           autofocus
+                           aria-invalid="true"
+                           aria-describedby="ContactFooter-error"
+                           {% elsif form.posted_successfully? %}
+                           aria-describedby="ContactFooter-success"
+                           {% endif %}
+                           placeholder="Oppgi din e-post"
+                           required
+                           >
+                    <button type="submit" class="news-btn" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
+                      Meld på
+                    </button>
                     {%- if form.errors -%}
                     <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
                     {%- endif -%}
@@ -197,6 +197,84 @@
 
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="site-footer__bottom">
+            {%- form 'localization', class: 'multi-selectors site-footer__bottom-block', data-disclosure-form: '' -%}
+            {%- if locale_selector -%}
+            <div class="multi-selectors__item">
+              <h2 class="visually-hidden" id="LangHeading">
+                {{ 'general.language.dropdown_label' | t }}
+              </h2>
+
+              <div id="FooterLocale" class="disclosure">
+                <button type="button" class="faux-select disclosure__toggle" aria-expanded="false" aria-controls="LangList" aria-describedby="LangHeading" data-disclosure-toggle>
+                  {{ form.current_locale.endonym_name }}
+                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+                </button>
+                <ul id="LangList" class="disclosure-list" data-disclosure-list>
+                  {%- for locale in form.available_locales -%}
+                  <li class="disclosure-list__item {% if locale.iso_code == form.current_locale.iso_code %}disclosure-list__item--current{% endif %}">
+                    <a class="disclosure-list__option" href="#" lang="{{ locale.iso_code }}" {% if locale.iso_code == form.current_locale.iso_code %}aria-current="true"{% endif %} data-value="{{ locale.iso_code }}" data-disclosure-option>
+                      {{ locale.endonym_name }}
+                    </a>
+                  </li>
+                  {%- endfor -%}
+                </ul>
+                <input type="hidden" name="locale_code" id="LocaleSelector" value="{{ form.current_locale.iso_code }}" data-disclosure-input/>
+              </div>
+            </div>
+            {%- endif -%}
+
+            {%- if currency_selector -%}
+            <div class="multi-selectors__item">
+              <h2 class="visually-hidden" id="CurrencyHeading">
+                {{ 'general.currency.dropdown_label' | t }}
+              </h2>
+
+              <div id="FooterCurrency" class="disclosure">
+                <button type="button" class="faux-select disclosure__toggle" aria-expanded="false" aria-controls="CurrencyList" aria-describedby="CurrencyHeading" data-disclosure-toggle>
+                  {%- if section.settings.show_currency_flags -%}
+                  <span class="currency-flag currency-flag--small" data-flag="{{ form.current_currency.iso_code }}" aria-hidden="true"></span>
+                  {%- endif -%}
+                  <span class="currency-options__label currency-options__label--inline">
+                    {{ form.current_currency.iso_code }} {%- if form.current_currency.symbol -%}{{ form.current_currency.symbol }}{%- endif -%}
+                  </span>
+                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+                </button>
+                <ul id="CurrencyList" class="disclosure-list" data-disclosure-list>
+                  {%- for currency in form.available_currencies -%}
+                  <li class="disclosure-list__item {% if currency.iso_code == form.current_currency.iso_code %}disclosure-list__item--current{% endif %}">
+                    <a class="disclosure-list__option" href="#" {% if currency.iso_code == form.current_currency.iso_code %}aria-current="true"{% endif %} data-value="{{ currency.iso_code }}" data-disclosure-option>
+                      {%- if section.settings.show_currency_flags -%}
+                      <span class="currency-flag currency-flag--small" data-flag="{{ currency.iso_code }}" aria-hidden="true"></span>
+                      {%- endif -%}
+                      <span class="currency-options__label currency-options__label--inline">
+                        {{ currency.iso_code }} {%- if currency.symbol -%}{{ currency.symbol }}{%- endif -%}
+                      </span>
+                    </a>
+                  </li>
+                  {%- endfor -%}
+                </ul>
+                <input type="hidden" name="currency_code" value="{{ form.current_currency.iso_code }}" data-disclosure-input>
+              </div>
+            </div>
+            {%- endif -%}
+            {%- endform -%}
+
+            <div class="footer__copyright site-footer__bottom-block">
+              {%- if section.settings.show_copyright -%}
+              <span>
+                &copy; {{ 'now' | date: '%Y' }} {{ shop.name }}
+                {%- if section.settings.copyright_text != blank -%}
+                {{ section.settings.copyright_text }}
+                {%- endif -%}
+              </span>
+              {%- endif -%}
+              {% comment %} <span class="footer__powered_by">{{ powered_by_link }}</span> {% endcomment %}
             </div>
           </div>
         </div>
