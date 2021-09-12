@@ -474,6 +474,9 @@ svg:not(:root) {
   	padding: 20px !important;
     width: 100% !important;;
   }
+  .custom-parallax__box-subtitle p{
+  	font-size: 14px !important;
+  }
 
 
 
