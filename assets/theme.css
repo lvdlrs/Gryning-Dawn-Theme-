@@ -493,6 +493,9 @@ svg:not(:root) {
     line-height: unset !important;
     font-size: 14px !important;
   }
+  .promotions__inner{
+  	padding: 0 !important;
+  }
 
 
 
