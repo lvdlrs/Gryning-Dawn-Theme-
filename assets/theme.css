@@ -394,7 +394,7 @@ svg:not(:root) {
   }
 
 .index-section {
-    margin: 50px 0;
+    margin: 50px 0 10px;
 }
   .index-section .w-75{
   	width: 100% !important;
