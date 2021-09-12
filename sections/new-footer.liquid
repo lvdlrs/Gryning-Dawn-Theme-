@@ -30,6 +30,16 @@
     display: block;
     padding: 4px 0;
   }
+  .footer__box-inner.news{
+  	padding-left: 30px;
+  }
+  .footer__box-inner.news p{
+  	font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #fdfaf2;
+    padding: 4px 0;
+  }
 </style>
 
 <footer>
@@ -109,7 +119,7 @@
           </div>
           <div class="col-lg-4 col-md-4 col-12">
             <div class="footer__box">
-              <div class="footer__box-inner">
+              <div class="footer__box-inner news">
                 <div class="footer__box-title">
                   <h3>{{ section.settings.newstitle }}</h3>
                 </div>
@@ -120,7 +130,7 @@
 
                   {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
                   <input type="hidden" name="contact[tags]" value="newsletter">
-                  <div class="newsletter-form__field-wrapper">
+                  <div class="newsletter-form__box">
                     <div class="field">
                       <input
                              id="NewsletterForm--{{ section.id }}"
