@@ -204,7 +204,7 @@
         <div class="row">
           <div class="site-footer__bottom">
             {%- form 'localization', class: 'multi-selectors site-footer__bottom-block', data-disclosure-form: '' -%}
-            {%- if locale_selector -%}
+          
             <div class="multi-selectors__item">
               <h2 class="visually-hidden" id="LangHeading">
                 {{ 'general.language.dropdown_label' | t }}
@@ -227,9 +227,7 @@
                 <input type="hidden" name="locale_code" id="LocaleSelector" value="{{ form.current_locale.iso_code }}" data-disclosure-input/>
               </div>
             </div>
-            {%- endif -%}
 
-            {%- if currency_selector -%}
             <div class="multi-selectors__item">
               <h2 class="visually-hidden" id="CurrencyHeading">
                 {{ 'general.currency.dropdown_label' | t }}
@@ -262,7 +260,6 @@
                 <input type="hidden" name="currency_code" value="{{ form.current_currency.iso_code }}" data-disclosure-input>
               </div>
             </div>
-            {%- endif -%}
             {%- endform -%}
 
             <div class="footer__copyright site-footer__bottom-block">
