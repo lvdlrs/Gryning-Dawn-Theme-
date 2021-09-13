@@ -338,9 +338,12 @@
     "1631550359158cb20a": {
       "type": "counter",
       "settings": {
-        "count1": "0, 400, 3000",
-        "count2": "0, 400, 3000",
-        "count3": "0, 400, 3000"
+        "count1": "0, 275, 3000",
+        "counter1": "Kilo mindre CO2 per familie",
+        "count2": "0, 267, 3000",
+        "counter2": "Kilo mindre å bære fra butikken",
+        "count3": "0, 5500, 3000",
+        "counter3": "Kroner spart som Gryning Medlem"
       }
     }
   },
