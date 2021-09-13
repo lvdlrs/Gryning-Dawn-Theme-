@@ -345,6 +345,13 @@
         "count3": "500, 5500, 100000",
         "counter3": "Kroner spart som Gryning Medlem"
       }
+    },
+    "16315538625fc5612f": {
+      "type": "timer",
+      "settings": {
+        "count1": "0, 275, 3000",
+        "counter1": "Kilo mindre CO2 per familie"
+      }
     }
   },
   "order": [
@@ -358,6 +365,7 @@
     "1631292402be865091",
     "1631388073a336ab82",
     "1631462133a3619aee",
-    "1631550359158cb20a"
+    "1631550359158cb20a",
+    "16315538625fc5612f"
   ]
 }
