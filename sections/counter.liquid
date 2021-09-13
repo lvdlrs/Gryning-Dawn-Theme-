@@ -30,9 +30,30 @@
 
 <section>
   <div class="counter">
-    <span id="count1" class="display-4"></span>
-    <span id="count2" class="display-4"></span>
-    <span id="count3" class="display-4"></span>
+    <div class="container">
+    <div class="counter__inner">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="counter__box">
+            <h2 id="count1"></h2>
+            <p>{{ section.settings.counter1 }}</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="counter__box">
+            <h2 id="count2"></h2>
+            <p>{{ section.settings.counter2 }}</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="counter__box">
+            <h2 id="count3"></h2>
+            <p>{{ section.settings.counter3 }}</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
   </div>
 </section>
 
