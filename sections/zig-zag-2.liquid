@@ -1,8 +1,127 @@
+{%- assign item = section.settings -%}
+
+<!-- zig-zag Design A start -->
+<section>
+  <div class="zig-zag_a">
+    <div class="page-width">
+      {% for block in section.blocks %}
+      {% if block.settings.position == 'left'%}
+      <div class="zig-zag_a_left">
+
+        <div class="zig-zag_a__inner">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="zig-zag_a__img">
+                <img src="{{ block.settings.zig-zag_a__img | img_url: 'master' }}" />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="zig-zag_a__content">
+                <div class="zig-zag_a__subtitle"><h3>{{ block.settings.zig-zag_a__subtitle }}</h3></div>
+                <div class="zig-zag_a__title"><h2>{{ block.settings.zig-zag_a__title }}</h2></div>
+                <div class="zig-zag_a__text"><p>{{ block.settings.zig-zag_a__text }}</p></div>
+                <div class="zig-zag_a__btn"><a href="{{ block.settings.zig-zag_a__link }}">{{ block.settings.zig-zag_a__link_text }}</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      {% else %}
+      <div class="zig-zag_a_right">
+
+        <div class="zig-zag_a__inner">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="zig-zag_a__content">
+                <div class="zig-zag_a__subtitle"><h3>{{ block.settings.zig-zag_a__subtitle }}</h3></div>
+                <div class="zig-zag_a__title"><h2>{{ block.settings.zig-zag_a__title }}</h2></div>
+                <div class="zig-zag_a__text"><p>{{ block.settings.zig-zag_a__text }}</p></div>
+                <div class="zig-zag_a__btn"><a href="{{ block.settings.zig-zag_a__link }}">{{ block.settings.zig-zag_a__link_text }}</a></div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="zig-zag_a__img">
+                <img src="{{ block.settings.zig-zag_a__img | img_url: 'master' }}" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name":"Zig-zag 2",
+    "settings":[
+        
+    ],
+    "blocks":[
+        {
+            "type":"Imagewithtext",
+            "name":"Image with Text",
+            "settings":[
+                {
+                    "type":"select",
+                    "id":"position",
+                    "label":"Image Position",
+                    "default":"left",
+                    "options":[
+                        {
+                            "value":"left",
+                            "label":"Left"
+                        },
+                        {
+                            "value":"right",
+                            "label":"Right"
+                        }
+                    ]
+                },
+                {
+                    "type":"image_picker",
+                    "id":"zig-zag_a__img",
+                    "label":"Image"
+                },
+                {
+                    "type":"text",
+                    "id":"zig-zag_a__title",
+                    "label":"Title"
+                },
+                {
+                    "type":"text",
+                    "id":"zig-zag_a__subtitle",
+                    "label":"Subtitle"
+                },
+                {
+                    "type":"textarea",
+                    "id":"zig-zag_a__text",
+                    "label":"Text"
+                },
+                {
+                    "type":"text",
+                    "id":"zig-zag_a__link_text",
+                    "label":"Button Text"
+                },
+                {
+                    "type":"url",
+                    "id":"zig-zag_a__link",
+                    "label":"Button Link"
+                }
+            ]
+        }
+    ],
+    "presets":[
+        {
+            "name":"Zig-zag 2",
+            "category":"Zig-zag"
+        }
+    ]
+}
 {% endschema %}
 
 {% stylesheet %}
@@ -10,3 +129,4 @@
 
 {% javascript %}
 {% endjavascript %}
+<!-- zig-zag Design A End -->
