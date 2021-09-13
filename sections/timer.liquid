@@ -1,6 +1,3 @@
-{%- assign item = section.settings -%}
-
-
 <style>
 
 </style>
@@ -30,7 +27,7 @@
                 let headline = document.getElementById("headline"),
                     countdown = document.getElementById("countdown");
 
-                headline.innerText = "Order Time Our";
+              headline.innerText = "{{ section.settings.timeout_msg }}";
                 countdown.style.display = "none";
 
                 clearInterval(x);
@@ -41,23 +38,19 @@
 
 </script>
 
-<!-- Banner Design F start -->
-
-<section class="section-separator">
-  <!--   This line only for information you need to remove in orignal code -->
-  <h2 class="text-center info-title">Banner product offer timer <b>Banner F</b></h2>
+<section>
 
   <div class="timer">
-    <div class="banner-f__inner">
+    <div class="timer__inner">
       <div class="container">
-        <div class="banner-f__box">
-          <div class="banner-f__box--title">
-            <h2><a href="{{item.banner_f_product_link}}">{{item.banner_f_product_text}}</a></h2>
+        <div class="bannertimer__box">
+          <div class="timer__title">
+            <h2>{{section.settings.timer_title}}</h2>
           </div>
-          <div class="banner-f__box--timer">
-            <p id="headline">{{item.banner_f_timer}}</p>
+          <div class="timer__timer">
+            <p id="headline"></p>
             <div id="countdown">
-              <ul class="banner-f__box--timerbox">
+              <ul class="timer__timerbox">
                 <li>
                   <p>Days</p>
                   <span id="days"></span>
@@ -70,7 +63,7 @@
                   <p>Minutes</p>
                   <span id="minutes"></span>
                 </li>
-                {% if item.show_seconds %}
+                {% if section.settings.show_seconds %}
                 <li>
                   <p>Seconds</p>
                   <span id="seconds"></span>
@@ -92,28 +85,23 @@
 
 {% schema %}
  {
-    "name":"Banner F",
+    "name":"Timer",
     "settings":[
         {
             "type":"header",
             "content":"Remaining Timer"
         },
         {
-            "type":"image_picker",
-            "id":"banner_f_bg",
-            "label":"Background Image"
-        },
-        {
-            "type":"checkbox",
-            "id":"banner_f_parallax",
-            "label":"Use parallax Background",
-            "default":true
+            "type":"text",
+            "id":"timer_title",
+            "label":"Timer Title",
+            "default":"Verdens første tørre strømmer sendes om.."
         },
         {
             "type":"text",
-            "id":"banner_f_timer",
-            "label":"Timer Title",
-            "default":"Hurry Up! Offer ends in"
+            "id":"timeout_msg",
+            "label":"Timeout message",
+            "default":"Your timeout"
         },
         {
             "type":"text",
@@ -127,33 +115,12 @@
             "id":"show_seconds",
             "label":"Show Seconds In Timer",
             "default":true
-        },
-        {
-            "type":"text",
-            "id":"banner_f_offer_text",
-            "label":"Offer Title",
-            "default":"SALE FEVER!"
-        },
-        {
-            "type":"text",
-            "id":"banner_f_product_text",
-            "label":"Product Title"
-        },
-        {
-            "type":"url",
-            "id":"banner_f_product_link",
-            "label":"Product Link"
-        },
-        {
-            "type":"image_picker",
-            "id":"banner_f_product_img",
-            "label":"Product Image"
         }
     ],
     "presets":[
         {
-            "name":"Banner F",
-            "category":"Banners"
+            "name":"Timer",
+            "category":"custom"
         }
     ]
 }
