@@ -15,9 +15,9 @@
         }
   }, step);
   }
-  counter("count1", 0, 400, 3000);
-  counter("count2", 100, 50, 2500);
-  counter("count3", 10, 40, 3000);
+  counter("count1", {{ section.settings.count1 }});
+  counter("count2", {{ section.settings.count2 }});
+  counter("count3", {{ section.settings.count3 }});
   });
 
 
@@ -44,9 +44,21 @@
     "settings": [
         {
             "type":"text",
-            "id":"title",
-            "label":"Heading",
-            "default":"Collection Title"
+            "id":"count1",
+            "label":"Counter 1",
+			"info": "please add like this:- 0, 400, 3000"
+        },
+{
+            "type":"text",
+            "id":"count2",
+            "label":"Counter 2",
+"info": "please add like this:- 0, 400, 3000"
+        },
+{
+            "type":"text",
+            "id":"count3",
+            "label":"Counter 3",
+"info": "please add like this:- 0, 400, 3000"
         }
     ],
     "blocks":[
