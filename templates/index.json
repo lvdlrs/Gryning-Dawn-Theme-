@@ -335,26 +335,6 @@
       "settings": {
       }
     },
-    "1631550359158cb20a": {
-      "type": "counter",
-      "settings": {
-        "count1": "0, 275, 3000",
-        "counter1": "Kilo mindre CO2 per familie",
-        "count2": "0, 267, 3000",
-        "counter2": "Kilo mindre å bære fra butikken",
-        "count3": "500, 5500, 100000",
-        "counter3": "Kroner spart som Gryning Medlem"
-      }
-    },
-    "16315538625fc5612f": {
-      "type": "timer",
-      "settings": {
-        "timer_title": "Verdens første tørre strømmer sendes om..",
-        "timeout_msg": "Your timeout",
-        "set_timer": "sep 30, 2021 2:10:20",
-        "show_seconds": true
-      }
-    },
     "163155624844949c99": {
       "type": "zig-zag-2",
       "blocks": {
@@ -372,6 +352,17 @@
         "cc7b2ccc-02b9-4c9c-958a-2d465245cf50"
       ],
       "settings": {
+      }
+    },
+    "1631550359158cb20a": {
+      "type": "counter",
+      "settings": {
+        "count1": "0, 275, 3000",
+        "counter1": "Kilo mindre CO2 per familie",
+        "count2": "0, 267, 3000",
+        "counter2": "Kilo mindre å bære fra butikken",
+        "count3": "500, 5500, 100000",
+        "counter3": "Kroner spart som Gryning Medlem"
       }
     },
     "1631557104f43e0275": {
@@ -392,6 +383,15 @@
       ],
       "settings": {
       }
+    },
+    "16315538625fc5612f": {
+      "type": "timer",
+      "settings": {
+        "timer_title": "Verdens første tørre strømmer sendes om..",
+        "timeout_msg": "Your timeout",
+        "set_timer": "sep 30, 2021 2:10:20",
+        "show_seconds": true
+      }
     }
   },
   "order": [
@@ -405,9 +405,9 @@
     "1631292402be865091",
     "1631388073a336ab82",
     "1631462133a3619aee",
-    "1631550359158cb20a",
-    "16315538625fc5612f",
     "163155624844949c99",
-    "1631557104f43e0275"
+    "1631550359158cb20a",
+    "1631557104f43e0275",
+    "16315538625fc5612f"
   ]
 }
