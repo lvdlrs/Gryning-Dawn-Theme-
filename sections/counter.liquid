@@ -1,57 +1,24 @@
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
-
-
 <script>
 
-//   document.addEventListener("DOMContentLoaded", () => {
-//                             function counter(id, start, end, duration) {
-//     let obj = document.getElementById(id),
-//         current = start,
-//         range = end - start,
-//         increment = end > start ? 1 : -1,
-//         step = Math.abs(Math.floor(duration / range)),
-//         timer = setInterval(() => {
-//                             current += increment;
-//                             obj.textContent = current;
-//                             if (current == end) {
-//           clearInterval(timer);
-//         }
-//   }, step);
-//   }
-//   counter("count1", {{ section.settings.count1 }});
-//   counter("count2", {{ section.settings.count2 }});
-//   counter("count3", {{ section.settings.count3 }});
-//   });
-
-  
-  
- // number count for stats, using jQuery animate
-
-$('.counting').each(function() {
-  var $this = $(this),
-      countTo = $this.attr('data-count');
-  
-  $({ countNum: $this.text()}).animate({
-    countNum: countTo
-  },
-
-  {
-
-    duration: 3000,
-    easing:'linear',
-    step: function() {
-      $this.text(Math.floor(this.countNum));
-    },
-    complete: function() {
-      $this.text(this.countNum);
-      //alert('finished');
-    }
-
-  });  
-  
-
-});
+  document.addEventListener("DOMContentLoaded", () => {
+                            function counter(id, start, end, duration) {
+    let obj = document.getElementById(id),
+        current = start,
+        range = end - start,
+        increment = end > start ? 1 : -1,
+        step = Math.abs(Math.floor(duration / range)),
+        timer = setInterval(() => {
+                            current += increment;
+                            obj.textContent = current;
+                            if (current == end) {
+          clearInterval(timer);
+        }
+  }, step);
+  }
+  counter("count1", {{ section.settings.count1 }});
+  counter("count2", {{ section.settings.count2 }});
+  counter("count3", {{ section.settings.count3 }});
+  });
 
 
 </script>
@@ -69,21 +36,18 @@ $('.counting').each(function() {
         <div class="col-lg-4 col-12">
           <div class="counter__box">
             <h2 id="count1"></h2>
-            <div class="counting" data-count="{{ section.settings.count1 }}">0</div>
             <p>{{ section.settings.counter1 }}</p>
           </div>
         </div>
         <div class="col-lg-4 col-12">
           <div class="counter__box">
             <h2 id="count2"></h2>
-            <div class="counting" data-count="{{ section.settings.count1 }}">0</div>
             <p>{{ section.settings.counter2 }}</p>
           </div>
         </div>
         <div class="col-lg-4 col-12">
           <div class="counter__box">
             <h2 id="count3"></h2>
-            <div class="counting" data-count="300">0</div>
             <p>{{ section.settings.counter3 }}</p>
           </div>
         </div>
