@@ -1,8 +1,74 @@
+<script>
+
+  document.addEventListener("DOMContentLoaded", () => {
+                            function counter(id, start, end, duration) {
+    let obj = document.getElementById(id),
+        current = start,
+        range = end - start,
+        increment = end > start ? 1 : -1,
+        step = Math.abs(Math.floor(duration / range)),
+        timer = setInterval(() => {
+                            current += increment;
+                            obj.textContent = current;
+                            if (current == end) {
+          clearInterval(timer);
+        }
+  }, step);
+  }
+  counter("count1", 0, 400, 3000);
+  counter("count2", 100, 50, 2500);
+  counter("count3", 10, 40, 3000);
+  });
+
+
+</script>
+
+
+<style>
+</style>
+
+
+<section>
+  <div class="counter">
+    <span id="count1" class="display-4"></span>
+    <span id="count2" class="display-4"></span>
+    <span id="count3" class="display-4"></span>
+  </div>
+</section>
+
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
-  }
+    "name": "Counter",
+    "settings": [
+        {
+            "type":"text",
+            "id":"title",
+            "label":"Heading",
+            "default":"Collection Title"
+        }
+    ],
+    "blocks":[
+        {
+            "type":"collection",
+            "name":"Collection",
+            "settings":[
+                {
+                    "id":"collection",
+                    "type":"collection",
+                    "label":"Collection"
+                }
+            ]
+        }
+    ],
+    "presets":[
+        {
+            "name":"Counter",
+            "category":"custom"
+        }
+    ]
+}
 {% endschema %}
 
 {% stylesheet %}
