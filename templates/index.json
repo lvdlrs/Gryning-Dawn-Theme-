@@ -334,64 +334,6 @@
       ],
       "settings": {
       }
-    },
-    "163155624844949c99": {
-      "type": "zig-zag-2",
-      "blocks": {
-        "cc7b2ccc-02b9-4c9c-958a-2d465245cf50": {
-          "type": "Imagewithtext",
-          "settings": {
-            "position": "right",
-            "zig-zag_a__img": "shopify:\/\/shop_images\/Family-Happily-Eating.jpg",
-            "zig-zag_a__title": "Billigere. Enklere. Bærekraftig.",
-            "zig-zag_a__text": "Vi tror veien til bærekraft starter med at det er billig og enkelt. Derfor tilbyr vi kjente varer, levert forutsigbart til gode priser som verdens første strømmetjeneste for tørre husholdningsvarer.<br>\n\nHvor mange varer vil du bare alltid ha i skapet? Vi løser dette først, så vi kan forbedre bærekraften i transport, emballasje og matavfall i vår verdikjede, samtidig som vi bidrar til mer familietid og bedre og positive matvaner i din familie. <br>\n\nLeverandørene vår støtter vår visjon, men mest av alt liker de lojale kunder som kjøper igjen, så derfor kan vi tilby svært gode priser til deg. <br>\n\nVår visjon er ambisiøs så vi ønsker oss engasjerte medlemmer med på laget. Bli medlem nå, ditt medlemskap dekker våre ekstra kostnader til sirkularitet og bærekraft.<br>\n\nDu sparer inn medlemskapet på din første strøm fra oss!"
-          }
-        }
-      },
-      "block_order": [
-        "cc7b2ccc-02b9-4c9c-958a-2d465245cf50"
-      ],
-      "settings": {
-      }
-    },
-    "1631550359158cb20a": {
-      "type": "counter",
-      "settings": {
-        "count1": "0, 275, 3000",
-        "counter1": "Kilo mindre CO2 per familie",
-        "count2": "0, 267, 3000",
-        "counter2": "Kilo mindre å bære fra butikken",
-        "count3": "500, 5500, 100000",
-        "counter3": "Kroner spart som Gryning Medlem"
-      }
-    },
-    "1631557104f43e0275": {
-      "type": "zig-zag-2",
-      "blocks": {
-        "98542afe-8b1b-46c3-bbc5-12e7dc2310d6": {
-          "type": "Imagewithtext",
-          "settings": {
-            "position": "left",
-            "zig-zag_a__img": "shopify:\/\/shop_images\/markus-spiske-n2HoOVk3tGY-unsplash.jpg",
-            "zig-zag_a__title": "Månedlig levering, aldri for mye",
-            "zig-zag_a__text": "Å strømme fysiske varer er noe helt nytt, men egentlig veldig enkelt.<br>\n\nDu bygger en strøm av varer som du ønsker å alltid ha på plass. Vi passer på at du aldri får for mye.<br>\n\nDu kan justere din strøm ned til 0,- eller opp til ditt budsjett hele måneden. Vi minner deg på justering før vi sender, og så kommer akkurat det du trenger hjem til deg!<br>\n\nDu velger et budsjett på kr 500,- eller kr 1000,- så du alltid har kontrollen på kostnadene i din strøm. Du betaler aldri for mer enn varene du får levert."
-          }
-        }
-      },
-      "block_order": [
-        "98542afe-8b1b-46c3-bbc5-12e7dc2310d6"
-      ],
-      "settings": {
-      }
-    },
-    "16315538625fc5612f": {
-      "type": "timer",
-      "settings": {
-        "timer_title": "Verdens første tørre strømmer sendes om..",
-        "timeout_msg": "Your timeout",
-        "set_timer": "sep 30, 2021 2:10:20",
-        "show_seconds": true
-      }
     }
   },
   "order": [
@@ -404,10 +346,6 @@
     "1631292413cc3473f7",
     "1631292402be865091",
     "1631388073a336ab82",
-    "1631462133a3619aee",
-    "163155624844949c99",
-    "1631550359158cb20a",
-    "1631557104f43e0275",
-    "16315538625fc5612f"
+    "1631462133a3619aee"
   ]
 }
