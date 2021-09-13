@@ -361,9 +361,10 @@
         "cc7b2ccc-02b9-4c9c-958a-2d465245cf50": {
           "type": "Imagewithtext",
           "settings": {
-            "position": "left",
-            "zig-zag_a__title": "",
-            "zig-zag_a__text": ""
+            "position": "right",
+            "zig-zag_a__img": "shopify:\/\/shop_images\/Family-Happily-Eating.jpg",
+            "zig-zag_a__title": "Billigere. Enklere. Bærekraftig.",
+            "zig-zag_a__text": "Vi tror veien til bærekraft starter med at det er billig og enkelt. Derfor tilbyr vi kjente varer, levert forutsigbart til gode priser som verdens første strømmetjeneste for tørre husholdningsvarer.<br>\n\nHvor mange varer vil du bare alltid ha i skapet? Vi løser dette først, så vi kan forbedre bærekraften i transport, emballasje og matavfall i vår verdikjede, samtidig som vi bidrar til mer familietid og bedre og positive matvaner i din familie. <br>\n\nLeverandørene vår støtter vår visjon, men mest av alt liker de lojale kunder som kjøper igjen, så derfor kan vi tilby svært gode priser til deg. <br>\n\nVår visjon er ambisiøs så vi ønsker oss engasjerte medlemmer med på laget. Bli medlem nå, ditt medlemskap dekker våre ekstra kostnader til sirkularitet og bærekraft.<br>\n\nDu sparer inn medlemskapet på din første strøm fra oss!"
           }
         }
       },
