@@ -4,9 +4,71 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "16315583435bed6283": {
+      "type": "zig-zag-2",
+      "blocks": {
+        "b4ba1a77-d086-4c10-99ab-9a4004c9dae4": {
+          "type": "Imagewithtext",
+          "settings": {
+            "position": "right",
+            "zig-zag_a__img": "shopify:\/\/shop_images\/Family-Happily-Eating.jpg",
+            "zig-zag_a__title": "Billigere. Enklere. Bærekraftig.",
+            "zig-zag_a__text": ""
+          }
+        }
+      },
+      "block_order": [
+        "b4ba1a77-d086-4c10-99ab-9a4004c9dae4"
+      ],
+      "settings": {
+      }
+    },
+    "16315581635cbe3dfc": {
+      "type": "counter",
+      "settings": {
+        "count1": "0, 275, 3000",
+        "counter1": "Kilo mindre CO2 per familie",
+        "count2": "0, 267, 3000",
+        "counter2": "Kilo mindre å bære fra butikken",
+        "count3": "0, 5500, 3000",
+        "counter3": "Kroner spart som Gryning Medlem"
+      }
+    },
+    "163155835594a4687e": {
+      "type": "zig-zag-2",
+      "blocks": {
+        "ce6f55b6-5d43-48d2-ad99-7fa962d30e4b": {
+          "type": "Imagewithtext",
+          "settings": {
+            "position": "left",
+            "zig-zag_a__img": "shopify:\/\/shop_images\/markus-spiske-n2HoOVk3tGY-unsplash.jpg",
+            "zig-zag_a__title": "Månedlig levering, aldri for mye",
+            "zig-zag_a__text": ""
+          }
+        }
+      },
+      "block_order": [
+        "ce6f55b6-5d43-48d2-ad99-7fa962d30e4b"
+      ],
+      "settings": {
+      }
+    },
+    "163155833094d0c9c4": {
+      "type": "timer",
+      "settings": {
+        "timer_title": "Verdens første tørre strømmer sendes om..",
+        "timeout_msg": "Your timeout",
+        "set_timer": "sep 29, 2021 2:10:20",
+        "show_seconds": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16315583435bed6283",
+    "16315581635cbe3dfc",
+    "163155835594a4687e",
+    "163155833094d0c9c4"
   ]
 }
