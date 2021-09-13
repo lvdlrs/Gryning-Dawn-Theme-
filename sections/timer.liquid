@@ -1,94 +1,159 @@
-<script>
+{%- assign item = section.settings -%}
 
+
+<style>
+
+</style>
+
+
+
+<script>
 (function () {
-  const second = 1000,
+    const second = 1000,
         minute = second * 60,
         hour = minute * 60,
         day = hour * 24;
 
-  let birthday = "Sep 30, 2021 00:00:00",
-      countDown = new Date(birthday).getTime(),
-      x = setInterval(function() {    
+    let birthday = "{{ section.settings.set_timer }}",
+        countDown = new Date(birthday).getTime(),
+        x = setInterval(function () {
+            let now = new Date().getTime(),
+                distance = countDown - now;
 
-        let now = new Date().getTime(),
-            distance = countDown - now;
+            (document.getElementById("days").innerText = Math.floor(distance / day)),
+                (document.getElementById("hours").innerText = Math.floor((distance % day) / hour)),
+                (document.getElementById("minutes").innerText = Math.floor((distance % hour) / minute)),
+                (document.getElementById("seconds").innerText = Math.floor((distance % minute) / second));
 
-        document.getElementById("days").innerText = Math.floor(distance / (day)),
-          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+            //do something later when date is reached
+            if (distance < 0) {
+                let headline = document.getElementById("headline"),
+                    countdown = document.getElementById("countdown");
 
-        //do something later when date is reached
-        if (distance < 0) {
-          let headline = document.getElementById("headline"),
-              countdown = document.getElementById("countdown"),
-              content = document.getElementById("content");
+                headline.innerText = "Order Time Our";
+                countdown.style.display = "none";
 
-          headline.innerText = "It's my birthday!";
-          countdown.style.display = "none";
-          content.style.display = "block";
-
-          clearInterval(x);
-        }
-        //seconds
-      }, 0)
-  }());
-
+                clearInterval(x);
+            }
+            //seconds
+        }, 0);
+})();
 
 </script>
 
+<!-- Banner Design F start -->
 
-<style>
-</style>
+<section class="section-separator">
+    <!--   This line only for information you need to remove in orignal code -->
+    <h2 class="text-center info-title">Banner product offer timer <b>Banner F</b></h2>
 
-
-<section>
-  <div class="counter">
-    <div class="container">
-      <div class="counter__inner">
-        <h1 id="headline">Countdown to my birthday:</h1>
-        <div id="countdown">
-          <ul>
-            <li><span id="days"></span>days</li>
-            <li><span id="hours"></span>Hours</li>
-            <li><span id="minutes"></span>Minutes</li>
-            <li><span id="seconds"></span>Seconds</li>
-          </ul>
+    <div class="banner-f" style="background-image: url({{ item.banner_f_bg | img_url: 'master' }});{% if item.banner_f_parallax %}background-attachment: fixed;{% endif %}">
+        <div class="banner-f__inner">
+            <div class="container">
+                        <div class="banner-f__box">
+                            <div class="banner-f__box--title">
+                                <h2><a href="{{item.banner_f_product_link}}">{{item.banner_f_product_text}}</a></h2>
+                            </div>
+                            <div class="banner-f__box--timer">
+                                <p id="headline">{{item.banner_f_timer}}</p>
+                                <div id="countdown">
+                                    <ul class="banner-f__box--timerbox">
+                                        <li>
+                                            <p>Days</p>
+                                            <span id="days"></span>
+                                        </li>
+                                        <li>
+                                            <p>Hours</p>
+                                            <span id="hours"></span>
+                                        </li>
+                                        <li>
+                                            <p>Minutes</p>
+                                            <span id="minutes"></span>
+                                        </li>
+                                        {% if item.show_seconds %}
+                                        <li>
+                                            <p>Seconds</p>
+                                            <span id="seconds"></span>
+                                        </li>
+                                        {% endif %}
+                                    </ul>
+                                </div>
+                            </div>
+                        
+                </div>
+            </div>
         </div>
-        <div id="content" class="emoji">
-          <span>🥳</span>
-          <span>🎉</span>
-          <span>🎂</span>
-        </div>
-      </div>
     </div>
-  </div>
 </section>
 
 
 
+
+
 {% schema %}
-  {
-    "name": "Timer",
-    "settings": [
+ {
+    "name":"Banner F",
+    "settings":[
         {
-            "type":"text",
-            "id":"count1",
-            "label":"Counter 1",
-			"default": "0, 275, 3000",
-			"info": "please add like this:- 0, 400, 3000"
+            "type":"header",
+            "content":"Remaining Timer"
+        },
+        {
+            "type":"image_picker",
+            "id":"banner_f_bg",
+            "label":"Background Image"
+        },
+        {
+            "type":"checkbox",
+            "id":"banner_f_parallax",
+            "label":"Use parallax Background",
+            "default":true
         },
         {
             "type":"text",
-            "id":"counter1",
-            "label":"Counter 1 Text",
-			"default": "Kilo mindre CO2 per familie"
+            "id":"banner_f_timer",
+            "label":"Timer Title",
+            "default":"Hurry Up! Offer ends in"
+        },
+        {
+            "type":"text",
+            "id":"set_timer",
+            "label":"Set Remaining Timer",
+            "default":"dec 22, 2024 2:10:20",
+            "info":"Please Enter Timer Format like this (dec 12, 2025 00:00:00) and must SAVE"
+        },
+        {
+            "type":"checkbox",
+            "id":"show_seconds",
+            "label":"Show Seconds In Timer",
+            "default":true
+        },
+        {
+            "type":"text",
+            "id":"banner_f_offer_text",
+            "label":"Offer Title",
+            "default":"SALE FEVER!"
+        },
+        {
+            "type":"text",
+            "id":"banner_f_product_text",
+            "label":"Product Title"
+        },
+        {
+            "type":"url",
+            "id":"banner_f_product_link",
+            "label":"Product Link"
+        },
+        {
+            "type":"image_picker",
+            "id":"banner_f_product_img",
+            "label":"Product Image"
         }
     ],
     "presets":[
         {
-            "name":"Timer",
-            "category":"custom"
+            "name":"Banner F",
+            "category":"Banners"
         }
     ]
 }
@@ -98,4 +163,5 @@
 {% endstylesheet %}
 
 {% javascript %}
+
 {% endjavascript %}
