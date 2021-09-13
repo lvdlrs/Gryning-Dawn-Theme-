@@ -354,6 +354,24 @@
         "set_timer": "sep 30, 2021 2:10:20",
         "show_seconds": true
       }
+    },
+    "163155624844949c99": {
+      "type": "zig-zag-2",
+      "blocks": {
+        "cc7b2ccc-02b9-4c9c-958a-2d465245cf50": {
+          "type": "Imagewithtext",
+          "settings": {
+            "position": "left",
+            "zig-zag_a__title": "",
+            "zig-zag_a__text": ""
+          }
+        }
+      },
+      "block_order": [
+        "cc7b2ccc-02b9-4c9c-958a-2d465245cf50"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -368,6 +386,7 @@
     "1631388073a336ab82",
     "1631462133a3619aee",
     "1631550359158cb20a",
-    "16315538625fc5612f"
+    "16315538625fc5612f",
+    "163155624844949c99"
   ]
 }
