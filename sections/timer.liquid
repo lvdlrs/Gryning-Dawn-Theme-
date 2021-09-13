@@ -44,46 +44,46 @@
 <!-- Banner Design F start -->
 
 <section class="section-separator">
-    <!--   This line only for information you need to remove in orignal code -->
-    <h2 class="text-center info-title">Banner product offer timer <b>Banner F</b></h2>
+  <!--   This line only for information you need to remove in orignal code -->
+  <h2 class="text-center info-title">Banner product offer timer <b>Banner F</b></h2>
 
-    <div class="banner-f" style="background-image: url({{ item.banner_f_bg | img_url: 'master' }});{% if item.banner_f_parallax %}background-attachment: fixed;{% endif %}">
-        <div class="banner-f__inner">
-            <div class="container">
-                        <div class="banner-f__box">
-                            <div class="banner-f__box--title">
-                                <h2><a href="{{item.banner_f_product_link}}">{{item.banner_f_product_text}}</a></h2>
-                            </div>
-                            <div class="banner-f__box--timer">
-                                <p id="headline">{{item.banner_f_timer}}</p>
-                                <div id="countdown">
-                                    <ul class="banner-f__box--timerbox">
-                                        <li>
-                                            <p>Days</p>
-                                            <span id="days"></span>
-                                        </li>
-                                        <li>
-                                            <p>Hours</p>
-                                            <span id="hours"></span>
-                                        </li>
-                                        <li>
-                                            <p>Minutes</p>
-                                            <span id="minutes"></span>
-                                        </li>
-                                        {% if item.show_seconds %}
-                                        <li>
-                                            <p>Seconds</p>
-                                            <span id="seconds"></span>
-                                        </li>
-                                        {% endif %}
-                                    </ul>
-                                </div>
-                            </div>
-                        
-                </div>
+  <div class="timer">
+    <div class="banner-f__inner">
+      <div class="container">
+        <div class="banner-f__box">
+          <div class="banner-f__box--title">
+            <h2><a href="{{item.banner_f_product_link}}">{{item.banner_f_product_text}}</a></h2>
+          </div>
+          <div class="banner-f__box--timer">
+            <p id="headline">{{item.banner_f_timer}}</p>
+            <div id="countdown">
+              <ul class="banner-f__box--timerbox">
+                <li>
+                  <p>Days</p>
+                  <span id="days"></span>
+                </li>
+                <li>
+                  <p>Hours</p>
+                  <span id="hours"></span>
+                </li>
+                <li>
+                  <p>Minutes</p>
+                  <span id="minutes"></span>
+                </li>
+                {% if item.show_seconds %}
+                <li>
+                  <p>Seconds</p>
+                  <span id="seconds"></span>
+                </li>
+                {% endif %}
+              </ul>
             </div>
+          </div>
+
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
 
