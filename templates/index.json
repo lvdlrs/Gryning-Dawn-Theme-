@@ -373,6 +373,25 @@
       ],
       "settings": {
       }
+    },
+    "1631557104f43e0275": {
+      "type": "zig-zag-2",
+      "blocks": {
+        "98542afe-8b1b-46c3-bbc5-12e7dc2310d6": {
+          "type": "Imagewithtext",
+          "settings": {
+            "position": "left",
+            "zig-zag_a__img": "shopify:\/\/shop_images\/markus-spiske-n2HoOVk3tGY-unsplash.jpg",
+            "zig-zag_a__title": "Månedlig levering, aldri for mye",
+            "zig-zag_a__text": "Å strømme fysiske varer er noe helt nytt, men egentlig veldig enkelt.<br>\n\nDu bygger en strøm av varer som du ønsker å alltid ha på plass. Vi passer på at du aldri får for mye.<br>\n\nDu kan justere din strøm ned til 0,- eller opp til ditt budsjett hele måneden. Vi minner deg på justering før vi sender, og så kommer akkurat det du trenger hjem til deg!<br>\n\nDu velger et budsjett på kr 500,- eller kr 1000,- så du alltid har kontrollen på kostnadene i din strøm. Du betaler aldri for mer enn varene du får levert."
+          }
+        }
+      },
+      "block_order": [
+        "98542afe-8b1b-46c3-bbc5-12e7dc2310d6"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -388,6 +407,7 @@
     "1631462133a3619aee",
     "1631550359158cb20a",
     "16315538625fc5612f",
-    "163155624844949c99"
+    "163155624844949c99",
+    "1631557104f43e0275"
   ]
 }
