@@ -80,6 +80,18 @@
     },
     "1631646222b2b819ae": {
       "type": "faq",
+      "blocks": {
+        "b4a08776-4523-4a2e-8229-d8e11d09a140": {
+          "type": "item",
+          "settings": {
+            "title": "Why are you cheaper?",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Everyday carry 3 wolf moon raw denim semiotics pok pok tattooed readymade bushwick. Humblebrag skateboard green juice mixtape polaroid ethical, messenger bag pitchfork sriracha hammock. Fam two 3 wolf moon, authentic woke stumptown bespoke."
+          }
+        }
+      },
+      "block_order": [
+        "b4a08776-4523-4a2e-8229-d8e11d09a140"
+      ],
       "settings": {
       }
     }
