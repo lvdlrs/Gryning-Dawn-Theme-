@@ -20,9 +20,10 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.50);
   }
-  section#section10 .scroll-banner__overlay {
+  
+  section#section10 .scroll-banner__inner{
     position: absolute;
-   	width: 100%;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -31,6 +32,11 @@
     z-index: 2;
     color: #fff;
     text-align: center;
+  }
+
+  section#section10 .scroll-banner__overlay {
+    max-width: 600px;
+    margin: 0 auto;
   }
   section#section10 .scroll-banner__overlay h1{
     font-size: 60px;
