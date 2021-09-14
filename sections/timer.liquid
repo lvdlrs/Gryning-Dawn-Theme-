@@ -41,7 +41,7 @@
     align-items: center;
     justify-content: center;
   }
-  .timer__timerbox li span{
+  .timer__timerbox li h4{
     font-size: 46px;
     font-weight: 700;
     color: rgba(62, 82, 66, 1.0);  
@@ -99,20 +99,20 @@
               <ul class="timer__timerbox">
                 <li>
                   <p>Days</p>
-                  <span id="days"></span>
+                  <h4 id="days"></h4>
                 </li>
                 <li>
                   <p>Hours</p>
-                  <span id="hours"></span>
+                  <h4 id="hours"></h4>
                 </li>
                 <li>
                   <p>Minutes</p>
-                  <span id="minutes"></span>
+                  <h4 id="minutes"></h4>
                 </li>
                 {% if section.settings.show_seconds %}
                 <li>
                   <p>Seconds</p>
-                  <span id="seconds"></span>
+                  <h4 id="seconds"></h4>
                 </li>
                 {% endif %}
               </ul>
