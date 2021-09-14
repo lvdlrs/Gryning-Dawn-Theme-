@@ -132,14 +132,71 @@
 
 
 <section id="section10" class="demo">
-  <h1>Scroll Down Button #10</h1>
-  <a href="#thanks"><span></span>Scroll</a>
+
+  <div class="scroll-banner">
+    <div class="scroll-banner__inner">
+      <div class="scroll-banner__title">
+
+        <h1>Strøm Tørre Ting</h1>
+      </div>
+      <div class="scroll-banner__text">
+        <p>Gryning lar deg strømme frokostvarer til ditt tørrskap hver måned.</p>
+        <p>Vi tilbyr et utvalg av smakfulle, kjente, noen ganger lokale, bærekraftige tørre varer til din husholdning. Velg kaffe, granola, grøt, havre, syltetøy eller juice og bygg din egen månedlige tørre strøm.</p>
+      </div>
+      <div class="scroll-banner__form">
+
+        {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
+        <input type="hidden" name="contact[tags]" value="newsletter">
+        <div class="newsletter-form__field-wrapper">
+          <div class="field">
+            <input
+                   id="NewsletterForm--{{ section.id }}"
+                   type="email"
+                   name="contact[email]"
+                   class="field__input"
+                   value="{{ form.email }}"
+                   aria-required="true"
+                   autocorrect="off"
+                   autocapitalize="off"
+                   autocomplete="email"
+                   {% if form.errors %}
+                   autofocus
+                   aria-invalid="true"
+                   aria-describedby="ContactFooter-error"
+                   {% elsif form.posted_successfully? %}
+                   aria-describedby="ContactFooter-success"
+                   {% endif %}
+                   placeholder="{{ 'newsletter.label' | t }}"
+                   required
+                   >
+            <label class="field__label" for="NewsletterForm--{{ section.id }}">
+              {{ 'newsletter.label' | t }}
+            </label>
+            <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
+              {% render 'icon-arrow' %}
+            </button>
+          </div>
+          {%- if form.errors -%}
+          <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+          {%- endif -%}
+        </div>
+        {%- if form.posted_successfully? -%}
+        <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+        {%- endif -%}
+        {%- endform -%}
+
+      </div>
+    </div>
+    <div class="scroll-banner__scroll">
+      <a href="#thanks"><span></span>Scroll</a>
+    </div>
+  </div>
 </section>
 
 
 {% schema %}
   {
-    "name": "Section name",
+    "name": "Scroll Banner",
     "settings": []
   }
 {% endschema %}
