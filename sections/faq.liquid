@@ -64,34 +64,14 @@
 <main class="site-wrapper container">
 
 	<div class="accordion">
+      {% for block in section.blocks %}
 		<div class="accordion__item">
-			<h2 class="accordion__title active">This is a FAQ Accordion Title 001</h2>
+			<h2 class="accordion__title">{{ block.settings.title }}</h2>
 			<div class="accordion__body">
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae amet quidem error blanditiis architecto molestiae recusandae fugit fugiat, et reprehenderit ratione perferendis quia. Vitae in molestiae, dicta doloribus porro quaerat.</p>
+				<p>{{ block.settings.text }}</p>
 			</div>
 		</div>
-		<!-- 	END Item -->
-		<div class="accordion__item">
-			<h2 class="accordion__title">This is a FAQ Accordion Title 002</h2>
-			<div class="accordion__body">
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae amet quidem error blanditiis architecto molestiae recusandae fugit fugiat, et reprehenderit ratione perferendis quia. Vitae in molestiae, dicta doloribus porro quaerat.</p>
-			</div>
-		</div>
-		<!-- 	END Item -->
-		<div class="accordion__item">
-			<h2 class="accordion__title">This is a FAQ Accordion Title 003</h2>
-			<div class="accordion__body">
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae amet quidem error blanditiis architecto molestiae recusandae fugit fugiat, et reprehenderit ratione perferendis quia. Vitae in molestiae, dicta doloribus porro quaerat.</p>
-			</div>
-		</div>
-		<!-- 	END Item -->
-		<div class="accordion__item">
-			<h2 class="accordion__title">This is a FAQ Accordion Title 004</h2>
-			<div class="accordion__body">
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae amet quidem error blanditiis architecto molestiae recusandae fugit fugiat, et reprehenderit ratione perferendis quia. Vitae in molestiae, dicta doloribus porro quaerat.</p>
-			</div>
-		</div>
-		<!-- 	END Item -->
+      {% endfor %}
 	</div>
 	<!-- 	END Accordion -->
 </main>
@@ -101,6 +81,24 @@
   {
     "name": "FAQ",
     "settings": [],
+	"blocks":[
+        {
+            "type":"item",
+            "name":"item",
+            "settings":[
+{
+                    "type":"text",
+                    "id":"title",
+                    "label":"Question"
+                },
+{
+                    "type":"text",
+                    "id":"text",
+                    "label":"Answers"
+                }
+            ]
+        }
+    ],
     "presets":[
         {
             "name":"FAQ",
