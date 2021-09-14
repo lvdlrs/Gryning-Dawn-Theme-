@@ -20,7 +20,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.50);
   }
-  
+
   section#section10 .scroll-banner__inner{
     position: absolute;
     width: 100%;
@@ -45,20 +45,20 @@
     font-weight: 700;
     text-align: center;
     margin-bottom: 10px;
-  	color: #fdfaf2;
+    color: #fdfaf2;
   }
-  
+
   section#section10 .scroll-banner__overlay p{
     font-size: 18px;
     line-height: 24px;
     font-weight: 600;
-  	color: #fdfaf2;
+    color: #fdfaf2;
     margin-bottom: 20px;
     text-align: center;
   }
-  
+
   .scroll-banner__form .form-box{
-  	display: flex;
+    display: flex;
     align-items: center;
   }
   .scroll-banner__form input{
@@ -86,7 +86,7 @@
     -webkit-box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
     box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
   }
-  
+
   #section10.demo a {
     position: absolute;
     bottom: 20px;
@@ -121,12 +121,12 @@
   }
   #section10 a span::before {
     position: absolute;
-    top: 10px;
+    top: 8px;
     left: 50%;
     content: '';
-    width: 6px;
-    height: 6px;
-    margin-left: -3px;
+    width: 2px;
+    height: 10px;
+    margin-left: -1px;
     background-color: #fff;
     border-radius: 100%;
     -webkit-animation: sdb10 2s infinite;
@@ -192,10 +192,10 @@
 
       <div class="scroll-banner__overlay">
         <div class="scroll-banner__title">
-          <h1>Strøm Tørre Ting</h1>
+          <h1>Strøm Tørre Ting{{ section.settings.title }}</h1>
         </div>
         <div class="scroll-banner__text">
-          <p>Gryning lar deg strømme frokostvarer til ditt tørrskap hver måned.</p>
+          <p>Gryning lar deg strømme frokostvarer til ditt tørrskap hver måned.{{ section.settings.text }}</p>
           <p>Vi tilbyr et utvalg av smakfulle, kjente, noen ganger lokale, bærekraftige tørre varer til din husholdning. Velg kaffe, granola, grøt, havre, syltetøy eller juice og bygg din egen månedlige tørre strøm.</p>
         </div>
         <div class="scroll-banner__form">
@@ -252,6 +252,16 @@
 			"type":"image_picker",
 			"id": "bg",
 			"label": "Select Bsckground Image"
+		},
+{
+			"type":"text",
+			"id": "title",
+			"label": "Banner Title"
+		},
+{
+			"type":"textarea",
+			"id": "text",
+			"label": "Banner Text"
 		}
 	],
     "presets":[
