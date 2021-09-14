@@ -87,10 +87,26 @@
             "title": "Why are you cheaper?",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Everyday carry 3 wolf moon raw denim semiotics pok pok tattooed readymade bushwick. Humblebrag skateboard green juice mixtape polaroid ethical, messenger bag pitchfork sriracha hammock. Fam two 3 wolf moon, authentic woke stumptown bespoke."
           }
+        },
+        "cdeda545-5889-4ace-8768-0ce7dfd8b516": {
+          "type": "item",
+          "settings": {
+            "title": "How do I avoid getting too many items?",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Everyday carry 3 wolf moon raw denim semiotics pok pok tattooed readymade bushwick. Humblebrag skateboard green juice mixtape polaroid ethical, messenger bag pitchfork sriracha hammock. Fam two 3 wolf moon, authentic woke stumptown bespoke."
+          }
+        },
+        "710ea4a8-6aec-4172-a115-8600d8ffed63": {
+          "type": "item",
+          "settings": {
+            "title": "Do I have control over the costs?",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Everyday carry 3 wolf moon raw denim semiotics pok pok tattooed readymade bushwick. Humblebrag skateboard green juice mixtape polaroid ethical, messenger bag pitchfork sriracha hammock. Fam two 3 wolf moon, authentic woke stumptown bespoke."
+          }
         }
       },
       "block_order": [
-        "b4a08776-4523-4a2e-8229-d8e11d09a140"
+        "b4a08776-4523-4a2e-8229-d8e11d09a140",
+        "cdeda545-5889-4ace-8768-0ce7dfd8b516",
+        "710ea4a8-6aec-4172-a115-8600d8ffed63"
       ],
       "settings": {
       }
