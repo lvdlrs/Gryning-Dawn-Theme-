@@ -1,7 +1,13 @@
 {
   "sections": {
+    "1631646120318b5e47": {
+      "type": "scroll-banner",
+      "settings": {
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
       }
     },
@@ -62,13 +68,26 @@
         "set_timer": "sep 29, 2021 2:10:20",
         "show_seconds": true
       }
+    },
+    "16316461557ac434fe": {
+      "type": "gallery",
+      "settings": {
+      }
+    },
+    "1631646222b2b819ae": {
+      "type": "faq",
+      "settings": {
+      }
     }
   },
   "order": [
+    "1631646120318b5e47",
     "main",
     "16315583435bed6283",
     "16315581635cbe3dfc",
     "163155835594a4687e",
-    "163155833094d0c9c4"
+    "163155833094d0c9c4",
+    "16316461557ac434fe",
+    "1631646222b2b819ae"
   ]
 }
