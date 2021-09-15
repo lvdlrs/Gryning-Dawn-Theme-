@@ -81,10 +81,59 @@
           "settings": {
             "img": "shopify:\/\/shop_images\/community.jpg"
           }
+        },
+        "1913fd6b-b10f-43fe-b076-94fc9e25f7f8": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Skjermbilde_2021-06-16_kl._21.07.52.png"
+          }
+        },
+        "cfdd0463-12ab-476d-9c07-c94745c4ea48": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/buildyourdrybreakfast.jpg"
+          }
+        },
+        "c00c3aef-e65b-4792-aac1-6f9225ef21a5": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/relaxing-in-the-forest.jpg"
+          }
+        },
+        "2cea8cf8-640c-479f-bf98-17d3af5477ca": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Sample-product-1.jpg"
+          }
+        },
+        "c1b9a13d-a3ff-459b-9cf2-a12ee10bbe56": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/sample-product-3.jpg"
+          }
+        },
+        "484cae39-4045-472d-8dbd-ee99769a4473": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Food-Containers.jpg"
+          }
+        },
+        "5aac8efb-3a35-4e52-965f-ad1322a75f68": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/sample-product-2.jpg"
+          }
         }
       },
       "block_order": [
-        "82eadc53-2176-4979-b721-289a2ca12cd4"
+        "82eadc53-2176-4979-b721-289a2ca12cd4",
+        "1913fd6b-b10f-43fe-b076-94fc9e25f7f8",
+        "cfdd0463-12ab-476d-9c07-c94745c4ea48",
+        "c00c3aef-e65b-4792-aac1-6f9225ef21a5",
+        "2cea8cf8-640c-479f-bf98-17d3af5477ca",
+        "c1b9a13d-a3ff-459b-9cf2-a12ee10bbe56",
+        "484cae39-4045-472d-8dbd-ee99769a4473",
+        "5aac8efb-3a35-4e52-965f-ad1322a75f68"
       ],
       "settings": {
         "title": "",
