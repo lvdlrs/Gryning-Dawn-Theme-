@@ -70,21 +70,31 @@
 
 <section>
   <div class="gallery">
-<div class="container">
-  <div class="row">
-    
-    {% for block in section.blocks %}
-  <div class="col-lg-3 col-3 col-6">
-    <div class="caption">
-      <a data-fancybox="gallery" href="{{ block.settings.img | img_url: 'master' }}">
-        <img class="lazyload" src="{{ block.settings.img | img_url: 'master' }}">
-      </a>
+    <div class="container">
+      <div class="gallery__inner">
+        <div class="gallery__title">
+          <h3>{{ section.settings.title }}</h3>
+        </div>
+        <div class="gallery__subtitle">
+          <p>{{ section.settings.subtitle }}</p>
+        </div>
+        <div class="gallery__box">
+          <div class="row">
+
+            {% for block in section.blocks %}
+            <div class="col-lg-3 col-3 col-6">
+              <div class="caption">
+                <a data-fancybox="gallery" href="{{ block.settings.img | img_url: 'master' }}">
+                  <img class="lazyload" src="{{ block.settings.img | img_url: 'master' }}">
+                </a>
+              </div>
+            </div>
+            {% endfor %}
+
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-    {% endfor %}
-    
-  </div>
-</div>
   </div>
 </section>
 
