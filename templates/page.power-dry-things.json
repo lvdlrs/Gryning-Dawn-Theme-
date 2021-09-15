@@ -171,7 +171,8 @@
         "710ea4a8-6aec-4172-a115-8600d8ffed63"
       ],
       "settings": {
-        "title": "Ofte stilte spørsmål"
+        "title": "Ofte stilte spørsmål",
+        "open_fisrt": false
       }
     }
   },
