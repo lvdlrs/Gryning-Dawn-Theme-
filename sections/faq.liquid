@@ -118,7 +118,7 @@
         <div class="accordion">
           {% for block in section.blocks %}
           <div class="accordion__item">
-            <h2 class="accordion__title {% if forloop.second %}active{% endif %}">{{ block.settings.title }}</h2>
+            <h2 class="accordion__title {% if section.settings.open_fisrt %}{% if forloop.first %}active{% endif %}{% endif %}">{{ block.settings.title }}</h2>
             <div class="accordion__body">
               <p>{{ block.settings.text }}</p>
             </div>
@@ -140,6 +140,12 @@
                     "type":"text",
                     "id":"title",
                     "label":"Title"
+                },
+{
+                    "type":"checkbox",
+                    "id":"open_fisrt",
+                    "label":"Open First Question Default",
+					"default": true
                 }
 	],
 	"blocks":[
