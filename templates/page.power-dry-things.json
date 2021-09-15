@@ -75,7 +75,20 @@
     },
     "16316461557ac434fe": {
       "type": "gallery",
+      "blocks": {
+        "82eadc53-2176-4979-b721-289a2ca12cd4": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/community.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "82eadc53-2176-4979-b721-289a2ca12cd4"
+      ],
       "settings": {
+        "title": "",
+        "subtitle": ""
       }
     },
     "1631646222b2b819ae": {
