@@ -118,7 +118,7 @@
         <div class="accordion">
           {% for block in section.blocks %}
           <div class="accordion__item">
-            <h2 class="accordion__title">{{ block.settings.title }}</h2>
+            <h2 class="accordion__title {% if forloop.first %}active{% endif %}">{{ block.settings.title }}</h2>
             <div class="accordion__body">
               <p>{{ block.settings.text }}</p>
             </div>
