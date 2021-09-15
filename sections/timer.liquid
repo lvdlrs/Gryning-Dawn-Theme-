@@ -59,60 +59,60 @@
     margin: 0;
     padding: 0;
   }
-  
+
   @media only screen and (max-width: 991px){
     .timer{
-    	padding: 30px 0;
+      padding: 30px 0;
     }
     .timer__title h2 {
-    font-size: 22px;
+      font-size: 22px;
     }
     .timer__timerbox li {
-    min-width: 25%;
+      min-width: 25%;
     }
     .timer__timerbox li p{
-    	font-size: 14px;
+      font-size: 14px;
     }
     .timer__timerbox li h4 {
       font-size: 26px;
     }
   }
-  
+
 </style>
 
 
 
 <script>
-(function () {
+  (function () {
     const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
+          minute = second * 60,
+          hour = minute * 60,
+          day = hour * 24;
 
     let birthday = "{{ section.settings.set_timer }}",
-        countDown = new Date(birthday).getTime(),
-        x = setInterval(function () {
-            let now = new Date().getTime(),
-                distance = countDown - now;
+    countDown = new Date(birthday).getTime(),
+      x = setInterval(function () {
+      let now = new Date().getTime(),
+          distance = countDown - now;
 
-            (document.getElementById("days").innerText = Math.floor(distance / day)),
-                (document.getElementById("hours").innerText = Math.floor((distance % day) / hour)),
-                (document.getElementById("minutes").innerText = Math.floor((distance % hour) / minute)),
-                (document.getElementById("seconds").innerText = Math.floor((distance % minute) / second));
+      (document.getElementById("days").innerText = Math.floor(distance / day)),
+        (document.getElementById("hours").innerText = Math.floor((distance % day) / hour)),
+        (document.getElementById("minutes").innerText = Math.floor((distance % hour) / minute)),
+        (document.getElementById("seconds").innerText = Math.floor((distance % minute) / second));
 
-            //do something later when date is reached
-            if (distance < 0) {
-                let headline = document.getElementById("headline"),
-                    countdown = document.getElementById("countdown");
+      //do something later when date is reached
+      if (distance < 0) {
+        let headline = document.getElementById("headline"),
+            countdown = document.getElementById("countdown");
 
-              headline.innerText = "{{ section.settings.timeout_msg }}";
-                countdown.style.display = "none";
+        headline.innerText = "{{ section.settings.timeout_msg }}";
+        countdown.style.display = "none";
 
-                clearInterval(x);
-            }
-            //seconds
-        }, 0);
-})();
+        clearInterval(x);
+      }
+      //seconds
+    }, 0);
+  })();
 
 </script>
 
