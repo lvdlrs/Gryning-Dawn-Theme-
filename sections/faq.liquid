@@ -156,46 +156,46 @@
 
 
 {% schema %}
-  {
-    "name": "FAQ",
-    "settings": [
-		{
-                    "type":"text",
-                    "id":"title",
-                    "label":"Title"
-                },
 {
-                    "type":"checkbox",
-                    "id":"open_fisrt",
-                    "label":"Open First Question Default",
-					"default": false
-                }
-	],
-	"blocks":[
+  "name":"FAQ",
+  "settings":[
+    {
+      "type":"text",
+      "id":"title",
+      "label":"Title"
+    },
+    {
+      "type":"checkbox",
+      "id":"open_fisrt",
+      "label":"Open First Question Default",
+      "default":false
+    }
+  ],
+  "blocks":[
+    {
+      "type":"item",
+      "name":"item",
+      "settings":[
         {
-            "type":"item",
-            "name":"item",
-            "settings":[
-{
-                    "type":"text",
-                    "id":"title",
-                    "label":"Question"
-                },
-{
-                    "type":"textarea",
-                    "id":"text",
-                    "label":"Answers"
-                }
-            ]
-        }
-    ],
-    "presets":[
+          "type":"text",
+          "id":"title",
+          "label":"Question"
+        },
         {
-            "name":"FAQ",
-            "category":"custom"
+          "type":"textarea",
+          "id":"text",
+          "label":"Answers"
         }
-    ]
-  }
+      ]
+    }
+  ],
+  "presets":[
+    {
+      "name":"FAQ",
+      "category":"custom"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
