@@ -517,17 +517,17 @@ svg:not(:root) {
     font-size: 14px !important;
   }
   .promotions{
-  	margin: 50px 0 !important;
+    margin: 50px 0 !important;
   }
   .footer__inner{
-  	padding: 0 !important;
+    padding: 0 !important;
   }
   .footer__box-inner{
     margin-top: 20px;
-  	padding: 0 !important;
+    padding: 0 !important;
   }
   .footer{
-  	padding: 50px 0 0 !important;
+    padding: 50px 0 0 !important;
   }
 
 
