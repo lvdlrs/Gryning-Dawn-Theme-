@@ -61,20 +61,29 @@
 </script>
 
 
-<main class="site-wrapper container">
+<section>
+  <div class="faq">
+    <div class="container">
+      <div class="faq__inner">
+        <div class="faq__title">
+          <h3>{{ section.settings.title }}</h3>
+        </div>
 
-	<div class="accordion">
-      {% for block in section.blocks %}
-		<div class="accordion__item">
-			<h2 class="accordion__title">{{ block.settings.title }}</h2>
-			<div class="accordion__body">
-				<p>{{ block.settings.text }}</p>
-			</div>
-		</div>
-      {% endfor %}
-	</div>
-	<!-- 	END Accordion -->
-</main>
+        <div class="accordion">
+          {% for block in section.blocks %}
+          <div class="accordion__item">
+            <h2 class="accordion__title">{{ block.settings.title }}</h2>
+            <div class="accordion__body">
+              <p>{{ block.settings.text }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
 
 
 {% schema %}
