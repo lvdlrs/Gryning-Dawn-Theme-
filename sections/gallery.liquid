@@ -38,7 +38,7 @@
   <div class="col-lg-3 col-3 col-6">
     <div class="caption">
       <a data-fancybox="gallery" href="{{ block.settings.img | img_url: 'master' }}">
-        <img src="{{ block.settings.img | img_url: 'master' }}" width="100%">
+        <img class="lazyload" src="{{ block.settings.img | img_url: 'master' }}">
       </a>
     </div>
   </div>
