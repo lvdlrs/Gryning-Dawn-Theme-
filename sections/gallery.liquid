@@ -33,13 +33,17 @@
 
 <div class="container">
   <div class="row">
+    
+    {% for block in blocks.settings %}
   <div class="col-lg-3 col-3 col-6">
     <div class="caption">
-      <a data-fancybox="gallery" href="https://tinyurl.com/y4lqpmcb">
-        <img src="https://tinyurl.com/y4lqpmcb" width="100%">
+      <a data-fancybox="gallery" href="{{ block.settings.image | img_url: 'master' }}">
+        <img src="{{ block.settings.image | img_url: 'master' }}" width="100%">
       </a>
     </div>
   </div>
+    {% endfor %}
+    
   </div>
 </div>
 
@@ -47,9 +51,34 @@
 
 
 {% schema %}
-  {
+{
     "name": "Gallery",
-    "settings": [],
+    "settings": [
+		{
+                    "type":"text",
+                    "id":"title",
+                    "label":"Title"
+                },
+{
+                    "type":"text",
+                    "id":"subtitle",
+                    "label":"Sub Title"
+                }
+
+	],
+	"blocks":[
+        {
+            "type":"image",
+            "name":"image",
+            "settings":[
+{
+                    "type":"image_picker",
+                    "id":"img",
+                    "label":"Gallery Image"
+                }
+            ]
+        }
+    ],
     "presets":[
         {
             "name":"Gallery",
