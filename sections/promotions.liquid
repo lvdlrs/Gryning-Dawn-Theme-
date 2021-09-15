@@ -85,47 +85,49 @@
 
 {% schema %}
  {
-    "name":"Promotions",
-    "settings":[],
-    "blocks":[
+  "name":"Promotions",
+  "settings":[
+    
+  ],
+  "blocks":[
+    {
+      "type":"item",
+      "name":"item",
+      "settings":[
         {
-            "type":"item",
-            "name":"item",
-            "settings":[
-                {
-                    "type":"image_picker",
-                    "id":"image",
-                    "label":"Image"
-                },
-{
-                    "type":"text",
-                    "id":"title",
-                    "label":"Title"
-                },
-{
-                    "type":"text",
-                    "id":"text",
-                    "label":"Text"
-                },
-{
-                    "type":"url",
-                    "id":"url",
-                    "label":"Button URL"
-                },
-{
-                    "type":"text",
-                    "id":"btn",
-                    "label":"Button Text"
-                }
-            ]
-        }
-    ],
-    "presets":[
+          "type":"image_picker",
+          "id":"image",
+          "label":"Image"
+        },
         {
-            "name":"Promotions",
-            "category":"custom"
+          "type":"text",
+          "id":"title",
+          "label":"Title"
+        },
+        {
+          "type":"text",
+          "id":"text",
+          "label":"Text"
+        },
+        {
+          "type":"url",
+          "id":"url",
+          "label":"Button URL"
+        },
+        {
+          "type":"text",
+          "id":"btn",
+          "label":"Button Text"
         }
-    ]
+      ]
+    }
+  ],
+  "presets":[
+    {
+      "name":"Promotions",
+      "category":"custom"
+    }
+  ]
 }
 {% endschema %}
 
