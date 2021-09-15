@@ -102,40 +102,39 @@
 
 {% schema %}
 {
-    "name": "Gallery",
-    "settings": [
-		{
-                    "type":"text",
-                    "id":"title",
-                    "label":"Title"
-                },
-{
-                    "type":"text",
-                    "id":"subtitle",
-                    "label":"Sub Title"
-                }
-
-	],
-	"blocks":[
+  "name":"Gallery",
+  "settings":[
+    {
+      "type":"text",
+      "id":"title",
+      "label":"Title"
+    },
+    {
+      "type":"text",
+      "id":"subtitle",
+      "label":"Sub Title"
+    }
+  ],
+  "blocks":[
+    {
+      "type":"image",
+      "name":"image",
+      "settings":[
         {
-            "type":"image",
-            "name":"image",
-            "settings":[
-{
-                    "type":"image_picker",
-                    "id":"img",
-                    "label":"Gallery Image"
-                }
-            ]
+          "type":"image_picker",
+          "id":"img",
+          "label":"Gallery Image"
         }
-    ],
-    "presets":[
-        {
-            "name":"Gallery",
-            "category":"custom"
-        }
-    ]
-  }
+      ]
+    }
+  ],
+  "presets":[
+    {
+      "name":"Gallery",
+      "category":"custom"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
