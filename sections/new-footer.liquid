@@ -161,9 +161,10 @@
                   
                   <div class="footer__social">
                     <div class="footer__social-inner">
-                    	<ul>
-                          <li><a href="{{ settings.social_twitter_link }}"><i data-feather="twitter"></i></a></li>
-                          
+                    	<ul class="d-flex">
+                          {% if settings.social_twitter_link %}
+                          <li class="p-0 mx-2"><a href="{{ settings.social_twitter_link }}"><i data-feather="twitter"></i></a></li>
+                          {% endif %}
                       </ul>
                     </div>
                   </div>
