@@ -162,7 +162,7 @@
                   <div class="footer__social">
                     <div class="footer__social-inner">
                     	<ul class="d-flex">
-                          {% if settings.social_twitter_link %}
+                          {% if settings.social_twitter_link != blank %}
                           <li><a class="p-0 mx-2" href="{{ settings.social_twitter_link }}"><i class="fab fa-twitter"></i></a></li>
                           {% endif %}
                           {% if settings.social_facebook_link != blank %}
