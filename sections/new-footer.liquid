@@ -165,7 +165,7 @@
                           {% if settings.social_twitter_link %}
                           <li><a class="p-0 mx-2" href="{{ settings.social_twitter_link }}"><i class="fab fa-twitter"></i></a></li>
                           {% endif %}
-                          {% if settings.social_facebook_link %}
+                          {% if settings.social_facebook_link != blank %}
                           <li><a class="p-0 mx-2" href="{{ settings.social_facebook_link }}"><i class="fab fa-facebook-f"></i></a></li>
                           {% endif %}
                           {% if settings.social_pinterest_link %}
