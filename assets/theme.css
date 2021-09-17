@@ -54,14 +54,13 @@
 .header {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  position: absolute;
   width: 100%;
   display: grid;
   max-width: 100%;
 }
 
-.template-product .header{
- position: unset;
+.template-index .header, .template-collection, .template-page.power-dry-things{
+ position: absolute;
 }
 
 .shopify-section-header-sticky .header {
