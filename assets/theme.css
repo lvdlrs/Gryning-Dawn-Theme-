@@ -59,7 +59,7 @@
   max-width: 100%;
 }
 
-.template-index .header, .template-collection, .template-page.power-dry-things{
+.template-index .header, .template-collection .header, .template-page.power-dry-things .header{
  position: absolute;
 }
 
