@@ -59,6 +59,11 @@
   display: grid;
   max-width: 100%;
 }
+
+.template-product .header{
+ position: unset;
+}
+
 .shopify-section-header-sticky .header {
   background: var(--gradient-background);
     }
