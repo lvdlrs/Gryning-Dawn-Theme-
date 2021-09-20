@@ -1,8 +1,185 @@
+<style>
+.product-box-a {
+    background: #fff;
+    padding: 50px 0;
+}
+.product-box-a__products-name {
+    color: #000000;
+    font-size: 18px;
+    line-height: 25px;
+    transition: all 500ms;
+}
+.product-box-a__products-price {
+    margin: 10px 0;
+}
+.product-box-a__products-name:hover {
+    color: #eb5d40;
+}
+.product-box-a__products-img {
+    width: 100%;
+    object-fit: cover;
+}
+.product-box-a_title {
+    text-align: center;
+    line-height: 25px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-weight: 700;
+    margin: 0 0 30px;
+}
+.product-box-a__products-tag {
+    padding-top: 25px;
+}
+</style>
+
+<section id="custom-product-box-a" class="section-separator">
+
+  <!--   This line only for information you need to remove in orignal code -->
+  <h2 class="text-center info-title">Fully functional Product Box <b>Product Box A</b></h2>
+
+  {% assign new_collection = collections[section.settings.my_collection] %}
+  {% assign product_limit = section.settings.product_limit %}
+
+
+  <div class="product-box-a"> 
+    <div class="container">
+      <div class="product-box-a__inner">
+        {% if section.settings.show_title %}
+        <h2 class="product-box-a_title">{% if section.settings.title == '' %}{{ new_collection.title }}{% else %}{{ section.settings.title }}{% endif %}</h2>
+        {% endif %}
+
+        <div class="row product-box-a__slider">
+
+          {% for product in new_collection.products  limit:product_limit %}
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="product-box-a__products">
+
+              <a href="{{ product.url }}">
+                <img class="product-box-a__products-img" src="{{ product.featured_image | product_img_url: 'medium' }}">
+              </a>
+
+              <div class="product-box-a__products-tag">
+
+                {% if section.settings.show_sale_badge %}
+                <span>{% if product.compare_at_price_max > product.price %} sale {% endif %}</span> <br>
+                {% endif %}
+
+                {% if section.settings.show_sold_out_badge %}
+                <span>{% if product.available == false %} Sold Out{% endif %}</span> <br>
+                {% endif %}
+
+                {% if section.settings.show_sale_badge_with_text %}
+                {% if product.compare_at_price_max > product.price %}{{ product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0'}}% OFF{% endif %}
+                {% endif %}
+                {% if section.settings.show_vendor %}
+                <p class="m-0">{{ product.vendor }}</p>
+                {% endif %}
+                {% if section.settings.show_type %}
+                <p class="m-0">{{ product.type }}</p>
+                {% endif %}
+
+                {% if product.available and product.variants.size > 1 %}
+                {% include 'swatch' for product.options as swatch %}
+                {% endif %}
+
+                <h3 class="m-0"><a href="{{ product.url }}" class="product-box-a__products-name">{{ product.title }}</a></h3>
+
+                {%- assign sort_desc = product.metafields.my_fields.product_sort_description -%}
+                <div class="hero">
+                  {{ sort_desc }}
+                </div>
+
+                <div class="d-flex">
+                  <p class="product-box-a__products-price m-0 pr-2">{{ country.currency.symbol }}{{ product.price | money_without_trailing_zeros }}</p>
+                  {% if section.settings.price_max %}
+                  <s>{{ country.currency.symbol }}{{ product.compare_at_price_max | money_without_trailing_zeros }}</s>
+                  {% endif %}
+                </div>
+                <div class="hoverclick">
+                  <form method="post" action="/cart/add" class="custom-cart-form">
+                    <input name="id" value="{{ product.variants.first.id }}" class="product-custom-id" type="hidden" />
+                    <input name="add" value="Add to Cart" type="submit"  class="cart-add-button add-cart-custom-btn">
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+   "name":"Custom Collection Box",
+   "settings":[
+	  {
+         "type":"checkbox",
+         "id":"show_sale_badge",
+         "label":"Show Sale Badge"
+      },
+{
+         "type":"checkbox",
+         "id":"show_sold_out_badge",
+         "label":"Show Sold out Badge"
+      },
+{
+         "type":"checkbox",
+         "id":"show_sale_badge_with_text",
+         "label":"Show Sale Badge with % OFF"
+      },
+{
+         "type":"checkbox",
+         "id":"show_vendor",
+         "label":"Show Product Vendor"
+      },
+{
+         "type":"checkbox",
+         "id":"show_type",
+         "label":"Show Product Type"
+      },
+{
+         "type":"checkbox",
+         "id":"price_max",
+         "label":"Show Compare Price"
+      },
+{
+         "type":"checkbox",
+         "id":"show_title",
+         "label":"Show Collection Title"
+      },
+      {
+         "type":"text",
+         "id":"title",
+         "label":"Collection Title"
+      },
+      {
+          "type": "range",
+          "id": "product_limit",
+          "min": 4,
+          "max": 24,
+          "step": 4,
+          "label": "Show products",
+          "default": 4
+      },
+	  {
+        "type":"collection",
+        "id":"my_collection",
+        "label":"Select Collection"
+	  }
+   ],
+   "presets":[
+      {
+         "name":"Custom Collection Box",
+         "category":"Product"
+      }
+   ]
+}
 {% endschema %}
 
 {% stylesheet %}
