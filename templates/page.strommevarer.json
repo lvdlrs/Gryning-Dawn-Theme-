@@ -12,7 +12,11 @@
         "bg": "shopify:\/\/shop_images\/buildyourdrybreakfast.jpg",
         "title": "Collection title",
         "text": "Collection sub text",
-        "scroll_id": ""
+        "scroll_id": "",
+        "btn1text": "Play",
+        "btn1url": "#",
+        "btn2text": "More Info",
+        "btn2url": "#"
       }
     },
     "1632117813262dcaa1": {
