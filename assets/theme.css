@@ -373,7 +373,10 @@ svg:not(:root) {
   border-bottom: 3px solid #fff;
   padding-bottom: 5px;
 }
-
+.cart-notification{
+	right: 0;
+  height: 100vh;
+}
 
 
 
