@@ -18,11 +18,6 @@
     "1632117813262dcaa1": {
       "type": "custom-collection-box",
       "settings": {
-        "show_sale_badge": false,
-        "show_sold_out_badge": false,
-        "show_sale_badge_with_text": false,
-        "show_vendor": false,
-        "show_type": false,
         "show_price": false,
         "price_max": false,
         "show_title": true,
@@ -30,11 +25,30 @@
         "product_limit": 4,
         "my_collection": "helgefrokost-stor-familie"
       }
+    },
+    "16321217115b066941": {
+      "type": "custom-product-list",
+      "blocks": {
+        "06ff6b30-47ca-43f6-b16c-4dcb1836606e": {
+          "type": "item",
+          "settings": {
+            "product": "brodmiks-med-chia-glutenfritt",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "06ff6b30-47ca-43f6-b16c-4dcb1836606e"
+      ],
+      "settings": {
+        "title": "Frokost: Variert Helgepakke (mnd forbruk)"
+      }
     }
   },
   "order": [
     "main",
     "1632119387c92d8151",
-    "1632117813262dcaa1"
+    "1632117813262dcaa1",
+    "16321217115b066941"
   ]
 }
