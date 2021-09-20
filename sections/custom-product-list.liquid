@@ -179,12 +179,12 @@
               <div class="product-list-overlay">
                 <h3 class="product-list-box-title"><a href="{{ product.url }}">{{ product.title }}</a></h3>
 
-                <form action="/cart/add" method="post" class="variants clearfix" id="cart-form-4955949236295">                                    
-                  <input type="hidden" name="id" value="32764390834247">  
-                  <a class="add-cart-btn">
-                    <i class="fas fa-shopping-bag"></i>
-                  </a>
+                <form method="post" action="/cart/add">
+                  <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                  <input min="1" type="number" id="quantity" name="quantity" value="1"/>
+                  <input type="submit" value="Add to cart" class="btn product-form__submit" />
                 </form>
+
               </div>
             </div>
           </div>
