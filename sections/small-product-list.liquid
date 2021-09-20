@@ -111,44 +111,57 @@
 <script>
 
   jQuery(document).ready(function ($) {
-    $('.small-product-box__slider').slick({
-      speed: 600,
-      draggable: true,
-      infinite: false,
-      centerMode: false,
-      centerPadding: '0.1px',
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      arrows: true,
-      dots: true,
-      appendDots: $('.small-product-box-dots'),
-      prevArrow: $('.small-product-box-prev'),
-      nextArrow: $('.small-product-box-next'),
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 575,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    });
-  }); 
+    $(".small-product-box__slider").each(function (num, elem) {
+      elem = $(elem);
+      elem.slick({
+        speed: 600,
+        draggable: true,
+        infinite: false,
+        centerMode: false,
+        centerPadding: "0.1px",
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: true,
+        appendDots: $(".small-product-box-dots")[num],
+        nextArrow: $(".small-product-box-next")[num],
+        prevArrow: $(".small-product-box-prev")[num],
+
+        responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+
+          {
+            breakpoint: 460,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+          });
+          });
+          });
+
 
 
 </script>
