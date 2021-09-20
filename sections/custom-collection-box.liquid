@@ -74,6 +74,16 @@
     padding: 0;
     right: 0;
     width: 400px;
+    height: 100%;
+  }
+  .product-box-dots .slick-dots li button{
+  	margin-right: 5px;
+  }
+  .product-box-dots .slick-dots li button:before{
+  	background: #000;
+    width: 30px;
+    height: 2px;
+    content: '';
   }
   
 </style>
@@ -89,7 +99,7 @@
       centerPadding: '0.1px',
       slidesToShow: 5,
       slidesToScroll: 1,
-      arrows: true,
+      arrows: false,
       dots: true,
       appendDots: $('.product-box-dots'),
       responsive: [
