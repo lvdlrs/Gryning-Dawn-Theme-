@@ -1,102 +1,18 @@
-<style>
-.single-product__img-boxes-images img {
-    width: 100px;
-    object-fit: cover;
-}
-.single-product__img-boxes-slider {
-    margin-top: 30px;
-}
-.product-slider-a .slick-next {
-    right: -25px;
-}
-.product-slider-a .slick-prev {
-    left: -25px;
-}
-.product-slider-a .slick-next,
-.product-slider-a .slick-prev {
-    z-index: 111;
-    background: #fff;
-    color: #000;
-    padding: 20px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 50%;
-    transition: all 500ms;
-}
-.product-slider-a .slick-next:hover,
-.product-slider-a .slick-prev:hover {
-    background: #000000;
-    color: #ffffff;
-}
-.product-slider-a .slick-next:before,
-.product-slider-a .slick-prev:before {
-    font-size: 25px;
-    line-height: 1;
-    opacity: 1;
-    color: unset;
-}
-.product-slider-a .slick-next:before:hover,
-.product-slider-a .slick-prev:before:hover {
-    color: #fff;
-}
-.product-slider-a .slick-dots li.slick-active button:before {
-    color: #000;
-    opacity: 1;
-    background: #000;
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-}
-.product-slider-a .slick-dots li a:before,
-.product-slider-a .slick-dots li button:before {
-    color: #ffffff;
-    opacity: 0.75;
-    background: #ffffff;
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-}
-.product-slider-a .slick-dots {
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin-top: 10px;
-}
-  .hide {
-	display: none;
-}
-
-@media screen and (max-width: 768px) {
-    .single-product__img-main img {
-        width: 100%;
-        object-fit: cover;
-    }
-  .single-product__img-boxes-images img {
-  	width: 100%;
-        object-fit: cover;
-  }
-  .single-product__img-boxes-images {
-  	margin: 0 10px;
-  }
-}
-
-</style>
-
-
 
 
 <section id="custom-product-list" class="section-separator">
 
-  {%- assign product = all_products[section.settings.product] -%}
-
   <div class="product-list">
     <div class="container">
+      
+      <div class="product-list-main-title">
+        <h3>{{ section.settings.title }}</h3>
+      </div>
+      
       <div class="row">
         
         {% for block in section.blocks %}
-        
+        {%- assign product = all_products[section.settings.product] -%}
         <div class="col-lg-3 col-md-3 col-12">
           <div class="product-list-box">
             <div class="show-img">
@@ -118,12 +34,12 @@
 
 {% schema %}
   {
-    "name": "Product Variant",
+    "name": "Custom Product List",
     "settings": [
 {
-               "type":"product",
-               "id":"product",
-               "label":"Select Product"
+               "type":"text",
+               "id":"title",
+               "label":"Collection title"
             }
 
 		],
@@ -147,7 +63,7 @@
   ],
 		"presets":[
         {
-            "name":"Product Variant",
+            "name":"Custom Product List",
             "category":"custom"
         }
     ]
