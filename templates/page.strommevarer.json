@@ -21,7 +21,6 @@
     },
     "1632117813262dcaa1": {
       "type": "custom-collection-box",
-      "disabled": true,
       "settings": {
         "show_price": false,
         "price_max": false,
@@ -32,7 +31,6 @@
     },
     "16321217115b066941": {
       "type": "custom-product-list",
-      "disabled": true,
       "blocks": {
         "06ff6b30-47ca-43f6-b16c-4dcb1836606e": {
           "type": "item",
