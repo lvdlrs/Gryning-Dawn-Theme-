@@ -111,7 +111,9 @@
 <script>
 
   jQuery(document).ready(function ($) {
-    $('.product-box__slider').slick({
+    $(".product-box__slider").each(function (num, elem) {
+      elem = $(elem);
+      elem.slick({
       speed: 600,
       draggable: true,
       infinite: false,
@@ -147,8 +149,9 @@
           }
         }
       ]
+      });
     });
-  }); 
+  });
 
 
 </script>
