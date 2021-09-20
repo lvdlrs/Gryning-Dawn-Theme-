@@ -52,16 +52,24 @@
           "settings": {
             "product": "d-vitamin-100-stk-tabletter"
           }
+        },
+        "b6cd66f3-6ed8-4fe6-8828-2cf78e7c25d1": {
+          "type": "item",
+          "settings": {
+            "product": "den-sorte-havre-vaffelmix-grove"
+          }
         }
       },
       "block_order": [
         "06ff6b30-47ca-43f6-b16c-4dcb1836606e",
         "eb41290a-21dc-4174-9b39-5eaf31863b67",
         "3d94d07f-9ead-4cf7-84e4-7ab0afdb3187",
-        "56759c82-a24b-4c85-ab49-626a7ab1a7a5"
+        "56759c82-a24b-4c85-ab49-626a7ab1a7a5",
+        "b6cd66f3-6ed8-4fe6-8828-2cf78e7c25d1"
       ],
       "settings": {
-        "title": "Frokost: Variert Helgepakke (mnd forbruk)"
+        "title": "Frokost: Variert Helgepakke (mnd forbruk)",
+        "url": ""
       }
     }
   },
