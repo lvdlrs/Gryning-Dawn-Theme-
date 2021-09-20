@@ -168,10 +168,7 @@
 
 
 <section id="small-custom-product-box" class="section-separator">
-
   {% assign new_collection = collections[section.settings.my_collection] %}
-
-
   <div class="small-product-box"> 
     <div class="container-fluid">
       <div class="small-product-box__inner">
@@ -181,11 +178,7 @@
           <div class="small-product-box-dots"></div>
         </div>
         {% endif %}
-
-
-
         <div class="small-product-box__slider-main">
-
           <div class="small-product-box-arrow small-product-box-prev"><i class="fas fa-chevron-left"></i></div>
           <div class="small-product-box-arrow small-product-box-next"><i class="fas fa-chevron-right"></i></div>
           <div class="small-product-box__slider">
@@ -225,41 +218,41 @@
 
 {% schema %}
 {
-   "name":"Small product list",
-   "settings":[
-{
-         "type":"checkbox",
-         "id":"show_price",
-         "label":"Show Product Price",
-		 "default": true
-      },
-{
-         "type":"checkbox",
-         "id":"price_max",
-         "label":"Show Compare Price"
-      },
-{
-         "type":"checkbox",
-         "id":"show_title",
-         "label":"Show Collection Title"
-      },
-      {
-         "type":"text",
-         "id":"title",
-         "label":"Collection Title"
-      },
-	  {
-        "type":"collection",
-        "id":"my_collection",
-        "label":"Select Collection"
-	  }
-   ],
-   "presets":[
-      {
-         "name":"Small product list",
-         "category":"Product"
-      }
-   ]
+  "name":"Small product list",
+  "settings":[
+    {
+      "type":"checkbox",
+      "id":"show_price",
+      "label":"Show Product Price",
+      "default":true
+    },
+    {
+      "type":"checkbox",
+      "id":"price_max",
+      "label":"Show Compare Price"
+    },
+    {
+      "type":"checkbox",
+      "id":"show_title",
+      "label":"Show Collection Title"
+    },
+    {
+      "type":"text",
+      "id":"title",
+      "label":"Collection Title"
+    },
+    {
+      "type":"collection",
+      "id":"my_collection",
+      "label":"Select Collection"
+    }
+  ],
+  "presets":[
+    {
+      "name":"Small product list",
+      "category":"Product"
+    }
+  ]
 }
 {% endschema %}
 
