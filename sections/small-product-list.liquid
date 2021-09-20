@@ -1,8 +1,252 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+<style>
+  .small-product-box{
+  	margin: 80px 0;
   }
+  .small-product-box__products{
+  	padding: 5px;
+    border-radius: 5px;
+    position: relative;
+  }
+  .small-product-box_title{
+  	padding: 10px 0;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+  }
+  .small-product-box_title a{
+  	color: #3e5242;
+  }
+  .small-product-box__products a{
+  	display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .small-product-box__products-img{
+  	width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .small-product-box__products-tag{
+  	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 50%, #3e5242 100%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  .small-product-box__products-name{
+  	font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+  }
+  .small-product-box__products-name:hover{
+    color: #d3d3d3;
+  }
+  .small-product-box__slider .slick-list{
+    padding: 0px 60px 0px 0px !important;
+  }
+  .small-product-box-box{
+  	padding: 0;
+  }
+  .small-product-box_title-box{
+  	display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .small-product-box-dots{
+  	position: relative;
+  }
+  .small-product-box-dots ul{
+  	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    bottom: unset;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    width: 400px;
+    height: 100%;
+  }
+  .small-product-box-dots .slick-dots li button:before{
+  	background: #000;
+    width: 25px;
+    height: 2px;
+    content: '';
+  }
+  .small-product-box__slider-main{
+  	position:relative;
+  }
+  .small-product-box-arrow{
+  	position: absolute;
+    top: 45%;
+    z-index: 20;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3e5242;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .small-product-box-next{
+  	right: 50px;
+  }
+  .small-product-box-prev{
+  	left: 20px;
+  }
+  
+</style>
+
+<script>
+
+  jQuery(document).ready(function ($) {
+    $('.small-product-box__slider').slick({
+      speed: 600,
+      draggable: true,
+      infinite: false,
+      centerMode: false,
+      centerPadding: '0.1px',
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: true,
+      appendDots: $('.small-product-box-dots'),
+      prevArrow: $('.small-product-box-prev'),
+      nextArrow: $('.small-product-box-next'),
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  }); 
+
+
+</script>
+
+
+<section id="small-custom-product-box" class="section-separator">
+
+  {% assign new_collection = collections[section.settings.my_collection] %}
+
+
+  <div class="small-product-box"> 
+    <div class="container">
+      <div class="small-product-box__inner">
+        {% if section.settings.show_title %}
+        <div class="small-product-box_title-box">
+          <h2 class="small-product-box_title"><a href="{{ new_collection.handle }}">{% if section.settings.title == '' %}{{ new_collection.title }}{% else %}{{ section.settings.title }}{% endif %}</a></h2>
+          <div class="small-product-box-dots"></div>
+        </div>
+        {% endif %}
+
+
+
+        <div class="small-product-box__slider-main">
+
+          <div class="small-product-box-arrow product-box-prev"><i class="fas fa-chevron-left"></i></div>
+          <div class="small-product-box-arrow product-box-next"><i class="fas fa-chevron-right"></i></div>
+          <div class="small-product-box__slider">
+
+            {% for product in new_collection.products %}
+            <div class="small-product-box-box">
+              <div class="small-product-box__products">
+
+                <a href="{{ product.url }}">
+                  <img class="small-product-box__products-img" src="{{ product.featured_image | product_img_url: 'medium' }}">
+                </a>
+
+                <div class="small-product-box__products-tag">
+
+                  <h3 class="m-0"><a href="{{ product.url }}" class="small-product-box__products-name">{{ product.title }}</a></h3>
+
+                  <div class="d-flex">
+                    {% if section.settings.show_price %}
+                    <p class="small-product-box__products-price m-0 pr-2">{{ country.currency.symbol }}{{ product.price | money_without_trailing_zeros }}</p>
+                    {% endif %}
+                    {% if section.settings.price_max %}
+                    <s>{{ country.currency.symbol }}{{ product.compare_at_price_max | money_without_trailing_zeros }}</s>
+                    {% endif %}
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+{% schema %}
+{
+   "name":"Small product list",
+   "settings":[
+{
+         "type":"checkbox",
+         "id":"show_price",
+         "label":"Show Product Price",
+		 "default": true
+      },
+{
+         "type":"checkbox",
+         "id":"price_max",
+         "label":"Show Compare Price"
+      },
+{
+         "type":"checkbox",
+         "id":"show_title",
+         "label":"Show Collection Title"
+      },
+      {
+         "type":"text",
+         "id":"title",
+         "label":"Collection Title"
+      },
+	  {
+        "type":"collection",
+        "id":"my_collection",
+        "label":"Select Collection"
+	  }
+   ],
+   "presets":[
+      {
+         "name":"Small product list",
+         "category":"Product"
+      }
+   ]
+}
 {% endschema %}
 
 {% stylesheet %}
