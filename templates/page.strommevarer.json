@@ -99,7 +99,7 @@
       "settings": {
         "show_price": true,
         "price_max": false,
-        "show_title": false,
+        "show_title": true,
         "title": "",
         "my_collection": "helgefrokost-stor-familie"
       }
