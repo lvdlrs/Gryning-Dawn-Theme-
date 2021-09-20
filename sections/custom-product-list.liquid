@@ -83,6 +83,28 @@
     height: 2px;
     content: '';
   }
+  .product-list-slider-box{
+  	position:relative;
+  }
+  .product-list-arrow{
+  	position: absolute;
+    top: 45%;
+    z-index: 20;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3e5242;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .product-list-next{
+  	right: 50px;
+  }
+  .product-list-prev{
+  	left: 20px;
+  }
 </style>
 <script>
 
@@ -98,6 +120,8 @@
       arrows: false,
       dots: true,
       appendDots: $('.product-list-dots'),
+      prevArrow: $('.product-list-prev'),
+      nextArrow: $('.product-list-next'),
       responsive: [
         {
           breakpoint: 991,
@@ -133,29 +157,34 @@
 
   <div class="product-list">
     <div class="container-fluid">
-      
+
       <div class="product-list-main-title">
         <h3><a href="{{ section.settings.url }}">{{ section.settings.title }}</a></h3>
         <div class="product-list-dots"></div>
       </div>
-      
-      <div class="row no-gutters product-list-slider">
-        
-        {% for block in section.blocks %}
-        {%- assign product = all_products[block.settings.product] -%}
-        <div class="col-lg-3 col-md-3 col-12 product-list-box-main">
-          <div class="product-list-box">
-            <div class="product-list-box-img">
-              <img src="{{ product.featured_image.src | product_img_url: 'master' }}" alt="{{ product.featured_image.alt | escape }}" />
-            </div>
-            <div class="product-list-overlay">
-              <h3 class="product-list-box-title"><a href="{{ shop.handle }}/products/{{ product.handle }}">{{ product.title }}</a></h3>
+
+      <div class="product-list-slider-box">
+
+        <div class="product-list-arrow product-list-prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="product-list-arrow product-list-next"><i class="fas fa-chevron-right"></i></div>
+
+        <div class="product-list-slider">
+          {% for block in section.blocks %}
+          {%- assign product = all_products[block.settings.product] -%}
+          <div class="product-list-box-main">
+            <div class="product-list-box">
+              <div class="product-list-box-img">
+                <img src="{{ product.featured_image.src | product_img_url: 'master' }}" alt="{{ product.featured_image.alt | escape }}" />
+              </div>
+              <div class="product-list-overlay">
+                <h3 class="product-list-box-title"><a href="{{ shop.handle }}/products/{{ product.handle }}">{{ product.title }}</a></h3>
+              </div>
             </div>
           </div>
+
+          {% endfor %}
+
         </div>
-        
-        {% endfor %}
-        
       </div>
     </div>
   </div>
