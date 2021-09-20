@@ -1,19 +1,19 @@
 <style>
-  .product-box-a__products{
+  .product-box__products{
   	padding: 5px;
     border-radius: 5px;
     position: relative;
   }
-  .product-box-a__products a{
+  .product-box__products a{
   	display: block;
     width: 100%;
     height: 100%;
   }
-  .product-box-a__products-img{
+  .product-box__products-img{
   	width: 100%;
     height: 300px;
   }
-  .product-box-a__products-tag{
+  .product-box__products-tag{
   	position: absolute;
     top: 0;
     left: 0;
@@ -29,81 +29,52 @@
     margin: 5px;
     border-radius: 5px;
   }
-  .product-box-a__products-name{
+  .product-box__products-name{
   	font-size: 16px;
     line-height: 24px;
     color: #fff;
   }
-  .product-box-a__products-name:hover{
+  .product-box__products-name:hover{
   	color: #d3d3d3;
   }
   
 </style>
 
-<section id="custom-product-box-a" class="section-separator mt-5">
+<section id="custom-product-box" class="section-separator">
 
   {% assign new_collection = collections[section.settings.my_collection] %}
   {% assign product_limit = section.settings.product_limit %}
 
 
-  <div class="product-box-a"> 
+  <div class="product-box"> 
     <div class="container">
-      <div class="product-box-a__inner">
+      <div class="product-box__inner">
         {% if section.settings.show_title %}
-        <h2 class="product-box-a_title">{% if section.settings.title == '' %}{{ new_collection.title }}{% else %}{{ section.settings.title }}{% endif %}</h2>
+        <h2 class="product-box_title">{% if section.settings.title == '' %}{{ new_collection.title }}{% else %}{{ section.settings.title }}{% endif %}</h2>
         {% endif %}
 
-        <div class="row no-gutters product-box-a__slider">
+        <div class="row no-gutters product-box__slider">
 
           {% for product in new_collection.products  limit:product_limit %}
           <div class="col-lg-3 col-md-6 col-12">
-            <div class="product-box-a__products">
+            <div class="product-box__products">
 
               <a href="{{ product.url }}">
-                <img class="product-box-a__products-img" src="{{ product.featured_image | product_img_url: 'medium' }}">
+                <img class="product-box__products-img" src="{{ product.featured_image | product_img_url: 'medium' }}">
               </a>
 
-              <div class="product-box-a__products-tag">
-
-                {% if section.settings.show_sale_badge %}
-                <span>{% if product.compare_at_price_max > product.price %} sale {% endif %}</span> <br>
-                {% endif %}
-
-                {% if section.settings.show_sold_out_badge %}
-                <span>{% if product.available == false %} Sold Out{% endif %}</span> <br>
-                {% endif %}
-
-                {% if section.settings.show_sale_badge_with_text %}
-                {% if product.compare_at_price_max > product.price %}{{ product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0'}}% OFF{% endif %}
-                {% endif %}
-                {% if section.settings.show_vendor %}
-                <p class="m-0">{{ product.vendor }}</p>
-                {% endif %}
-                {% if section.settings.show_type %}
-                <p class="m-0">{{ product.type }}</p>
-                {% endif %}
+              <div class="product-box__products-tag">
 
                 <h3 class="m-0"><a href="{{ product.url }}" class="product-box-a__products-name">{{ product.title }}</a></h3>
 
-                {%- assign sort_desc = product.metafields.my_fields.product_sort_description -%}
-                <div class="hero">
-                  {{ sort_desc }}
-                </div>
-
                 <div class="d-flex">
                   {% if section.settings.show_price %}
-                  <p class="product-box-a__products-price m-0 pr-2">{{ country.currency.symbol }}{{ product.price | money_without_trailing_zeros }}</p>
+                  <p class="product-box__products-price m-0 pr-2">{{ country.currency.symbol }}{{ product.price | money_without_trailing_zeros }}</p>
                   {% endif %}
                   {% if section.settings.price_max %}
                   <s>{{ country.currency.symbol }}{{ product.compare_at_price_max | money_without_trailing_zeros }}</s>
                   {% endif %}
                 </div>
-<!--                 <div class="hoverclick">
-                  <form method="post" action="/cart/add" class="custom-cart-form">
-                    <input name="id" value="{{ product.variants.first.id }}" class="product-custom-id" type="hidden" />
-                    <input name="add" value="Add to Cart" type="submit"  class="cart-add-button add-cart-custom-btn">
-                  </form>
-                </div> -->
               </div>
 
             </div>
@@ -120,31 +91,6 @@
 {
    "name":"Custom Collection Box",
    "settings":[
-	  {
-         "type":"checkbox",
-         "id":"show_sale_badge",
-         "label":"Show Sale Badge"
-      },
-{
-         "type":"checkbox",
-         "id":"show_sold_out_badge",
-         "label":"Show Sold out Badge"
-      },
-{
-         "type":"checkbox",
-         "id":"show_sale_badge_with_text",
-         "label":"Show Sale Badge with % OFF"
-      },
-{
-         "type":"checkbox",
-         "id":"show_vendor",
-         "label":"Show Product Vendor"
-      },
-{
-         "type":"checkbox",
-         "id":"show_type",
-         "label":"Show Product Type"
-      },
 {
          "type":"checkbox",
          "id":"show_price",
