@@ -46,10 +46,12 @@
        
         feather.replace()
 
-        {% capture content %}{% include 'quickview' %}{% endcapture %}
-        var content = {{ content | json }};
+        
 
         });
+      
+      {% capture content %}{% include 'quickview' %}{% endcapture %}
+        var content = {{ content | json }};
     </script>
     
     
