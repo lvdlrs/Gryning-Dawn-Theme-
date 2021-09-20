@@ -11,6 +11,44 @@
   .product-list-main-title a{
   	color: #3e5242;
   }
+  .product-box__products a{
+  	display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .product-list-box-img img{
+  	width: 100%;
+    height: 300px;
+  }
+  .product-list-box{
+  	padding: 5px;
+    border-radius: 5px;
+    position: relative;
+  }
+  .product-list-overlay{
+  	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(73,73,77,1) 100%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  .product-box__products-name{
+  	font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+  }
+  .product-box__products-name:hover{
+  	color: #d3d3d3;
+  }
 </style>
 
 
@@ -24,13 +62,13 @@
         <h3><a href="{{ section.settings.url }}">{{ section.settings.title }}</a></h3>
       </div>
       
-      <div class="row">
+      <div class="row no-gutters">
         
         {% for block in section.blocks %}
         {%- assign product = all_products[block.settings.product] -%}
         <div class="col-lg-3 col-md-3 col-12">
           <div class="product-list-box">
-            <div class="show-img">
+            <div class="product-list-box-img">
               <img src="{{ product.featured_image.src | product_img_url: 'master' }}" alt="{{ product.featured_image.alt | escape }}" />
             </div>
             <div class="product-list-overlay">
