@@ -9,12 +9,6 @@
         "scroll_id": "shopify-section-template--15087802286275__16315583435bed6283"
       }
     },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "16315583435bed6283": {
       "type": "zig-zag-2",
       "blocks": {
@@ -178,7 +172,6 @@
   },
   "order": [
     "1631646120318b5e47",
-    "main",
     "16315583435bed6283",
     "16315581635cbe3dfc",
     "163155835594a4687e",
