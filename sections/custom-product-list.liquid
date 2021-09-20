@@ -211,22 +211,21 @@
 </section>
 
 {% schema %}
-  {
-    "name": "Custom Product List",
-    "settings": [
 {
-               "type":"text",
-               "id":"title",
-               "label":"Collection title"
-            },
-{
-               "type":"url",
-               "id":"url",
-               "label":"Collection URL"
-            }
-
-		],
-"blocks":[
+  "name":"Custom Product List",
+  "settings":[
+    {
+      "type":"text",
+      "id":"title",
+      "label":"Collection title"
+    },
+    {
+      "type":"url",
+      "id":"url",
+      "label":"Collection URL"
+    }
+  ],
+  "blocks":[
     {
       "type":"item",
       "name":"item",
@@ -239,13 +238,13 @@
       ]
     }
   ],
-		"presets":[
-        {
-            "name":"Custom Product List",
-            "category":"custom"
-        }
-    ]
-  }
+  "presets":[
+    {
+      "name":"Custom Product List",
+      "category":"custom"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
