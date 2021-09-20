@@ -13,7 +13,7 @@
         <h2 class="product-box-a_title">{% if section.settings.title == '' %}{{ new_collection.title }}{% else %}{{ section.settings.title }}{% endif %}</h2>
         {% endif %}
 
-        <div class="row product-box-a__slider">
+        <div class="row no-gutters product-box-a__slider">
 
           {% for product in new_collection.products  limit:product_limit %}
           <div class="col-lg-3 col-md-6 col-12">
