@@ -77,12 +77,23 @@
         "title": "Frokost: Variert Helgepakke (mnd forbruk)",
         "url": ""
       }
+    },
+    "163214335658905f1c": {
+      "type": "small-product-list",
+      "settings": {
+        "show_price": false,
+        "price_max": false,
+        "show_title": true,
+        "title": "",
+        "my_collection": "manedlige-varer-friskt-sott"
+      }
     }
   },
   "order": [
     "main",
     "1632119387c92d8151",
     "1632117813262dcaa1",
-    "16321217115b066941"
+    "16321217115b066941",
+    "163214335658905f1c"
   ]
 }
