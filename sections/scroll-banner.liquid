@@ -210,7 +210,6 @@
 
   <div class="scroll-banner">
     <div class="scroll-banner__inner">
-
       <div class="scroll-banner__overlay">
         <div class="scroll-banner__title">
           <h1>{{ section.settings.title }}</h1>
@@ -219,7 +218,6 @@
           <p>{{ section.settings.text }}</p>
         </div>
         <div class="scroll-banner__form">
-
           {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
           <input type="hidden" name="contact[tags]" value="newsletter">
           <div class="newsletter-form__field-wrapper">
@@ -246,14 +244,16 @@
               <button type="submit" name="commit" id="Subscribe">Kom i gang ></button>
             </div>
             {%- if form.errors -%}
-            <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+            <small class="newsletter-form__message form__message" id="ContactFooter-error">
+              {% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+            </small>
             {%- endif -%}
           </div>
           {%- if form.posted_successfully? -%}
-          <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+          <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>
+            {% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
           {%- endif -%}
           {%- endform -%}
-
         </div>
       </div>
       <div class="scroll-banner__scroll">
