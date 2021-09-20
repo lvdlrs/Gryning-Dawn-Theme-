@@ -6,6 +6,15 @@
       "settings": {
       }
     },
+    "1632143888e10a17c8": {
+      "type": "collection-banner",
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/buildyourdrybreakfast.jpg",
+        "title": "Collection title",
+        "text": "Collection sub text",
+        "scroll_id": ""
+      }
+    },
     "1632117813262dcaa1": {
       "type": "custom-collection-box",
       "settings": {
@@ -78,22 +87,13 @@
         "title": "",
         "my_collection": "manedlige-varer-friskt-sott"
       }
-    },
-    "1632143888e10a17c8": {
-      "type": "collection-banner",
-      "settings": {
-        "bg": "shopify:\/\/shop_images\/buildyourdrybreakfast.jpg",
-        "title": "Collection title",
-        "text": "Collection sub text",
-        "scroll_id": ""
-      }
     }
   },
   "order": [
     "main",
+    "1632143888e10a17c8",
     "1632117813262dcaa1",
     "16321217115b066941",
-    "163214335658905f1c",
-    "1632143888e10a17c8"
+    "163214335658905f1c"
   ]
 }
