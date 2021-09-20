@@ -55,7 +55,6 @@
 <section id="custom-product-box" class="section-separator">
 
   {% assign new_collection = collections[section.settings.my_collection] %}
-  {% assign product_limit = section.settings.product_limit %}
 
 
   <div class="product-box"> 
@@ -67,7 +66,7 @@
 
         <div class="row no-gutters product-box__slider">
 
-          {% for product in new_collection.products  limit:product_limit %}
+          {% for product in new_collection.products %}
           <div class="col-lg-3 col-md-6 col-12">
             <div class="product-box__products">
 
@@ -123,15 +122,6 @@
          "type":"text",
          "id":"title",
          "label":"Collection Title"
-      },
-      {
-          "type": "range",
-          "id": "product_limit",
-          "min": 4,
-          "max": 24,
-          "step": 1,
-          "label": "Show products",
-          "default": 5
       },
 	  {
         "type":"collection",
