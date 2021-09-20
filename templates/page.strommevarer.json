@@ -32,13 +32,33 @@
         "06ff6b30-47ca-43f6-b16c-4dcb1836606e": {
           "type": "item",
           "settings": {
-            "product": "brodmiks-med-chia-glutenfritt",
-            "text": ""
+            "product": "brodmiks-med-chia-glutenfritt"
+          }
+        },
+        "eb41290a-21dc-4174-9b39-5eaf31863b67": {
+          "type": "item",
+          "settings": {
+            "product": "axa-lettkokte-havregryn"
+          }
+        },
+        "3d94d07f-9ead-4cf7-84e4-7ab0afdb3187": {
+          "type": "item",
+          "settings": {
+            "product": "basmatiris"
+          }
+        },
+        "56759c82-a24b-4c85-ab49-626a7ab1a7a5": {
+          "type": "item",
+          "settings": {
+            "product": "d-vitamin-100-stk-tabletter"
           }
         }
       },
       "block_order": [
-        "06ff6b30-47ca-43f6-b16c-4dcb1836606e"
+        "06ff6b30-47ca-43f6-b16c-4dcb1836606e",
+        "eb41290a-21dc-4174-9b39-5eaf31863b67",
+        "3d94d07f-9ead-4cf7-84e4-7ab0afdb3187",
+        "56759c82-a24b-4c85-ab49-626a7ab1a7a5"
       ],
       "settings": {
         "title": "Frokost: Variert Helgepakke (mnd forbruk)"
