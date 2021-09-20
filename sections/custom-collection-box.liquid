@@ -73,6 +73,7 @@
       slidesToScroll: 1,
       arrows: true,
       dots: true,
+      appendDots: $('.product-box-dots'),
       responsive: [
         {
           breakpoint: 991,
@@ -112,7 +113,10 @@
     <div class="container-fluid">
       <div class="product-box__inner">
         {% if section.settings.show_title %}
-        <h2 class="product-box_title"><a href="{{ new_collection.handle }}">{% if section.settings.title == '' %}{{ new_collection.title }}{% else %}{{ section.settings.title }}{% endif %}</a></h2>
+        <div class="product-box_title-box">
+          <h2 class="product-box_title"><a href="{{ new_collection.handle }}">{% if section.settings.title == '' %}{{ new_collection.title }}{% else %}{{ section.settings.title }}{% endif %}</a></h2>
+          <div class="product-box-dots"></div>
+        </div>
         {% endif %}
 
         <div class="row no-gutters product-box__slider">
