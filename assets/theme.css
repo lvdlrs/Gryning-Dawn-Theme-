@@ -60,7 +60,7 @@
 }
 
 .template-index .header, .template-collection .header, .kom-i-gang .header{
- position: absolute;
+  position: absolute;
 }
 
 .shopify-section-header-sticky .header {
@@ -374,7 +374,7 @@ svg:not(:root) {
   padding-bottom: 5px;
 }
 .cart-notification{
-	right: 0;
+  right: 0 !important;
   height: 100vh;
 }
 
