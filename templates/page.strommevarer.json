@@ -4,9 +4,25 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "1632117813262dcaa1": {
+      "type": "custom-collection-box",
+      "settings": {
+        "show_sale_badge": false,
+        "show_sold_out_badge": false,
+        "show_sale_badge_with_text": false,
+        "show_vendor": false,
+        "show_type": false,
+        "price_max": false,
+        "show_title": true,
+        "title": "",
+        "product_limit": 4,
+        "my_collection": "helgefrokost-stor-familie"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1632117813262dcaa1"
   ]
 }
