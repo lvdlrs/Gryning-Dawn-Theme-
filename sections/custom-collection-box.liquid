@@ -53,7 +53,7 @@
     <div class="container">
       <div class="product-box__inner">
         {% if section.settings.show_title %}
-        <h2 class="product-box_title">{% if section.settings.title == '' %}{{ new_collection.title }}{% else %}{{ section.settings.title }}{% endif %}</h2>
+        <h2 class="product-box_title"><a href="{{ new_collection.title }}">{% if section.settings.title == '' %}{{ new_collection.title }}{% else %}{{ section.settings.title }}{% endif %}</a></h2>
         {% endif %}
 
         <div class="row no-gutters product-box__slider">
