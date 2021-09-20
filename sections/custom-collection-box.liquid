@@ -159,13 +159,13 @@
         
         
 
-        <div class="row no-gutters product-box__slider">
+        <div class="no-gutters product-box__slider">
 
           <div class="product-box-arrow product-box-prev"><i class="fas fa-chevron-left"></i></div>
         <div class="product-box-arrow product-box-next"><i class="fas fa-chevron-right"></i></div>
           
           {% for product in new_collection.products %}
-          <div class="col-lg-3 col-md-6 col-12 product-box-box">
+          <div class="product-box-box">
             <div class="product-box__products">
 
               <a href="{{ product.url }}">
