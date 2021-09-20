@@ -1,3 +1,18 @@
+<style>
+  .product-list{
+  	padding: 80px 0;
+  }
+  .product-list-main-title h3{
+  	padding: 10px 0;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+  }
+  .product-list-main-title a{
+  	color: #3e5242;
+  }
+</style>
+
 
 
 <section id="custom-product-list" class="section-separator">
@@ -6,7 +21,7 @@
     <div class="container">
       
       <div class="product-list-main-title">
-        <h3>{{ section.settings.title }}</h3>
+        <h3><a href="{{ setion.settings.url }}">{{ section.settings.title }}</a></h3>
       </div>
       
       <div class="row">
@@ -40,6 +55,11 @@
                "type":"text",
                "id":"title",
                "label":"Collection title"
+            },
+{
+               "type":"url",
+               "id":"url",
+               "label":"Collection URL"
             }
 
 		],
