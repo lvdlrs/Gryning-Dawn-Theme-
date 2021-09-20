@@ -183,6 +183,15 @@
                   <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
                   <input type="submit" value="Add to cart" class="product-form__submit" />
                 </form>
+                
+                <div class="header__cart">
+
+                <a class="js-ajax-cart-drawer-trigger" href="/cart">
+                    {% include 'icon-cart' %}
+                    <span class="js-ajax-cart-counter">{{ cart.item_count }}</span>
+                </a>
+
+            </div>
 
               </div>
             </div>
