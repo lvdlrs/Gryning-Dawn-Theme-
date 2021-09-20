@@ -52,12 +52,12 @@
 </style>
 <script>
 
-  jQuery(document).ready(function() {
-    jQuery('.product-list-slider').slick({
+  jQuery(document).ready(function ($) {
+    $('.product-list-slider').slick({
       speed: 600,
       draggable: true,
       infinite: true,
-      centerMode: false,
+      centerMode: true,
       centerPadding: '0.1px',
       slidesToShow: 4,
       slidesToScroll: 1,
