@@ -109,8 +109,10 @@
 </style>
 <script>
 
-  jQuery(document).ready(function ($) {
-    $('.product-list-slider').slick({
+    jQuery(document).ready(function ($) {
+    $(".product-box__slider").each(function (num, elem) {
+      elem = $(elem);
+      elem.slick({
       speed: 600,
       draggable: true,
       infinite: false,
@@ -146,8 +148,9 @@
           }
         }
       ]
-    });
-  }); 
+      });
+    }); 
+    }); 
 
 
 </script>
