@@ -72,7 +72,7 @@
               <img src="{{ product.featured_image.src | product_img_url: 'master' }}" alt="{{ product.featured_image.alt | escape }}" />
             </div>
             <div class="product-list-overlay">
-              <h3 class="product-list-box-title"><a href="{{ product.handle }}">{{ product.title }}</a></h3>
+              <h3 class="product-list-box-title"><a href="{{ routes.root_url }}/{{ product.handle }}">{{ product.title }}</a></h3>
             </div>
           </div>
         </div>
