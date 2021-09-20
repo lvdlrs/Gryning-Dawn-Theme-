@@ -21,6 +21,7 @@
     },
     "1632117813262dcaa1": {
       "type": "custom-collection-box",
+      "disabled": true,
       "settings": {
         "show_price": false,
         "price_max": false,
@@ -31,6 +32,7 @@
     },
     "16321217115b066941": {
       "type": "custom-product-list",
+      "disabled": true,
       "blocks": {
         "06ff6b30-47ca-43f6-b16c-4dcb1836606e": {
           "type": "item",
@@ -91,6 +93,16 @@
         "title": "",
         "my_collection": "manedlige-varer-friskt-sott"
       }
+    },
+    "163214598466e33f14": {
+      "type": "small-product-list",
+      "settings": {
+        "show_price": true,
+        "price_max": false,
+        "show_title": false,
+        "title": "",
+        "my_collection": ""
+      }
     }
   },
   "order": [
@@ -98,6 +110,7 @@
     "1632143888e10a17c8",
     "1632117813262dcaa1",
     "16321217115b066941",
-    "163214335658905f1c"
+    "163214335658905f1c",
+    "163214598466e33f14"
   ]
 }
