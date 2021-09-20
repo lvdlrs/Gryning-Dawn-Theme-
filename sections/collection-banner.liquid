@@ -1,0 +1,306 @@
+
+
+
+<style>
+
+  section#section10 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+  section#section10::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+  }
+
+  section#section10 .scroll-banner__inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+  }
+
+  section#section10 .scroll-banner__overlay {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  section#section10 .scroll-banner__overlay h1{
+    font-size: 60px;
+    line-height: 66px;
+    margin: 0;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fdfaf2;
+  }
+
+  section#section10 .scroll-banner__overlay p{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fdfaf2;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .scroll-banner__form .form-box{
+    display: flex;
+    align-items: center;
+  }
+  .scroll-banner__form input{
+    border: 1px solid rgba(253,250,242,1.0);
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    color: #3e5242;
+    font-size: 16px;
+    padding: 10px 10px 10px;
+    background: #fff;
+    width: calc(100% - 136px);
+    display: inline-block;
+  }
+  .scroll-banner__form button{
+    margin: 0;
+    margin-right: -2px;
+    padding: 14px 20px 13px;
+    color: #fdfaf2 !important;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: unset;
+    border-radius: 0px;
+    border: 0;
+    background-color: rgba(62,82,66,1.0);
+    -webkit-box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+  }
+
+  #section10.demo a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+  }
+  .demo a:hover {
+    opacity: .5;
+  }
+
+  #section10 a {
+    padding-top: 60px;
+  }
+  #section10 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+  }
+  #section10 a span::before {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    content: '';
+    width: 2px;
+    height: 10px;
+    margin-left: -1px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: sdb10 2s infinite;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb10 {
+    0% {
+      -webkit-transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb10 {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  
+  
+  @media only screen and (max-width: 991px){
+    .scroll-banner__inner{
+    	padding: 15px;
+    }
+    section#section10 .scroll-banner__overlay h1{
+  	font-size: 34px;
+    line-height: 36px;
+    }
+    .scroll-banner__text{
+    	padding: 5px 0;
+    }
+    section#section10 .scroll-banner__overlay p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    }
+  }
+</style>
+
+
+
+<script>
+  $(document).ready(function() {  
+    $(function() {
+      $('scroll-banner__scroll a').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+      });
+    });
+  });
+
+</script>
+
+
+
+
+
+<section id="section10" class="demo" style="background: url({{ section.settings.bg | img_url: 'master' }}">
+
+  <div class="scroll-banner">
+    <div class="scroll-banner__inner">
+
+      <div class="scroll-banner__overlay">
+        <div class="scroll-banner__title">
+          <h1>{{ section.settings.title }}</h1>
+        </div>
+        <div class="scroll-banner__text">
+          <p>{{ section.settings.text }}</p>
+        </div>
+        <div class="scroll-banner__form">
+
+          {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <div class="newsletter-form__field-wrapper">
+            <div class="form-box">
+              <input
+                     id="NewsletterForm--{{ section.id }}"
+                     type="email"
+                     name="contact[email]"
+                     value="{{ form.email }}"
+                     aria-required="true"
+                     autocorrect="off"
+                     autocapitalize="off"
+                     autocomplete="email"
+                     {% if form.errors %}
+                     autofocus
+                     aria-invalid="true"
+                     aria-describedby="ContactFooter-error"
+                     {% elsif form.posted_successfully? %}
+                     aria-describedby="ContactFooter-success"
+                     {% endif %}
+                     placeholder="E-postadresse*"
+                     required
+                     >
+              <button type="submit" name="commit" id="Subscribe">Kom i gang ></button>
+            </div>
+            {%- if form.errors -%}
+            <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+            {%- endif -%}
+          </div>
+          {%- if form.posted_successfully? -%}
+          <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+          {%- endif -%}
+          {%- endform -%}
+
+        </div>
+      </div>
+      <div class="scroll-banner__scroll">
+        <a href="#{{ section.settings.scroll_id }}"><span></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Scroll Banner",
+    "settings": [
+		{
+			"type":"image_picker",
+			"id": "bg",
+			"label": "Select Bsckground Image"
+		},
+{
+			"type":"text",
+			"id": "title",
+			"label": "Banner Title"
+		},
+{
+			"type":"textarea",
+			"id": "text",
+			"label": "Banner Text"
+		},
+{
+			"type":"text",
+			"id": "scroll_id",
+			"label": "Bottom Section ID",
+			"info":"Enter bottom section id for scroll"
+		}
+	],
+    "presets":[
+        {
+            "name":"Scroll Banner",
+            "category":"custom"
+        }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
