@@ -6,15 +6,6 @@
       "settings": {
       }
     },
-    "1632119387c92d8151": {
-      "type": "scroll-banner",
-      "settings": {
-        "bg": "shopify:\/\/shop_images\/disney__template_bgrev_38538e91-fdd1-4d10-98c0-6dc2bf217ba6.jpg",
-        "title": "Strøm Tørre Ting",
-        "text": "Vi tilbyr et utvalg av smakfulle, kjente, noen ganger lokale, bærekraftige tørre varer til din husholdning. Velg kaffe, granola, grøt, havre, syltetøy eller juice og bygg din egen månedlige tørre strøm.",
-        "scroll_id": ""
-      }
-    },
     "1632117813262dcaa1": {
       "type": "custom-collection-box",
       "settings": {
@@ -87,13 +78,22 @@
         "title": "",
         "my_collection": "manedlige-varer-friskt-sott"
       }
+    },
+    "1632143888e10a17c8": {
+      "type": "collection-banner",
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/buildyourdrybreakfast.jpg",
+        "title": "Collection title",
+        "text": "Collection sub text",
+        "scroll_id": ""
+      }
     }
   },
   "order": [
     "main",
-    "1632119387c92d8151",
     "1632117813262dcaa1",
     "16321217115b066941",
-    "163214335658905f1c"
+    "163214335658905f1c",
+    "1632143888e10a17c8"
   ]
 }
