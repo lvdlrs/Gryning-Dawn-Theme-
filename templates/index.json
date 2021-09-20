@@ -1,18 +1,12 @@
 {
   "sections": {
-    "1631290729d01739bd": {
-      "type": "hero-video",
+    "1632134689eb9d4c6f": {
+      "type": "scroll-banner",
       "settings": {
-        "title": "Strøm tørre ting",
-        "title_size": 80,
-        "subheading": "Bra. Enkelt. Bærekraftig.",
-        "link_text": "Hvordan virker det?",
-        "link": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "text_align": "vertical-bottom horizontal-left",
-        "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0557\/7411\/8083\/files\/Family-Laughing-Kitchen.mp4?v=1623792221",
-        "overlay_opacity": 0,
-        "section_height": "750px",
-        "mobile_height": "auto"
+        "bg": "shopify:\/\/shop_images\/disney__template_bgrev_38538e91-fdd1-4d10-98c0-6dc2bf217ba6.jpg",
+        "title": "asd",
+        "text": "asd",
+        "scroll_id": ""
       }
     },
     "163129325259d93273": {
@@ -337,7 +331,7 @@
     }
   },
   "order": [
-    "1631290729d01739bd",
+    "1632134689eb9d4c6f",
     "163129325259d93273",
     "16313755260218adae",
     "16313839067904c324",
