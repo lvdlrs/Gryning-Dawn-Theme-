@@ -133,6 +133,19 @@
     animation: sdb10 2s infinite;
     box-sizing: border-box;
   }
+  .scroll-banner__btn{
+  	display: flex;
+    align-items: center;
+  }
+  .scroll-banner__btn .scroll-banner__btn-btn{
+  	padding: 5px 20px;
+    font-size: 18px;
+    color: #d3d3d3;
+    background: #fff;
+    border-radius: 5px;
+  }
+  
+  
   @-webkit-keyframes sdb10 {
     0% {
       -webkit-transform: translate(0, 0);
@@ -254,6 +267,10 @@
           {%- endif -%}
           {%- endform -%}
 
+        </div>
+        <div class="scroll-banner__btn">
+          <a href="{{ section.settings.btn1url }}" class="scroll-banner__btn-btn btn-one">{{ section.settings.btn1text }}</a>
+          <a href="{{ section.settings.btn2url }}" class="scroll-banner__btn-btn btn-two">{{ section.settings.btn2text }}</a>
         </div>
       </div>
       <div class="scroll-banner__scroll">
