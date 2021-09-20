@@ -72,9 +72,7 @@
               <img src="{{ product.featured_image.src | product_img_url: 'master' }}" alt="{{ product.featured_image.alt | escape }}" />
             </div>
             <div class="product-list-overlay">
-              <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
-              <h3 class="product-list-box-title"><a href="{{ product.handle }}">{{ product.title }}</a></h3>
-              </form>
+              <h3 class="product-list-box-title"><a href="{{ shop.handle }}/products/{{ product.handle }}">{{ product.title }}</a></h3>
             </div>
           </div>
         </div>
