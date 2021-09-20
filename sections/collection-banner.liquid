@@ -231,43 +231,7 @@
         <div class="scroll-banner__text">
           <p>{{ section.settings.text }}</p>
         </div>
-        <div class="scroll-banner__form">
-
-          {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
-          <input type="hidden" name="contact[tags]" value="newsletter">
-          <div class="newsletter-form__field-wrapper">
-            <div class="form-box">
-              <input
-                     id="NewsletterForm--{{ section.id }}"
-                     type="email"
-                     name="contact[email]"
-                     value="{{ form.email }}"
-                     aria-required="true"
-                     autocorrect="off"
-                     autocapitalize="off"
-                     autocomplete="email"
-                     {% if form.errors %}
-                     autofocus
-                     aria-invalid="true"
-                     aria-describedby="ContactFooter-error"
-                     {% elsif form.posted_successfully? %}
-                     aria-describedby="ContactFooter-success"
-                     {% endif %}
-                     placeholder="E-postadresse*"
-                     required
-                     >
-              <button type="submit" name="commit" id="Subscribe">Kom i gang ></button>
-            </div>
-            {%- if form.errors -%}
-            <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
-            {%- endif -%}
-          </div>
-          {%- if form.posted_successfully? -%}
-          <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
-          {%- endif -%}
-          {%- endform -%}
-
-        </div>
+        
         <div class="scroll-banner__btn">
           <a href="{{ section.settings.btn1url }}" class="scroll-banner__btn-btn btn-one">{{ section.settings.btn1text }}</a>
           <a href="{{ section.settings.btn2url }}" class="scroll-banner__btn-btn btn-two">{{ section.settings.btn2text }}</a>
