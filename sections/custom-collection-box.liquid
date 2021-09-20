@@ -167,40 +167,40 @@
           <div class="product-box-dots"></div>
         </div>
         {% endif %}
-        
-        
 
-        <div class="no-gutters product-box__slider-main">
+
+
+        <div class="product-box__slider-main">
 
           <div class="product-box-arrow product-box-prev"><i class="fas fa-chevron-left"></i></div>
-        <div class="product-box-arrow product-box-next"><i class="fas fa-chevron-right"></i></div>
+          <div class="product-box-arrow product-box-next"><i class="fas fa-chevron-right"></i></div>
           <div class="product-box__slider">
-          
-          {% for product in new_collection.products %}
-          <div class="product-box-box">
-            <div class="product-box__products">
 
-              <a href="{{ product.url }}">
-                <img class="product-box__products-img" src="{{ product.featured_image | product_img_url: 'medium' }}">
-              </a>
+            {% for product in new_collection.products %}
+            <div class="product-box-box">
+              <div class="product-box__products">
 
-              <div class="product-box__products-tag">
+                <a href="{{ product.url }}">
+                  <img class="product-box__products-img" src="{{ product.featured_image | product_img_url: 'medium' }}">
+                </a>
 
-                <h3 class="m-0"><a href="{{ product.url }}" class="product-box__products-name">{{ product.title }}</a></h3>
+                <div class="product-box__products-tag">
 
-                <div class="d-flex">
-                  {% if section.settings.show_price %}
-                  <p class="product-box__products-price m-0 pr-2">{{ country.currency.symbol }}{{ product.price | money_without_trailing_zeros }}</p>
-                  {% endif %}
-                  {% if section.settings.price_max %}
-                  <s>{{ country.currency.symbol }}{{ product.compare_at_price_max | money_without_trailing_zeros }}</s>
-                  {% endif %}
+                  <h3 class="m-0"><a href="{{ product.url }}" class="product-box__products-name">{{ product.title }}</a></h3>
+
+                  <div class="d-flex">
+                    {% if section.settings.show_price %}
+                    <p class="product-box__products-price m-0 pr-2">{{ country.currency.symbol }}{{ product.price | money_without_trailing_zeros }}</p>
+                    {% endif %}
+                    {% if section.settings.price_max %}
+                    <s>{{ country.currency.symbol }}{{ product.compare_at_price_max | money_without_trailing_zeros }}</s>
+                    {% endif %}
+                  </div>
                 </div>
-              </div>
 
+              </div>
             </div>
-          </div>
-          {% endfor %}
+            {% endfor %}
           </div>
         </div>
       </div>
