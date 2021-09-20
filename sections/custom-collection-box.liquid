@@ -49,7 +49,13 @@
     color: #fff;
   }
   .product-box__products-name:hover{
-  	color: #d3d3d3;
+    color: #d3d3d3;
+  }
+  .product-box__slider .slick-list{
+    padding: 0px 60px 0px 0px !important;
+  }
+  .product-box-box{
+  	padding: 0;
   }
   
 </style>
@@ -111,7 +117,7 @@
         <div class="row no-gutters product-box__slider">
 
           {% for product in new_collection.products %}
-          <div class="col-lg-3 col-md-6 col-12">
+          <div class="col-lg-3 col-md-6 col-12 product-box-box">
             <div class="product-box__products">
 
               <a href="{{ product.url }}">
