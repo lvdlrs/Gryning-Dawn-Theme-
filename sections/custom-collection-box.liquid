@@ -79,10 +79,6 @@
                 <p class="m-0">{{ product.type }}</p>
                 {% endif %}
 
-                {% if product.available and product.variants.size > 1 %}
-                {% include 'swatch' for product.options as swatch %}
-                {% endif %}
-
                 <h3 class="m-0"><a href="{{ product.url }}" class="product-box-a__products-name">{{ product.title }}</a></h3>
 
                 {%- assign sort_desc = product.metafields.my_fields.product_sort_description -%}
