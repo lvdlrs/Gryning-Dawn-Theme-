@@ -99,6 +99,8 @@
       arrows: true,
       dots: true,
       appendDots: $('.product-box-dots'),
+      prevArrow: $('.product-box-prev'),
+      nextArrow: $('.product-box-next'),
       responsive: [
         {
           breakpoint: 991,
@@ -143,6 +145,9 @@
           <div class="product-box-dots"></div>
         </div>
         {% endif %}
+        
+        <div class="product-box-arrow product-box-prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="product-box-arrow product-box-next"><i class="fas fa-chevron-right"></i></div>
 
         <div class="row no-gutters product-box__slider">
 
