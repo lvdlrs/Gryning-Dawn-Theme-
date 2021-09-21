@@ -1,182 +1,351 @@
 {
   "sections": {
-    "1631646120318b5e47": {
-      "type": "scroll-banner",
+    "1631290729d01739bd": {
+      "type": "hero-video",
       "settings": {
-        "bg": "shopify:\/\/shop_images\/disney__template_bgrev_38538e91-fdd1-4d10-98c0-6dc2bf217ba6.jpg",
-        "title": "Strøm Tørre Ting",
-        "text": "<p>Gryning lar deg strømme frokostvarer til ditt tørrskap hver måned.<\/p>\n\n<p>Vi tilbyr et utvalg av smakfulle, kjente, noen ganger lokale, bærekraftige tørre varer til din husholdning. Velg kaffe, granola, grøt, havre, syltetøy eller juice og bygg din egen månedlige tørre strøm.<\/p>",
-        "scroll_id": "shopify-section-template--15087802286275__16315583435bed6283"
+        "title": "Strøm tørre ting",
+        "title_size": 80,
+        "subheading": "Bra. Enkelt. Bærekraftig.",
+        "link_text": "Hvordan virker det?",
+        "link": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "text_align": "vertical-bottom horizontal-left",
+        "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0557\/7411\/8083\/files\/Family-Laughing-Kitchen.mp4?v=1623792221",
+        "overlay_opacity": 0,
+        "section_height": "750px",
+        "mobile_height": "auto"
       }
     },
-    "16315583435bed6283": {
-      "type": "zig-zag-2",
+    "163129325259d93273": {
+      "type": "featured-content",
+      "settings": {
+        "title": "",
+        "text": "<p>Gryning er en ny måte å handle på med fokus på sirkularitet, bærekraft og smart forbruk. Hos oss får du mindre å bære, mer utvalg på kjøkkenet og bedre ernæring til din familie.<\/p>",
+        "link": "",
+        "link_text": "",
+        "align_text": "center",
+        "enlarge_text": true,
+        "divider": false
+      }
+    },
+    "16313755260218adae": {
+      "type": "zig-zag",
       "blocks": {
-        "b4ba1a77-d086-4c10-99ab-9a4004c9dae4": {
-          "type": "Imagewithtext",
-          "settings": {
-            "position": "right",
-            "zig-zag_a__img": "shopify:\/\/shop_images\/Family-Happily-Eating.jpg",
-            "zig-zag_a__title": "Billigere. Enklere. Bærekraftig.",
-            "zig-zag_a__text": "We believe that the road to sustainability starts with it being cheap and easy. That is why we offer well-known goods, delivered predictably at good prices as the world's first electricity service for dry household goods.<br>\n\nHow many items do you just always want in the closet? We solve this first, so we can improve the sustainability of transport, packaging and food waste in our value chain, while contributing to more family time and better and positive eating habits in your family. <br>\n\nOur suppliers support our vision, but most of all they like loyal customers who buy again, so we can offer you very good prices. <br>\n\nOur vision is ambitious so we want committed members on the team. Become a member now, your membership covers our extra costs of circularity and sustainability.<br>\n\nYou save the membership on your first stream from us!"
-          }
-        }
-      },
-      "block_order": [
-        "b4ba1a77-d086-4c10-99ab-9a4004c9dae4"
-      ],
-      "settings": {
-      }
-    },
-    "16315581635cbe3dfc": {
-      "type": "counter",
-      "settings": {
-        "count1": "0, 275, 3000",
-        "counter1": "Kilo mindre CO2 per familie",
-        "count2": "0, 267, 3000",
-        "counter2": "Kilo mindre å bære fra butikken",
-        "count3": "0, 5500, 3000",
-        "counter3": "Kroner spart som Gryning Medlem"
-      }
-    },
-    "163155835594a4687e": {
-      "type": "zig-zag-2",
-      "blocks": {
-        "ce6f55b6-5d43-48d2-ad99-7fa962d30e4b": {
+        "043ece74-0a73-439d-9231-220b0d88f122": {
           "type": "Imagewithtext",
           "settings": {
             "position": "left",
+            "zig-zag_a__img": "shopify:\/\/shop_images\/family-eating_5943e5de-fa5d-420c-b0d5-7c998c2b8e71.jpg",
+            "zig-zag_a__title": "Digg frokost - Alltid i skapet",
+            "zig-zag_a__subtitle": "Kvalitetsvarer på plass",
+            "zig-zag_a__text": "Hvorfor skal du gå tom for god kaffe, eller noe godt å spise til frokost? Sett sammen din egen strøm av tørre kvalitetsvarer så er det alltid der i skapet når du trenger det!",
+            "zig-zag_a__link_text": "Bygg din Gryning Frokost nå",
+            "zig-zag_a__link": "#"
+          }
+        },
+        "6f056617-4ecc-468a-af8a-16779c9cadcf": {
+          "type": "Imagewithtext",
+          "settings": {
+            "position": "right",
             "zig-zag_a__img": "shopify:\/\/shop_images\/markus-spiske-n2HoOVk3tGY-unsplash.jpg",
-            "zig-zag_a__title": "Månedlig levering, aldri for mye",
-            "zig-zag_a__text": "Streaming physical goods is something completely new, but really very simple.<br>\n\nYou build a stream of goods that you want to always have in place. We make sure you never get too much.<br>\n\nYou can adjust your power down to 0, - or up to your budget throughout the month. We remind you of the adjustment before we send, and then exactly what you need will come to your home!<br>\n\nYou choose a budget of NOK 500 or NOK 1,000 so you always have control over the costs of your electricity. You never pay for more than the goods you receive delivered."
+            "zig-zag_a__title": "Strøm kjedelige dagligvarer",
+            "zig-zag_a__subtitle": "TØRRVARER PÅ AUTO-UPDATE",
+            "zig-zag_a__text": "Vi tror at tørrskapet ditt kan holde seg selv oppdatert, og hos oss får du akkurat det. Velg hvilke kvalitetsvarer du vil ha på plass, og vi sender deg en bærekraftig forsendelse med akkurat riktig volum hver måned.",
+            "zig-zag_a__link_text": "Hold mitt tørrskap oppdatert!",
+            "zig-zag_a__link": "#"
           }
         }
       },
       "block_order": [
-        "ce6f55b6-5d43-48d2-ad99-7fa962d30e4b"
+        "043ece74-0a73-439d-9231-220b0d88f122",
+        "6f056617-4ecc-468a-af8a-16779c9cadcf"
       ],
       "settings": {
       }
     },
-    "163155833094d0c9c4": {
-      "type": "timer",
-      "settings": {
-        "timer_title": "Verdens første tørre strømmer sendes om..",
-        "timeout_msg": "Your timeout",
-        "set_timer": "sep 29, 2021 2:10:20",
-        "show_seconds": true
-      }
-    },
-    "16316461557ac434fe": {
-      "type": "gallery",
+    "16313839067904c324": {
+      "type": "custom-collections",
       "blocks": {
-        "82eadc53-2176-4979-b721-289a2ca12cd4": {
-          "type": "image",
+        "7eb4559b-659a-40df-9150-18471b07b236": {
+          "type": "collection",
           "settings": {
-            "img": "shopify:\/\/shop_images\/community.jpg"
+            "collection": "helgefrokost-stor-familie"
           }
         },
-        "1913fd6b-b10f-43fe-b076-94fc9e25f7f8": {
-          "type": "image",
+        "399193a4-c2eb-4504-8567-fef479d935dd": {
+          "type": "collection",
           "settings": {
-            "img": "shopify:\/\/shop_images\/Skjermbilde_2021-06-16_kl._21.07.52.png"
+            "collection": "hold-det-rent-med-gryning"
           }
         },
-        "cfdd0463-12ab-476d-9c07-c94745c4ea48": {
-          "type": "image",
+        "ee43e5bd-7cb9-4888-a879-c65e5a3ef3b7": {
+          "type": "collection",
           "settings": {
-            "img": "shopify:\/\/shop_images\/buildyourdrybreakfast.jpg"
+            "collection": "kaffe"
           }
         },
-        "c00c3aef-e65b-4792-aac1-6f9225ef21a5": {
-          "type": "image",
+        "1aec6891-e3bf-465a-80b8-268411b087d1": {
+          "type": "collection",
           "settings": {
-            "img": "shopify:\/\/shop_images\/relaxing-in-the-forest.jpg"
+            "collection": "matboks-med-grying"
           }
         },
-        "2cea8cf8-640c-479f-bf98-17d3af5477ca": {
-          "type": "image",
+        "6dcc053f-5aaa-4a66-8208-a1ce10abdee9": {
+          "type": "collection",
           "settings": {
-            "img": "shopify:\/\/shop_images\/Sample-product-1.jpg"
+            "collection": "smakfulle-bakevaner-med-gryning"
           }
         },
-        "c1b9a13d-a3ff-459b-9cf2-a12ee10bbe56": {
-          "type": "image",
+        "99d1dca2-a2a3-4b7a-95ba-728a1bd6793c": {
+          "type": "collection",
           "settings": {
-            "img": "shopify:\/\/shop_images\/sample-product-3.jpg"
+            "collection": "ta-vare-pa-kroppen-med-gryning"
           }
         },
-        "484cae39-4045-472d-8dbd-ee99769a4473": {
-          "type": "image",
+        "6c93e1c4-992c-428d-a8f6-7a8b19a3fa32": {
+          "type": "collection",
           "settings": {
-            "img": "shopify:\/\/shop_images\/Food-Containers.jpg"
+            "collection": "hold-det-rent-med-gryning"
           }
         },
-        "5aac8efb-3a35-4e52-965f-ad1322a75f68": {
-          "type": "image",
+        "26e20914-35bf-436e-ae2b-a1c5dd9f5b12": {
+          "type": "collection",
           "settings": {
-            "img": "shopify:\/\/shop_images\/sample-product-2.jpg"
+            "collection": "frokostmat"
           }
         }
       },
       "block_order": [
-        "82eadc53-2176-4979-b721-289a2ca12cd4",
-        "1913fd6b-b10f-43fe-b076-94fc9e25f7f8",
-        "cfdd0463-12ab-476d-9c07-c94745c4ea48",
-        "c00c3aef-e65b-4792-aac1-6f9225ef21a5",
-        "2cea8cf8-640c-479f-bf98-17d3af5477ca",
-        "c1b9a13d-a3ff-459b-9cf2-a12ee10bbe56",
-        "484cae39-4045-472d-8dbd-ee99769a4473",
-        "5aac8efb-3a35-4e52-965f-ad1322a75f68"
+        "7eb4559b-659a-40df-9150-18471b07b236",
+        "399193a4-c2eb-4504-8567-fef479d935dd",
+        "ee43e5bd-7cb9-4888-a879-c65e5a3ef3b7",
+        "1aec6891-e3bf-465a-80b8-268411b087d1",
+        "6dcc053f-5aaa-4a66-8208-a1ce10abdee9",
+        "99d1dca2-a2a3-4b7a-95ba-728a1bd6793c",
+        "6c93e1c4-992c-428d-a8f6-7a8b19a3fa32",
+        "26e20914-35bf-436e-ae2b-a1c5dd9f5b12"
       ],
       "settings": {
-        "title": "Gryning originaler, basisvarer og helgekos",
-        "subtitle": "Alltid i skapet, aldri for mye!"
+        "title": "Våre kategorier for nye bedre vaner"
       }
     },
-    "1631646222b2b819ae": {
-      "type": "faq",
+    "1631386419433636c0": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Mer enn bare strømming",
+        "collection": "helgefrokost-stor-familie",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "1631386419433636c8": {
+      "type": "new-fading-slider",
       "blocks": {
-        "b4a08776-4523-4a2e-8229-d8e11d09a140": {
-          "type": "item",
+        "f8f54dcb-0d50-4aba-9853-bc504fcee930": {
+          "type": "slide",
           "settings": {
-            "title": "Why are you cheaper?",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Everyday carry 3 wolf moon raw denim semiotics pok pok tattooed readymade bushwick. Humblebrag skateboard green juice mixtape polaroid ethical, messenger bag pitchfork sriracha hammock. Fam two 3 wolf moon, authentic woke stumptown bespoke."
+            "text1": "<p>Vårt tankesett<br\/>Moderne med tanke på fremtiden.<\/p>",
+            "image": "shopify:\/\/shop_images\/Bright_Future.jpg"
           }
         },
-        "cdeda545-5889-4ace-8768-0ce7dfd8b516": {
-          "type": "item",
+        "907b417c-76a4-4d87-9410-4e72664b3d90": {
+          "type": "slide",
           "settings": {
-            "title": "How do I avoid getting too many items?",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Everyday carry 3 wolf moon raw denim semiotics pok pok tattooed readymade bushwick. Humblebrag skateboard green juice mixtape polaroid ethical, messenger bag pitchfork sriracha hammock. Fam two 3 wolf moon, authentic woke stumptown bespoke."
+            "text1": "<p>Vår visjon<br\/>Drømmende når du skildrer familie- og matsituasjoner<\/p>",
+            "image": "shopify:\/\/shop_images\/family-eating_5943e5de-fa5d-420c-b0d5-7c998c2b8e71.jpg"
           }
         },
-        "710ea4a8-6aec-4172-a115-8600d8ffed63": {
-          "type": "item",
+        "b6aa5238-b9b7-477d-a34a-a341a85aba20": {
+          "type": "slide",
           "settings": {
-            "title": "Do I have control over the costs?",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Everyday carry 3 wolf moon raw denim semiotics pok pok tattooed readymade bushwick. Humblebrag skateboard green juice mixtape polaroid ethical, messenger bag pitchfork sriracha hammock. Fam two 3 wolf moon, authentic woke stumptown bespoke."
+            "text1": "<p>Vårt oppdrag<br\/>Ambisjon om vårt felles bidrag til et bedre samfunn.<\/p>",
+            "image": "shopify:\/\/shop_images\/presentation.jpg"
           }
         }
       },
       "block_order": [
-        "b4a08776-4523-4a2e-8229-d8e11d09a140",
-        "cdeda545-5889-4ace-8768-0ce7dfd8b516",
-        "710ea4a8-6aec-4172-a115-8600d8ffed63"
+        "f8f54dcb-0d50-4aba-9853-bc504fcee930",
+        "907b417c-76a4-4d87-9410-4e72664b3d90",
+        "b6aa5238-b9b7-477d-a34a-a341a85aba20"
       ],
       "settings": {
-        "title": "Ofte stilte spørsmål",
-        "open_fisrt": false
+      }
+    },
+    "1631292413cc3473f7": {
+      "type": "fading-images",
+      "disabled": true,
+      "blocks": {
+        "1631292413cc3473f7-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bright_Future.jpg",
+            "focal_point": "center center",
+            "slide_title1": "Vårt tankesett",
+            "slide_title2": "Moderne med tanke på fremtiden."
+          }
+        },
+        "1631292413cc3473f7-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/family-eating.jpg",
+            "focal_point": "center center",
+            "slide_title1": "Use this section",
+            "slide_title2": "to impress customers"
+          }
+        },
+        "1631292413cc3473f7-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/presentation.jpg",
+            "focal_point": "center center",
+            "slide_title1": "And highlight",
+            "slide_title2": "important details"
+          }
+        }
+      },
+      "block_order": [
+        "1631292413cc3473f7-0",
+        "1631292413cc3473f7-1",
+        "1631292413cc3473f7-2"
+      ],
+      "settings": {
+        "title_lines": "2",
+        "title_font": "heading",
+        "title_size": 45,
+        "title_color": "#fdfaf2",
+        "title_bg_color": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "link": "",
+        "slide_speed": 5,
+        "color_overlay": "#000000",
+        "color_overlay_opacity": 30,
+        "desktop_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
+    "1631292402be865091": {
+      "type": "testimonials",
+      "blocks": {
+        "1631292402be865091-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Gryning og OneFoodChain tar fatt i problemstillingen på en måte ingen andre i Norge gjør akkurat nå. Dette heier vi på!<\/p>",
+            "author": "Jørgen Ingeberg",
+            "author_info": "Circular Packaging Cluster"
+          }
+        },
+        "1631292402be865091-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Gryning utfordrer med en spennede visjon om bærekraftig forbrukerisme.<\/p>",
+            "author": "Profilert Investor",
+            "author_info": "Oslo"
+          }
+        },
+        "1631292402be865091-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Dette er en sånn \"hvorfor har ingen tenkt på det før\" startup. Smartere enn herreklippen til Cutters!<\/p>",
+            "author": "Startup-personlighet",
+            "author_info": "Oslo"
+          }
+        },
+        "1631292402be865091-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Gryning endrer mer på mine kjøkkenskuffer enn sist gang jeg flyttet. Banalt enkelt og helt genialt!<\/p>",
+            "author": "Toppleder",
+            "author_info": "Norsk Dagligvaregigant"
+          }
+        }
+      },
+      "block_order": [
+        "1631292402be865091-0",
+        "1631292402be865091-1",
+        "1631292402be865091-2",
+        "1631292402be865091-3"
+      ],
+      "settings": {
+        "title": "Hva folk sier om oss",
+        "round_images": true,
+        "color_background": "#fdfcf7",
+        "color_text": "#3e5242"
+      }
+    },
+    "1631388073a336ab82": {
+      "type": "parallax-section",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/people_in_bokeh_street_of_London.jpg",
+        "subtitle": "INNSIKT",
+        "title": "Troverdig klimainnsats!",
+        "text": "<p>Har du gitt opp å ta bærekraftige valg? Vi var også frustrert. Derfor startet vi Gryning.<\/p>\n<p>\nSammen skal vi troverdig redusere vårt fotavtrykk med 500.000 tonn CO2 innen utgangen av 2022!<\/p>",
+        "btn_text": "Les mer",
+        "btn_link": "#"
+      }
+    },
+    "1631462133a3619aee": {
+      "type": "promotions",
+      "blocks": {
+        "e473aade-97b6-43b8-bc2f-0847b9134547": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/community.jpg",
+            "title": "Økologisk og lokalt når mulig",
+            "text": "Vi er opptatt av god helse, rene råvarer som er dyrket med hensyn til planeten. Vår seleksjon av varer og leverandører har dette som standard.",
+            "url": "#",
+            "btn": "Les mer"
+          }
+        },
+        "329d5e13-3752-40fa-9c3e-d2a998116846": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/relaxing-in-the-forest.jpg",
+            "title": "Sirkulært med troverdig CO2-gevinst",
+            "text": "I hele vårt utvalg gjør vi relevante og troverdige beregninger på innsparinger i CO2 fotavtrykk som din familie realiserer med å handle litt annerledes hos oss.",
+            "url": "#",
+            "btn": "Les mer"
+          }
+        },
+        "bca57df6-bd4b-43bf-8948-6b35e391f4a2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sample-product-img_9ce3b4e8-80e0-4b67-8bbf-bb599195070d.jpg",
+            "title": "Riktig mengde - Alltid i skapet",
+            "text": "Å strømme tørre varer fra oss sikrer at du alltid har riktig mengde i skapet, og at du aldri kaster mat fra oss.",
+            "url": "#",
+            "btn": "Les mer"
+          }
+        }
+      },
+      "block_order": [
+        "e473aade-97b6-43b8-bc2f-0847b9134547",
+        "329d5e13-3752-40fa-9c3e-d2a998116846",
+        "bca57df6-bd4b-43bf-8948-6b35e391f4a2"
+      ],
+      "settings": {
       }
     }
   },
   "order": [
-    "1631646120318b5e47",
-    "16315583435bed6283",
-    "16315581635cbe3dfc",
-    "163155835594a4687e",
-    "163155833094d0c9c4",
-    "16316461557ac434fe",
-    "1631646222b2b819ae"
+    "1631290729d01739bd",
+    "163129325259d93273",
+    "16313755260218adae",
+    "16313839067904c324",
+    "1631386419433636c0",
+    "1631386419433636c8",
+    "1631292413cc3473f7",
+    "1631292402be865091",
+    "1631388073a336ab82",
+    "1631462133a3619aee"
   ]
 }
