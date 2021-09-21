@@ -179,9 +179,17 @@
     {% endif %}
     
     {% if customer  %}
+    
     <script type="text/javascript">
-//       window.location = "/account";
+      window.location = "/";
     </script>
+    
+    {% else %}
+    
+    <script type="text/javascript">
+      window.location = "/pages/kom-i-gang";
+    </script>
+    
     {% endif %}
     
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
