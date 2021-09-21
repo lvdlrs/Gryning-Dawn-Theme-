@@ -181,22 +181,8 @@
     {% if customer  %}
     <script type="text/javascript">
 
-      document.onreadystatechange = function () {
-    switch(document.readyState) {
-        case 'loading':
-            loading
-        break;
-		
-        case 'interactive':
-        interactive
-            // document has finished loading; DOM elements can now be accessed
-        break;
-		
-        case 'complete':
-        complete
-            // page is fully loaded (i.e. all resources finished loading)
-        break;
-    }
+      window.onload = function() {
+    location.href = "/";
 }
 //       document.location = "{{ routes.root_url }}";
     
