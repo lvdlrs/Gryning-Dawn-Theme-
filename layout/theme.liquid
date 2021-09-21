@@ -181,9 +181,7 @@
     {% if customer  %}
     {{ redirect.dispatch(Redirect '/'); }}
     {% else %}
-    <script type="text/javascript">
-      window.location = "/pages/kom-i-gang";
-    </script>
+    {{ redirect.dispatch(Redirect '/pages/kom-i-gang'); }}
     {% endif %}
     
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
