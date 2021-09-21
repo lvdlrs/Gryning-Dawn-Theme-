@@ -178,19 +178,20 @@
 <!--     	login -->
     {% endif %}
     
-<!--     {% if customer  %}
-    
+    {% if customer  %}
     <script type="text/javascript">
-      document.location = "{{ routes.root_url }}";
+      
+      window.addEventListener('load', function(event) {
+    // all resources finished loading
+    window.location = '/';
+});
+    
     </script>
-    
     {% else %}
-    
     <script type="text/javascript">
       window.location = "/pages/kom-i-gang";
     </script>
-    
-    {% endif %} -->
+    {% endif %}
     
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
