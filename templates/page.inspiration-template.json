@@ -4,9 +4,23 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "1632215840deb0f565": {
+      "type": "text-and-image",
+      "settings": {
+        "image_width": 800,
+        "subtitle": "Improved",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "Optional button",
+        "button_link": "",
+        "layout": "left",
+        "divider": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1632215840deb0f565"
   ]
 }
