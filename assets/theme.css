@@ -380,6 +380,12 @@ svg:not(:root) {
 
 
 
+.strommevarer {
+	background: #26382d;
+}
+
+
+
 
 
 @media only screen and (max-width: 991px){
