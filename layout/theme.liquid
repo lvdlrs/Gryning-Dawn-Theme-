@@ -184,14 +184,16 @@
       document.onreadystatechange = function () {
     switch(document.readyState) {
         case 'loading':
-            // document still loading
+            loading
         break;
 		
         case 'interactive':
+        interactive
             // document has finished loading; DOM elements can now be accessed
         break;
 		
         case 'complete':
+        complete
             // page is fully loaded (i.e. all resources finished loading)
         break;
     }
