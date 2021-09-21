@@ -179,14 +179,7 @@
     {% endif %}
     
     {% if customer  %}
-    <script type="text/javascript">
-
-      window.onload = function() {
-    location.href = "/";
-}
-//       document.location = "{{ routes.root_url }}";
-    
-    </script>
+    {{ redirect.dispatch(Redirect.Action.ADMIN_PATH, '/customers'); }}
     {% else %}
     <script type="text/javascript">
       window.location = "/pages/kom-i-gang";
