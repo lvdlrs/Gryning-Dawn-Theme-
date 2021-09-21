@@ -178,13 +178,10 @@
 <!--     	login -->
     {% endif %}
     
-    {% if customer  %}
+<!--     {% if customer  %}
     
     <script type="text/javascript">
-      window.onload = function() {
-        // similar behavior as clicking on a link
-        window.location.href = "/";
-      }
+      window.location = "{{ routes.root_url }}";
     </script>
     
     {% else %}
@@ -193,7 +190,7 @@
       window.location = "/pages/kom-i-gang";
     </script>
     
-    {% endif %}
+    {% endif %} -->
     
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
