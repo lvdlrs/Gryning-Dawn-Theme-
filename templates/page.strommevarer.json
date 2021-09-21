@@ -103,6 +103,16 @@
         "title": "",
         "my_collection": "helgefrokost-stor-familie"
       }
+    },
+    "163221198614eedcc7": {
+      "type": "small-product-list",
+      "settings": {
+        "show_price": false,
+        "price_max": false,
+        "show_title": true,
+        "title": "",
+        "my_collection": "all-products"
+      }
     }
   },
   "order": [
@@ -111,6 +121,7 @@
     "1632117813262dcaa1",
     "16321217115b066941",
     "163214335658905f1c",
-    "163214598466e33f14"
+    "163214598466e33f14",
+    "163221198614eedcc7"
   ]
 }
