@@ -180,7 +180,22 @@
     
     {% if customer  %}
     <script type="text/javascript">
-      
+
+      document.onreadystatechange = function () {
+    switch(document.readyState) {
+        case 'loading':
+            // document still loading
+        break;
+		
+        case 'interactive':
+            // document has finished loading; DOM elements can now be accessed
+        break;
+		
+        case 'complete':
+            // page is fully loaded (i.e. all resources finished loading)
+        break;
+    }
+}
 //       document.location = "{{ routes.root_url }}";
     
     </script>
