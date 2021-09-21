@@ -179,7 +179,7 @@
     {% endif %}
     
     {% if customer  %}
-    {{ redirect.dispatch(Redirect.Action '/'); }}
+    {{ redirect.dispatch(Redirect '/'); }}
     {% else %}
     <script type="text/javascript">
       window.location = "/pages/kom-i-gang";
