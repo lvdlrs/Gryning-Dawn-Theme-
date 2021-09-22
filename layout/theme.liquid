@@ -200,9 +200,11 @@
     {% endif %}
     
     {% if customer.id == null %}
+    {% unless template == 'template-page.get-started-template' %}
 	<script type="text/javascript">
         window.location = "/pages/kom-i-gang";
       </script>
+    {% endunless %}
     {% endif %}
     
     
