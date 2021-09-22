@@ -191,20 +191,19 @@
     
     
     
-    {% unless template == 'template-page.get-started-template' %}
-    hello
-    {% endunless %}
     
     {% if template == 'template-page.get-started-template' %}
     Hey
+    {% else %}
+    hello
     {% endif %}
     
     {% if customer.id == null %}
-    {% if template == 'template-page.get-started-template' %}
-	<script type="text/javascript">
-        window.location = "/pages/kom-i-gang";
-      </script>
-    {% endif %}
+      {% if template == 'template-page.get-started-template' %}
+      <script type="text/javascript">
+          window.location = "/pages/kom-i-gang";
+        </script>
+      {% endif %}
     {% endif %}
     
     
