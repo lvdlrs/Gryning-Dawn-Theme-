@@ -177,11 +177,11 @@
     
     <script type="text/javascript">
 
-      If ( template != 'home' ) {
+      {% if template != 'template-index' %}
       window.onload = function() {
         location.href = "/";
       }
-      }
+      {% endif %}
 
     </script>
     {% else %}
