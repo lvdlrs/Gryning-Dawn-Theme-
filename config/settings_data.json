@@ -143,57 +143,6 @@
           "announcement_closable": false
         }
       },
-      "footer-promotions": {
-        "type": "footer-promotions",
-        "blocks": {
-          "footer-promotions-0": {
-            "type": "promotion",
-            "settings": {
-              "enable_image": true,
-              "image": "shopify:\/\/shop_images\/community.jpg",
-              "image_width": 650,
-              "title": "Økologisk og lokalt når mulig",
-              "text": "<p>Vi er opptatt av god helse, rene råvarer som er dyrket med hensyn til planeten. Vår seleksjon av varer og leverandører har dette som standard.<\/p>",
-              "button_label": "Les mer",
-              "button_link": ""
-            }
-          },
-          "footer-promotions-1": {
-            "type": "promotion",
-            "settings": {
-              "enable_image": true,
-              "image": "shopify:\/\/shop_images\/relaxing-in-the-forest.jpg",
-              "image_width": 650,
-              "title": "Sirkulært med troverdig CO2-gevinst",
-              "text": "<p>I hele vårt utvalg gjør vi relevante og troverdige beregninger på innsparinger i CO2 fotavtrykk som din familie realiserer med å handle litt annerledes hos oss.<\/p>",
-              "button_label": "Les mer",
-              "button_link": ""
-            }
-          },
-          "footer-promotions-2": {
-            "type": "promotion",
-            "settings": {
-              "enable_image": true,
-              "image": "shopify:\/\/shop_images\/sample-product-img_9ce3b4e8-80e0-4b67-8bbf-bb599195070d.jpg",
-              "image_width": 650,
-              "title": "Riktig mengde - Alltid i skapet",
-              "text": "<p>Å strømme tørre varer fra oss sikrer at du alltid har riktig mengde i skapet, og at du aldri kaster mat fra oss.<\/p>",
-              "button_label": "Les mer",
-              "button_link": ""
-            }
-          }
-        },
-        "block_order": [
-          "footer-promotions-0",
-          "footer-promotions-1",
-          "footer-promotions-2"
-        ],
-        "settings": {
-          "hide_homepage": false,
-          "image_size": "wide",
-          "align_text": "left"
-        }
-      },
       "AP-header": {
         "type": "AP-header",
         "settings": {
