@@ -189,13 +189,14 @@
     
     {% unless customer %}
     
-    {% unless template == 'template-page.get-started-template' %}
+    {% if template == 'template-page.get-started-template' %}
+    Hey
+    {% endif %}
     
+    {% unless template == 'template-page.get-started-template' %}
+    hello
     {% endunless %}
     
-    <script type="text/javascript">
-      window.location = "/pages/kom-i-gang";
-    </script>
     
     {% endunless %}
     
