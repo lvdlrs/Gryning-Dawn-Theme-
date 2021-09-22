@@ -1,39 +1,17 @@
 {
   "sections": {
-    "1631819260c31a78b7": {
-      "type": "scroll-banner",
-      "settings": {
-        "bg": "shopify:\/\/shop_images\/disney__template_bgrev_38538e91-fdd1-4d10-98c0-6dc2bf217ba6.jpg",
-        "title": "Strøm Tørre Ting",
-        "text": "<p>Gryning lar deg strømme frokostvarer til ditt tørrskap hver måned.<\/p>\n<p>Vi tilbyr et utvalg av smakfulle, kjente, noen ganger lokale, bærekraftige tørre varer til din husholdning. Velg kaffe, granola, grøt, havre, syltetøy eller juice og bygg din egen månedlige tørre strøm.<\/p>",
-        "scroll_id": "shopify-section-template--15031620829379__banner"
-      }
-    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
-        "show_collection_description": false,
-        "show_collection_image": false
       }
     },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 16,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_filtering": true,
-        "enable_sorting": true,
-        "collapse_on_larger_devices": false
       }
     }
   },
   "order": [
-    "1631819260c31a78b7",
     "banner",
     "product-grid"
   ]
