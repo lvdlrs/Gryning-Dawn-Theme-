@@ -173,8 +173,8 @@
     {% section 'header' %}
     
     {% unless customer %}
-  This customer is not logged in.
-{% endunless %}
+  
+	{% endunless %}
     
     
     {% if customer  %}
@@ -185,14 +185,15 @@
         }
       </script>
       {% endif %}
+    {% endif %}
     
-    {% else %}
+    {% unless customer %}
       {% if template == 'template-page.get-started-template' %}
       <script type="text/javascript">
         window.location = "/pages/kom-i-gang";
       </script>
       {% endif %}
-    {% endif %}
+    {% endunless %}
     
     
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
