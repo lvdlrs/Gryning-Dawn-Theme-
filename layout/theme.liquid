@@ -181,21 +181,17 @@
         }
       </script>
       {% endif %}
-    {% endif %}    
-    
-    
-    
-    {% unless customer %} 
-    
-    {% if template == 'customers/login' %}
-    {% elsif template == 'customers/register' %}
-    {% elsif page.handle == 'kom-i-gang' %}
-    {% else %}
-        <script type="text/javascript">
-            window.location = "/pages/kom-i-gang";
-          </script>
     {% endif %}
     
+    {% unless customer %} 
+      {% if template == 'customers/login' %}
+      {% elsif template == 'customers/register' %}
+      {% elsif page.handle == 'kom-i-gang' %}
+      {% else %}
+          <script type="text/javascript">
+              window.location = "/pages/kom-i-gang";
+            </script>
+      {% endif %}
     {% endunless %}
     
     
