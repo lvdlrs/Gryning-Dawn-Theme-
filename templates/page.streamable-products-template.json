@@ -116,6 +116,12 @@
       "settings": {
         "bundle": "f9531f62-f31e-4c3d-938c-c3afcf5ef668"
       }
+    },
+    "163233665829a7c143": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"rbrFastBundlePage\" bundle-ids='f9531f62-f31e-4c3d-938c-c3afcf5ef668'><\/div>"
+      }
     }
   },
   "order": [
@@ -126,6 +132,7 @@
     "163214335658905f1c",
     "163214598466e33f14",
     "163221198614eedcc7",
-    "163233642231def67d"
+    "163233642231def67d",
+    "163233665829a7c143"
   ]
 }
