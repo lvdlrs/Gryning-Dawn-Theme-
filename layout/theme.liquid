@@ -173,14 +173,23 @@
     {% section 'header' %}
     
     
-    {{ page.handle }} 
-    template-{{ template }}
+    {% if customer  %}
+    
+    <script type="text/javascript">
 
-    {% if customer %}
-    	account 
+      If ( template != 'home' ) {
+      window.onload = function() {
+        location.href = "/";
+      }
+      }
+
+    </script>
     {% else %}
-    	login 
+    <script type="text/javascript">
+      window.location = "/pages/kom-i-gang";
+    </script>
     {% endif %}
+    
     
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
