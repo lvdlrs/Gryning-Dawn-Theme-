@@ -1,7 +1,23 @@
+<div class="rbrFastBundlePage" bundle-ids='{{ section.settings.bundle }}'></div>
+f9531f62-f31e-4c3d-938c-c3afcf5ef668
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Bundle Section",
+    "settings": [
+{
+            "type": "text",
+            "id": "bundle",
+            "label": "Text",
+			"info": "you need to install"
+          }
+],
+    "presets": [
+      {
+        "name": "Bundle Section",
+        "category": "custom"
+      }
+    ]
   }
 {% endschema %}
 
