@@ -188,22 +188,9 @@
     {% unless customer %} 
     
     {% if template == 'customers/login' %}
-      <script type="text/javascript">
-        window.onload = function() {
-          location.href = "/account/login";
-        }
-      </script>
-    
     {% elsif template == 'customers/register' %}
-      <script type="text/javascript">
-        window.onload = function() {
-          location.href = "account/register";
-        }
-      </script>
-    
-      {% elsif page.handle == 'kom-i-gang' %}
-      
-      {% else %}
+    {% elsif page.handle == 'kom-i-gang' %}
+    {% else %}
         <script type="text/javascript">
             window.location = "/pages/kom-i-gang";
           </script>
