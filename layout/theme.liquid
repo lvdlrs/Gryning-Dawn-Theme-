@@ -175,15 +175,17 @@
     
     {% if customer  %}
     
-    <script type="text/javascript">
+    
 
-      {% if template = 'template-index' %}
+    {% if template = 'template-index' %}
+    <script type="text/javascript">  
       window.onload = function() {
         location.href = "/";
       }
-      {% endif %}
-
     </script>
+    {% endif %}
+
+    
     {% else %}
     <script type="text/javascript">
       window.location = "/pages/kom-i-gang";
