@@ -188,9 +188,9 @@
     {% endif %}
     
     {% unless customer %}
-    <script type="text/javascript">
-        window.location = "/pages/kom-i-gang";
-      </script>    
+    {% if template == 'template-page.get-started-template' %}
+    hello  
+    {% endif %}
     {% endunless %}
     
     
