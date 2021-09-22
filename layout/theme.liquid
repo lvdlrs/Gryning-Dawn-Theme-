@@ -189,13 +189,15 @@
     
     {% unless customer %}
     
-    {% if template == 'template-page.get-started-template' %}
-    Hey
-    {% endif %}
+    
     
     {% unless template == 'template-page.get-started-template' %}
     hello
     {% endunless %}
+    
+    {% if template == 'template-page.get-started-template' %}
+    Hey
+    {% endif %}
     
     
     {% endunless %}
