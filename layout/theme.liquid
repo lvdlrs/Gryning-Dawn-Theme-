@@ -193,8 +193,11 @@
       <script type="text/javascript">
         window.location = "/pages/kom-i-gang";
       </script>
-    {% else %}
-    Hello
+    {% endif %}
+    {% if template !== 'template-page.get-started-template' %}
+    <script type="text/javascript">
+        window.location = "/pages/kom-i-gang";
+      </script>
     {% endif %}
     
     {% endunless %}
