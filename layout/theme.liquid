@@ -172,6 +172,10 @@
     {% section 'announcement-bar' %}
     {% section 'header' %}
     
+    {% unless customer %}
+  This customer is not logged in.
+{% endunless %}
+    
     
     {% if customer  %}
       {% if template == 'template-index' %}
