@@ -174,24 +174,20 @@
     
     
     {% if customer  %}
-    
-    
-
-    {% if template == 'template-index' %}
-    <script type="text/javascript">
-      window.onload = function() {
-        location.href = "/";
-      }
-    </script>
-    {% endif %}
-
+      {% if template == 'template-index' %}
+      <script type="text/javascript">
+        window.onload = function() {
+          location.href = "/";
+        }
+      </script>
+      {% endif %}
     
     {% else %}
-<!--     {% if page.handle == 'kom-i-gang' %}
-    <script type="text/javascript">
-      window.location = "/pages/kom-i-gang";
-    </script>
-    {% endif %} -->
+      {% if page.handle == 'kom-i-gang' %}
+      <script type="text/javascript">
+        window.location = "/pages/kom-i-gang";
+      </script>
+      {% endif %}
     {% endif %}
     
     
