@@ -187,7 +187,9 @@
     
     {% unless customer %} 
     
-    {% if template == 'template-customers/login' %}
+    {% if page.handle == 'kom-i-gang' %}
+    
+    {% elsif template == 'template-customers/login' %}
       <script type="text/javascript">
         window.onload = function() {
           location.href = "account/login";
@@ -201,9 +203,7 @@
         }
       </script>
     
-      {% elsif page.handle == 'kom-i-gang' %}
-      
-      {% else %}
+    {% else %}
         <script type="text/javascript">
             window.location = "/pages/kom-i-gang";
           </script>
