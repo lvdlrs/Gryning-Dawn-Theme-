@@ -173,7 +173,9 @@
     {% section 'header' %}
     
     
-    {% if customer  %}
+<!--     All pages are accessed if the user is logged in -->
+    
+<!--     {% if customer  %}
       {% if template == 'template-index' %}
       <script type="text/javascript">
         window.onload = function() {
@@ -192,7 +194,7 @@
               window.location = "/pages/kom-i-gang";
             </script>
       {% endif %}
-    {% endunless %}
+    {% endunless %} -->
     
     
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
@@ -233,9 +235,5 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-  
-{% if content_for_header contains 'fastbundle.co' %}
-    {% render 'fast_bundle_service' %}
-{% endif %}
-</body>
+  </body>
 </html>
