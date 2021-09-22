@@ -172,10 +172,6 @@
     {% section 'announcement-bar' %}
     {% section 'header' %}
     
-    {% unless customer %}
-  
-	{% endunless %}
-    
     
     {% if customer  %}
       {% if template == 'template-index' %}
@@ -185,7 +181,9 @@
         }
       </script>
       {% endif %}
-    {% endif %}
+    {% endif %}    
+    
+    
     
     {% unless customer %} 
     
@@ -195,20 +193,22 @@
           location.href = "account/login";
         }
       </script>
-      {% endif %}
-    {% if template == 'template-customers/register' %}
+    
+    {% elsif template == 'template-customers/register' %}
       <script type="text/javascript">
         window.onload = function() {
           location.href = "account/register";
         }
       </script>
-      {% endif %}
     
-      {% unless page.handle == 'kom-i-gang' %}
-      <script type="text/javascript">
-        window.location = "/pages/kom-i-gang";
-      </script>
-      {% endunless %}
+      {% elsif page.handle == 'kom-i-gang' %}
+      
+      {% else %}
+        <script type="text/javascript">
+            window.location = "/pages/kom-i-gang";
+          </script>
+    {% endif %}
+    
     {% endunless %}
     
     
