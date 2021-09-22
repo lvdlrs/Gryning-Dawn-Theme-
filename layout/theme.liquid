@@ -187,26 +187,26 @@
     
     {% unless customer %} 
     
-    {% if page.handle == 'kom-i-gang' %}
-    
-    {% elsif template == 'customers/login' %}
+    {% if template == 'customers/login' %}
       <script type="text/javascript">
         window.onload = function() {
-          location.href = "/login";
+          location.href = "account/login";
         }
       </script>
     
     {% elsif template == 'customers/register' %}
       <script type="text/javascript">
         window.onload = function() {
-          location.href = "/register";
+          location.href = "account/register";
         }
       </script>
     
-    {% else %}
-<!--         <script type="text/javascript">
+      {% elsif page.handle == 'kom-i-gang' %}
+      
+      {% else %}
+        <script type="text/javascript">
             window.location = "/pages/kom-i-gang";
-          </script> -->
+          </script>
     {% endif %}
     
     {% endunless %}
