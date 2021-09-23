@@ -362,10 +362,6 @@
                   	{% for variant in product.variants %}
                       {% if variant.option1 %}
                       <li>{{variant.option1}}</li>
-                      {% elsif variant.option2 %}
-                      <li>{{variant.option2}}</li>
-                      {% elsif variant.option3 %}
-                      <li>{{variant.option3}}</li>
                       {% endif %}
                     {% endfor %}
                     </ul>
