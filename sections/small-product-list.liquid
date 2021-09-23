@@ -354,7 +354,7 @@
                     {% if section.settings.price_max %}
                     <s>{{ country.currency.symbol }}{{ product.compare_at_price_max | money_without_trailing_zeros }}</s>
                     {% endif %}
-                    </div>
+                    </div> 
                     <div class="small-product-box__products-save">
                     	{% if product.compare_at_price_max > product.price %}{{ product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0'}}% OFF{% endif %}
                     </div>
