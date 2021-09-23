@@ -360,7 +360,7 @@
                   <div class="small-product-box__products-var">
                     
                     <ul>
-                      {% for variant in product.variants %}
+                      {% for variant in product.variants limit: 3 %}
                       {% if variant.available %}
                       <li>{{ variant.title }}</li>
                       {% endif %}
