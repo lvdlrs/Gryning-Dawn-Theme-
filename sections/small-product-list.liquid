@@ -359,6 +359,7 @@
                   </div>
                   <div class="small-product-box__products-var">
                     
+                    {% assign hide_default_title = false %}
                     {% if product.variants.size == 1 and product.variants.first.title contains 'Default' %}
                     {% assign hide_default_title = true %}
                     {% endif %}
