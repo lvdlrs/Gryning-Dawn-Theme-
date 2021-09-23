@@ -142,6 +142,9 @@
     justify-content: space-between;
     width: 100%;
   }
+  .small-product-box__products-var{
+  	display: none;
+  }
   .small-product-box__products:hover .small-product-box__products-action{
   	display: flex;
   }
@@ -188,6 +191,16 @@
     font-size: 12px;
     justify-content: space-between;
     align-items: center;
+  }
+  .small-product-box__products:hover .small-product-box__products-var{
+  	display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .small-product-box__products-var ul li{
+  	color: #fff;
+    font-size: 12px;
+    text-align: left;
   }
   
   
@@ -325,10 +338,18 @@
                     	{% if product.compare_at_price_max > product.price %}{{ product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0'}}% OFF{% endif %}
                     </div>
                   </div>
-                  <div>
-                  	{% for variant in product.variants %}          			
-                        {{variant.option1}}          			
+                  <div class="small-product-box__products-var">
+                    <ul>
+                  	{% for variant in product.variants %}
+                      {% if variant.option1 %}
+                      <li>{{variant.option1}}</li>
+                      {% elsif variant.option2 %}
+                      <li>{{variant.option2}}</li>
+                      {% elsif variant.option3 %}
+                      <li>{{variant.option3}}</li>
+                      {% endif %}
                     {% endfor %}
+                    </ul>
                   </div>
                 </div>
 
