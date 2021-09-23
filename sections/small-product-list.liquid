@@ -364,6 +364,9 @@
                       {% if variant.available %}
                       <li>{{ variant.title }}</li>
                       {% endif %}
+                      
+                      {% if variant.title == 'Default Title' %}
+                      {% endif %}
                       {% endfor %} 
                     </ul>
                     
