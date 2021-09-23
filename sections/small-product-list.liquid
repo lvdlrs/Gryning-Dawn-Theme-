@@ -360,9 +360,7 @@
                   <div class="small-product-box__products-var">
                     <ul>
                   	{% for variant in product.variants %}
-                      {% if variant.option1 %}
                       <li>{{variant.option1}}</li>
-                      {% endif %}
                     {% endfor %}
                     </ul>
                   </div>
