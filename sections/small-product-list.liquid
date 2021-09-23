@@ -302,7 +302,7 @@
 
                   <h3 class="m-0"><a href="{{ product.url }}" class="small-product-box__products-name">{{ product.title }}</a></h3>
 
-                  <div class="d-flex">
+                  <div class="small-product-box__products-main-price">
                     {% if section.settings.show_price %}
                     <p class="small-product-box__products-price m-0 pr-2">{{ country.currency.symbol }}{{ product.price | money_without_trailing_zeros }}</p>
                     {% endif %}
