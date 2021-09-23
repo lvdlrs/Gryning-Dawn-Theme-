@@ -129,7 +129,23 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-  
+  .small-product-box__products-action{
+  	display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .small-product-box__products:hover .small-product-box__products-action{
+  	display: flex;
+  }
+  .small-product-box__products-right a{
+  	width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+  }
   
   
   {% if template == 'page.streamable-products-template' %}
