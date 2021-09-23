@@ -356,7 +356,13 @@
                     {% endif %}
                     </div>
                     <div class="small-product-box__products-save">
-                    	{% if product.compare_at_price_max > product.price %}{{ product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0'}}% OFF{% endif %}
+<!--                     	{% if product.compare_at_price_max > product.price %}{{ product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0'}}% OFF{% endif %}
+                     -->
+                    
+                       {% if product.compare_at_price_max > product.price %}You save {{ current_variant.compare_at_price | minus: current_variant.price | times: 100.0 | divided_by: current_variant.compare_at_price | truncate: 5, "" }}%{% endif %}
+ 
+{% if product.compare_at_price_max > product.price %} ({{ current_variant.compare_at_price | minus: current_variant.price | money }}){% endif %}
+                    
                     </div>
                   </div>
                   <div class="small-product-box__products-var">
