@@ -178,13 +178,16 @@
   .small-product-box__products:hover .small-product-box__products-name {
     font-size: 12px;
     line-height: 20px;
-    padding: 5px 0;
+    padding: 5px 0 0;
     text-align: left;
     text-decoration: none;
   }
   .small-product-box__products:hover .small-product-box__products-main-price{
   	display: flex;
     color: #fff;
+    font-size: 12px;
+    justify-content: space-between;
+    align-items: center;
   }
   
   
@@ -310,12 +313,17 @@
                   <h3 class="m-0"><a href="{{ product.url }}" class="small-product-box__products-name">{{ product.title }}</a></h3>
 
                   <div class="small-product-box__products-main-price">
+                    <div class="d-flex">
                     {% if section.settings.show_price %}
                     <p class="small-product-box__products-price m-0 pr-2">{{ country.currency.symbol }}{{ product.price | money_without_trailing_zeros }}</p>
                     {% endif %}
                     {% if section.settings.price_max %}
                     <s>{{ country.currency.symbol }}{{ product.compare_at_price_max | money_without_trailing_zeros }}</s>
                     {% endif %}
+                    </div>
+                    <div class="small-product-box__products-save">
+                    	{% if product.compare_at_price_max > product.price %}You Save {{ product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0'}}% {% endif %}
+                    </div>
                   </div>
                 </div>
 
