@@ -29,9 +29,6 @@
   align-items: center;
   margin: 0;
 }
-.ap-header__menu li{
-
-}
 .ap-header__menu a{
   display: inline-block;
   vertical-align: middle;
