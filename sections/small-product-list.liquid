@@ -366,11 +366,9 @@
                     
                     <ul>
                       {% for variant in product.variants limit: 3 %}
-                      {% if variant.available %}
                       {% unless hide_default_title %}
                       <li>{{ variant.title }}</li>
                       {% endunless %}
-                      {% endif %}
                       {% endfor %} 
                     </ul>
                     
