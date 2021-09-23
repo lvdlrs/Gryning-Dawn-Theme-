@@ -358,11 +358,17 @@
                     </div>
                   </div>
                   <div class="small-product-box__products-var">
+                    
                     <ul>
-                  	{% for variant in product.variants %}
-                      <li>{{variant.option1}}</li>
-                    {% endfor %} 
+                      {% for variant in product.variants %}
+                      <li>
+                        {% if variant.available %}
+                        {{ variant.title }}
+                        {% endif %}
+                      </li>
+                      {% endfor %} 
                     </ul>
+                    
                   </div>
                 </div>
 
