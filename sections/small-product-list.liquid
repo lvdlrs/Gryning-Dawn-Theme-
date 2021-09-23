@@ -361,11 +361,9 @@
                     
                     <ul>
                       {% for variant in product.variants %}
-                      <li>
-                        {% if variant.available %}
-                        {{ variant.title }}
-                        {% endif %}
-                      </li>
+                      {% if variant.available %}
+                      <li>{{ variant.title }}</li>
+                      {% endif %}
                       {% endfor %} 
                     </ul>
                     
