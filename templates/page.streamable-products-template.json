@@ -81,6 +81,7 @@
     },
     "163214598466e33f14": {
       "type": "small-product-list",
+      "disabled": true,
       "settings": {
         "show_price": true,
         "price_max": true,
@@ -91,6 +92,7 @@
     },
     "163221198614eedcc7": {
       "type": "small-product-list",
+      "disabled": true,
       "settings": {
         "show_price": true,
         "price_max": true,
