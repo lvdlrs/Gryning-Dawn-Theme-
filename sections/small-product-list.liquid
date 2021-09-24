@@ -342,12 +342,6 @@
                         </form>
                       </div>
                       
-                      <form method="post" action="/cart/add">
-                        <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-                        <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
-<!--                         <input type="submit" value="Add to cart" class="btn" /> -->
-                        <button type="submit" class="btn"><i class="fas fa-plus"></i></button>
-                      </form>
                     </div>
                     <div class="small-product-box__products-right">
                       <a href="{{ product.url }}"><i class="fas fa-chevron-down"></i></a>
