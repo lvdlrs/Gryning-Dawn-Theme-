@@ -107,6 +107,13 @@
       "settings": {
         "custom_liquid": "<div data-revy-bundle-id='d02d9c5c-2109-4f7d-92cc-875c8d5f325a'><\/div>"
       }
+    },
+    "1632504540ca6d4a63": {
+      "type": "custom-ajax-cart",
+      "settings": {
+        "title": "New Collection",
+        "my_collection": "drikke"
+      }
     }
   },
   "order": [
@@ -116,6 +123,7 @@
     "163214335658905f1c",
     "163214598466e33f14",
     "163221198614eedcc7",
-    "16323385873a3843ea"
+    "16323385873a3843ea",
+    "1632504540ca6d4a63"
   ]
 }
