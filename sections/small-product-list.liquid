@@ -333,6 +333,15 @@
                   
                   <div class="small-product-box__products-action">
                     <div class="small-product-box__products-left">
+
+                      <div class="hoverclick">
+                        <form method="post" action="/cart/add" class="custom-cart-form">
+                          <input name="id" value="{{ product.variants.first.id }}" class="product-custom-id" type="hidden" />
+<!--                           <input name="add" value="Add to Cart" type="submit"  class="cart-add-button add-cart-custom-btn"> -->
+                          <button type="submit" class="btn cart-add-button add-cart-custom-btn"><i class="fas fa-plus"></i></button>
+                        </form>
+                      </div>
+                      
                       <form method="post" action="/cart/add">
                         <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
                         <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
