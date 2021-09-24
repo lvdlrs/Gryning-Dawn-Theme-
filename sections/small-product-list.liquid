@@ -436,4 +436,88 @@
 {% endstylesheet %}
 
 {% javascript %}
+
+	// Ajax Add-to-cart Button
+
+$(document).ready(function() {
+  
+  
+  $(document).on( 'click', '.add-cart-custom-btn', function( e ) {
+    
+    var p_id = $(this).prev('.product-custom-id').val();
+    e.preventDefault();
+
+    add_to_cart( p_id );
+    
+  } );
+
+});
+
+
+function add_to_cart( id ) {
+    
+    var quantity = 1;
+    var params = {
+        type: "POST",
+        url: "/cart/add.js",
+        data: "quantity=" + quantity + "&id=" + id,
+        dataType: "json",
+        success: function(line_item) {
+          	cart_count_add();
+          
+        },
+        error: function(XMLHttpRequest, textStatus) {
+            //message_show( "error", XMLHttpRequest.responseJSON.description );
+        }
+    };
+    $.ajax(params);
+}
+
+// Cart Count Update 
+
+function cart_count_add() {
+  if( $(document).find('.ajax-badge__custom').length > 0 ) {
+  	var current_cart_val = $('.ajax-badge__custom').html();
+    $('.ajax-badge__custom').html( parseFloat( parseFloat(current_cart_val) + 1 ) );
+  } else {
+  	$('.custom-cart-before').after( '<div class="ajax-count-bubble">'+            
+              '<span aria-hidden="true" class="ajax-badge__custom">1</span>'+
+              '<span class="visually-hidden"></span>'+
+          '</div>' );
+  }
+}
+
+
+function change_cart( variant_id ) {
+	
+    var quantity = 0;
+  
+    var params = {
+        type: "POST",
+        url: "/cart/change.js",
+        data: "quantity=" + quantity + "&id=" + variant_id,
+        dataType: "json",
+        success: function(XMLHttpRequest) {
+          	cart_count_update();
+        },
+        error: function(XMLHttpRequest, textStatus) {
+            
+        }
+    };
+    $.ajax(params);
+}
+
+function cart_count_update() {
+  $.getJSON("/cart.js", function( cart ) {
+  	console.log(cart);
+    if( cart.item_count == 0 ) {
+      $('.ajax-count-bubble').hide();
+      $('.cart__empty-text').show()
+    } else {
+    	$('.ajax-badge__custom').html( cart.item_count );
+    }
+    
+  })
+}
+
 {% endjavascript %}
