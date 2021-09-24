@@ -39,16 +39,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     
-    {{ 'quickview.js' | asset_url | script_tag }}
-    {{ 'ajax-cart.js' | asset_url | script_tag }}
 <!--     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script> -->
     <script>
       jQuery(document).ready(function ($) {
        
         feather.replace()
-
-        {% capture content %}{% include 'quickview' %}{% endcapture %}
-        var content = {{ content | json }};
 
         });
     </script>
@@ -142,8 +137,6 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
-    {{ 'ajax-cart.scss' | asset_url | stylesheet_tag }} 
-    {{ 'quickview.css' | asset_url | stylesheet_tag }} 
     {{ 'theme.css' | asset_url | stylesheet_tag }} 
 
     
