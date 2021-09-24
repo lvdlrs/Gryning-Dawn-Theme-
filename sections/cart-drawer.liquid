@@ -1,53 +1,431 @@
-{% if settings.cart__drawer %}
-    {{ 'cart-drawer.css' | asset_url | stylesheet_tag }}
-    {{ 'cart-drawer.js' | asset_url | script_tag }}
+<style>
+/* Cart Sidebar CSS Start */
+.close-sidebar {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: none;
+}
+.close-sidebar.active {
+  display: block;
+}
+.cart-sidebar {
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+  	display: block !important;
+  	position: fixed !important;
+    width: 400px !important;
+    height: 100% !important;
+    top: 0px !important;
+    right: 0px !important;
+    background: rgb(255, 255, 255) !important;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 3px 6px 4px !important;
+    z-index: 999 !important;
+    transform: translateX(450px) !important;
+    transition: all 300ms ease 0s !important;
+  	padding: 28px 30px 20px;
+}
+.cart-sidebar.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0)!important;
+  }
+.cart-sidebar-headerpart {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  	margin-bottom: 30px;
+    border-bottom: 1px solid #d3d3d3;
+}
+.cart-close-button {
+	cursor: pointer;
+}
+.cart-sidebar-bottom-part {
+	position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+}
+.cart-sidebar-product {
+	height: 250px;
+    overflow-y: auto;
+  	display: block;
+}
+.sidebar-product-main {
+	display: flex;
+  	align-items: center;
+  	margin-bottom: 30px;
+}
+.col__products-name {
+	transition: all 500ms;
+}
+.col__products-name:hover {
+	color: #eb5d40;
+}
+.cart-sidebar-checkout form button {
+	text-transform: uppercase;
+}
+.sidebar-remove-product-button {
+	padding-left: 30px;
+  	opacity: 0;
+  	transition: all 500ms;
+}
+.sidebar-remove-product-button a {
+	color: #000000;
+  	transition: all 500ms;
+}
+.sidebar-remove-product-button a:hover {
+	color: #eb5d40;
+}
+.sidebar-product-main:hover .sidebar-remove-product-button {
+	opacity: 1;
+}
+  .drawer-count-bubble {
+  	position: absolute;
+    background-color: rgb(var(--color-base-accent-1));
+    color: rgb(var(--color-base-solid-button-labels));
+    height: 1.7rem;
+    width: 1.7rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .9rem;
+    bottom: .8rem;
+    left: 2.2rem;
+    line-height: 1.1;
+  }
+  .drawer-totals {
+  	display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .drawer-totals h3, .drawer-totals p {
+  	font-weight: 700;
+  }
+  .cart-sidebar-viewcart a{
+  	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+@media screen and (max-width: 575px) {
+  .cart-sidebar {
+  	width: 300px !important;
+  }
+}
+/* Cart Sidebar CSS End */
+</style> 
 
-    <section class="drawer" id="drawer-name" data-drawer-target>
-        <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
-        <div class="drawer__wrapper">
-            <div class="drawer__header">
-                <div class="drawer__title">
-                    {{ 'sections.cart.title' | t }}
-                </div>
-                <button class="drawer__close" data-drawer-close aria-label="Close Drawer"></button>
+<section id="custom-cart-drawer" class="section-separator">
+  <!--   This line only for information you need to remove in orignal code -->
+  <h2 class="text-center info-title">Cart Drawer with Dyamic Value <b>Cart Drawer</b></h2>
+
+  <a href="javascript:void(0)" class="header__icon header__icon--cart link link--text focus-inset" id="drawer-cart">
+    {%- liquid
+          if cart == empty
+            render 'icon-cart-empty'
+          else
+            render 'icon-cart'
+          endif
+        -%}
+    <span class="visually-hidden drawer-cart-before">{{ 'templates.cart.cart' | t }}</span>
+    {%- if cart != empty -%}
+    <div class="drawer-count-bubble">
+      {%- if cart.item_count < 100 -%}
+      <span aria-hidden="true" class="drawer-badge">{{ cart.item_count }}</span>
+      {%- endif -%}
+      <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+    </div>
+    {%- endif -%}
+  </a>
+
+  <div class="cart-sidebar">
+    <div class="cart-sidebar-headerpart">
+      <div class="cart-sidebar__title">
+        <h3 >Shoping Cart</h3>
+        <input type="hidden" value="{{ cart.currency.symbol }}" name="custom_currency" id="custom_currency" >
+      </div>
+      <div class="cart-close-button" id="cartsidebarclose">
+        {% include 'cart-close-icon' %}
+      </div>
+    </div>
+    {% if cart == empty %}
+    <h2 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h2>
+    {% endif %}
+    {%- if cart != empty -%}
+    <div class="cart-sidebar-product">
+      {%- for item in cart.items -%}
+      <div data-cur="{{ country.currency.symbol }}" id="cart-notification-product-{{ item.id }}" class="sidebar-product-main">
+        {% if item.image %}
+        <img class="cart-notification-product__image"
+             src="{{ item.image | img_url: '140x' }}"
+             alt="{{ item.image.alt | escape }}"
+             width="90"
+             height="{{ 90 | divided_by: item.image.aspect_ratio | ceil }}"
+             loading="lazy"
+             >
+        {% endif %}
+        <div class="cart-notification-product__info">
+          <a href="{{ item.product.url }}" class="col__products-name">{{ item.product.title | escape }}</a>
+          <h3 class="col__products-price">{{ country.currency.symbol }}{{ item.product.price | money_without_trailing_zeros }}</h3>
+          {% comment %}
+          {%- unless item.product.has_only_default_variant -%}
+          <dl>
+            {%- for option in item.options_with_values -%}
+            <div class="cart-notification-product__option h4">
+              <dt>{{ option.name }}: </dt>
+              <dd>{{ option.value }}</dd>
             </div>
-            <div class="drawer__content">
-                <div id="drawer_cart_items">
-                    <img src="" alt=""><h5></h5><p></p>
-                </div>
-                <div id="drawer__cart_bottom">
-                    <div class="drawer_cart_sub_row">
-                        <div class="cart__subtotal">Subtotal</div>
-                        <div>{{ cart.total_price | money }}</div>
-                    </div>
-
-
-                    <div class="cart__checkout-wrapper">
-                        <button type="submit" name="checkout" class="button">
-                            Checkout
-                        </button>
-                    </div>
-                </div>
-            </div>
+            {%- endfor -%}
+          </dl>
+          {%- endunless -%}
+          {% endcomment %}
         </div>
-    </section>
+        <div class="sidebar-remove-product-button" id="removeproduct">
+          <a href="javascript:void(0)" class="cust-remove-item" data-id="{{ item.id }}" rel="{{ item.id }}">{% include 'cart-close-icon' %}</a>
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
+    <div class="cart-sidebar-bottom-part">
+      <div class="cart-sidebar-totla">
+        <div class="drawer-totals mb-4">
+          <h3 class="totals__subtotal">Total</h3>
+          <p class="totals__subtotal-value total-custom">{{ cart.total_price | money_with_currency }}</p>
+        </div>
+      </div>
+      <div class="button-group">
+        <div class="cart-sidebar-viewcart">
+          <a href="{{ routes.cart_url }}" class="button viewcart-custom">Go to cart</a>
+        </div>
+        <div class="cart-sidebar-checkout">
+          <form action="{{ routes.cart_url }}" method="post" id="cart">
+            <button class="button button--primary button--full-width" name="checkout" form="cart">{{ 'sections.cart.checkout' | t }}</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
-<script>
-    fetch('/cart.js')
-    .then( (resp) => resp.json() )
-    .then( (data) => {
-        //console.log(data)
-        if(data.items.length > 0){
-            data.items.forEach(function(product, index){
-                document.getElementById('drawer_cart_items').innerHTML = '<img class="cart-item__image" src="' + product.featured_image.url +'" alt="' + product.featured_image.alt +'"><h5>'+ product.title +'</h5><p>'+ product.quantity +' x ' + product.line_price +'</p>';
-            })
-        } else {
-            document.getElementById('drawer_cart_items').innerHTML = "<p>Cart is empty</p>"
-        }
-        
-    })
+  </div>
+
+  <div class="close-sidebar"></div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Cart Drawer",
+    "settings": [
+            {
+              "type":"header",
+              "content":"Cart Drawer"
+            }
+		],
+		"presets":[
+           {
+              "name":"Cart Drawer",
+              "category":"custom"
+           }
+        ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+// Addtocart Popup
+
+$(document).ready(function() {
+  
+  
+  $(document).on( 'click', '.add-cart-custom-btn', function( e ) {
     
-</script>
+    var p_id = $(this).prev('.product-custom-id').val();
+    e.preventDefault();
+    
+    var img = $(this).parent('.custom-cart-form').find('.product-custom-image').val();
+    $(".product-pop-img").attr("src", img);
+    $(".title-custom").html()
+    var title = $(this).parent('.custom-cart-form').find('.product-custom-title').val();
+    $(".title-custom").html(title);
+    var url = $(this).parent('.custom-cart-form').find('.product-custom-url').val();
+    $(".title-custom").attr("href", url);
+    var price = $(this).parent('.custom-cart-form').find('.product-custom-price').val();
+    $(".price-custom").html(price);
+    var subtotal = $(this).parent('.custom-cart-form').find('.product-custom-subtotal').val();
+    $(".subtotal-custom").html(subtotal);
+    var total = $(this).parent('.custom-cart-form').find('.product-custom-total').val();
+    $(".total-custom").html(total);
+    
+    add_to_cart( p_id );
+    
+  	$('#popUpForm').fadeIn(1000);
+    if( $("body").hasClass("template-index") )
+      {
+	      $( "body" ).css("overflow-y", "hidden");
+      }
+  } );
 
-{% endif %}
+});
 
+$('.success-message').hide();
+$('.error-message').hide();
+
+function add_to_cart( id ) {
+    
+    var quantity = 1;
+    var params = {
+        type: "POST",
+        url: "/cart/add.js",
+        data: "quantity=" + quantity + "&id=" + id,
+        dataType: "json",
+        success: function(line_item) {
+          	cart_count_add();
+          	$('.success-message').html('');
+          	$('.error-message').hide();
+          	$('.success-message').html('Added to cart successfully!');
+          	$('.success-message').show();
+          
+          	cart_side_update();
+          $('.cart__empty-text').hide();
+          
+        },
+        error: function(XMLHttpRequest, textStatus) {
+            //message_show( "error", XMLHttpRequest.responseJSON.description );
+          $('.error-message').html('');
+          $('.success-message').hide();
+          $('.error-message').html(XMLHttpRequest.responseJSON.description);
+          $('.error-message').show();
+            //alert(XMLHttpRequest.responseJSON.description);
+        }
+    };
+    $.ajax(params);
+}
+
+// Cart Count Update 
+
+function cart_count_add() {
+  if( $(document).find('.drawer-badge').length > 0 ) {
+  	var current_cart_val = $('.drawer-badge').html();
+    $('.drawer-badge').html( parseFloat( parseFloat(current_cart_val) + 1 ) );
+  } else {
+  	$('.drawer-cart-before').after( '<div class="drawer-count-bubble">'+            
+              '<span aria-hidden="true" class="drawer-badge">1</span>'+
+              '<span class="visually-hidden"></span>'+
+          '</div>' );
+  }
+}
+
+
+// Cart Sidebar Update
+
+function cart_side_update() {
+  if( $(document).find('.cart-sidebar-product').length == 0 ) {
+  		$('.cart-sidebar-headerpart').after('<div class="cart-sidebar-product"></div>');
+  } else {
+  	$('.cart-sidebar-product').html('');
+  }
+		
+  
+  $.getJSON("/cart.js", function( cart ) { 
+    
+    var custom_currency = $('#custom_currency').val()
+   
+    var cart_items = [];
+    var cart_item;
+  	
+    $.each( cart.items, function( index, item ) { 
+    	var cart_item = '<div id="cart-notification-product-'+item.id+'" class="sidebar-product-main">'+
+        '<img class="cart-notification-product__image" src="'+item.image+'" alt="'+item.image.alt+'" width="90px" height="90px" loading="lazy">'+
+            '<div class="cart-notification-product__info">'+
+        		'<a href="item.product.url" class="col__products-name">'+item.product_title+'</a>'+
+        			'<h3 class="col__products-price">'+custom_currency+(item.price/100)+'</h3>'+
+      		'</div>'+
+            '<div class="sidebar-remove-product-button" id="removeproduct">'+
+         		'<a href="javascript:void(0)" class="cust-remove-item" data-id="'+item.id+'" rel="'+item.id+'"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></a>'+
+      		'</div></div>';
+      
+      	cart_items.push( cart_item );
+    } );
+    
+    $(document).find('.cart-sidebar-product').append(cart_items);
+    
+  } );
+}
+
+
+
+
+// Cart Sidebar
+$('#drawer-cart').click(function () {
+  $('.cart-sidebar').addClass('active');
+  $('.close-sidebar').addClass('active');
+  $('body').addClass('overflow');
+})
+$('.close-sidebar').click(function () {
+  $('.cart-sidebar').removeClass('active');
+  $(this).removeClass('active');
+  $('body').removeClass('overflow');
+})
+$('#cartsidebarclose').click(function () {
+  $('.cart-sidebar').removeClass('active');
+  $(this).removeClass('active');
+  $('body').removeClass('overflow');
+})
+$(document).keyup(function(e) {
+  $('.cart-sidebar').removeClass('active');
+  $('.close-sidebar').removeClass('active');
+  $('body').removeClass('overflow');
+});
+
+$(document).on( 'click', '.cust-remove-item', function() {
+	var id = $(this).attr('data-id');
+  	change_cart( id )
+} );
+
+function change_cart( variant_id ) {
+	
+    var quantity = 0;
+  
+    var params = {
+        type: "POST",
+        url: "/cart/change.js",
+        data: "quantity=" + quantity + "&id=" + variant_id,
+        dataType: "json",
+        success: function(XMLHttpRequest) {
+            cart_side_update();
+          	cart_count_update();
+        },
+        error: function(XMLHttpRequest, textStatus) {
+            
+        }
+    };
+    $.ajax(params);
+}
+
+function cart_count_update() {
+  $.getJSON("/cart.js", function( cart ) {
+  	console.log(cart);
+    if( cart.item_count == 0 ) {
+      $('.drawer-count-bubble').hide();
+      $('.cart__empty-text').show()
+    } else {
+    	$('.drawer-badge').html( cart.item_count );
+    }
+    
+  })
+}
+
+{% endjavascript %}
