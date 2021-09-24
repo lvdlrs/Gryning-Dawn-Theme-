@@ -82,8 +82,8 @@
     "163214598466e33f14": {
       "type": "small-product-list",
       "settings": {
-        "show_price": false,
-        "price_max": false,
+        "show_price": true,
+        "price_max": true,
         "show_title": true,
         "title": "",
         "my_collection": "strommeforslag-faste-frokostvarer"
@@ -92,8 +92,8 @@
     "163221198614eedcc7": {
       "type": "small-product-list",
       "settings": {
-        "show_price": false,
-        "price_max": false,
+        "show_price": true,
+        "price_max": true,
         "show_title": true,
         "title": "",
         "my_collection": "drikke"
