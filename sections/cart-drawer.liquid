@@ -430,4 +430,36 @@ function cart_count_update() {
   })
 }
 
+
+
+<!-- notifation code -->
+
+$.ajax({
+    type: 'GET',
+    url: '/cart.js',
+    async: false,
+    cache: false,
+    dataType: 'json',
+    success: updateCartDesc
+});
+
+var updateCartDesc = function() {
+    //redirect the user to the cart and pass showSuccess=true in the URL
+    window.location = "/cart?showSuccess=true";
+};
+
+
+
+$(function() {
+    //if the current URL contains showSuccess,
+    //display the success message to the user
+    if(window.location.href.indexOf('showSuccess') != -1) {
+        $('.add-cart-msg').hide()
+                          .addClass('success')
+                          .html('Item added to cart!')
+                          .fadeIn('300');
+
+    }
+});
+
 {% endjavascript %}
