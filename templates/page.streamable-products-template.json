@@ -17,6 +17,7 @@
     },
     "16321217115b066941": {
       "type": "custom-product-list",
+      "disabled": true,
       "blocks": {
         "06ff6b30-47ca-43f6-b16c-4dcb1836606e": {
           "type": "item",
@@ -80,7 +81,6 @@
     },
     "163214598466e33f14": {
       "type": "small-product-list",
-      "disabled": true,
       "settings": {
         "show_price": false,
         "price_max": false,
@@ -91,7 +91,6 @@
     },
     "163221198614eedcc7": {
       "type": "small-product-list",
-      "disabled": true,
       "settings": {
         "show_price": false,
         "price_max": false,
