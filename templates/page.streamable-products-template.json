@@ -99,6 +99,16 @@
         "my_collection": "grains-rice-and-cereal"
       }
     },
+    "16326690762de54a25": {
+      "type": "small-product-list",
+      "settings": {
+        "show_price": false,
+        "price_max": false,
+        "show_title": true,
+        "title": "",
+        "my_collection": "nuts-seeds"
+      }
+    },
     "16323385873a3843ea": {
       "type": "custom-liquid",
       "disabled": true,
@@ -114,6 +124,7 @@
     "163214335658905f1c",
     "163214598466e33f14",
     "163221198614eedcc7",
+    "16326690762de54a25",
     "16323385873a3843ea"
   ]
 }
