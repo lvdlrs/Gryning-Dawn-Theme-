@@ -109,6 +109,16 @@
         "my_collection": "nuts-seeds"
       }
     },
+    "1632670312760b5f68": {
+      "type": "small-product-list",
+      "settings": {
+        "show_price": false,
+        "price_max": false,
+        "show_title": true,
+        "title": "",
+        "my_collection": "vitamins-supplements"
+      }
+    },
     "16323385873a3843ea": {
       "type": "custom-liquid",
       "disabled": true,
@@ -125,6 +135,7 @@
     "163214598466e33f14",
     "163221198614eedcc7",
     "16326690762de54a25",
+    "1632670312760b5f68",
     "16323385873a3843ea"
   ]
 }
