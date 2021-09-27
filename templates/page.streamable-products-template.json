@@ -15,60 +15,6 @@
         "scroll_id": ""
       }
     },
-    "16321217115b066941": {
-      "type": "custom-product-list",
-      "disabled": true,
-      "blocks": {
-        "06ff6b30-47ca-43f6-b16c-4dcb1836606e": {
-          "type": "item",
-          "settings": {
-            "product": "brodmiks-med-chia-glutenfritt"
-          }
-        },
-        "eb41290a-21dc-4174-9b39-5eaf31863b67": {
-          "type": "item",
-          "settings": {
-            "product": "axa-lettkokte-havregryn"
-          }
-        },
-        "3d94d07f-9ead-4cf7-84e4-7ab0afdb3187": {
-          "type": "item",
-          "settings": {
-            "product": "basmatiris"
-          }
-        },
-        "56759c82-a24b-4c85-ab49-626a7ab1a7a5": {
-          "type": "item",
-          "settings": {
-            "product": "d-vitamin-100-stk-tabletter"
-          }
-        },
-        "b6cd66f3-6ed8-4fe6-8828-2cf78e7c25d1": {
-          "type": "item",
-          "settings": {
-            "product": "den-sorte-havre-vaffelmix-grove"
-          }
-        },
-        "f33d6bb2-327d-4d4c-ab90-e9d5dfa2ff77": {
-          "type": "item",
-          "settings": {
-            "product": "hasselnotter"
-          }
-        }
-      },
-      "block_order": [
-        "06ff6b30-47ca-43f6-b16c-4dcb1836606e",
-        "eb41290a-21dc-4174-9b39-5eaf31863b67",
-        "3d94d07f-9ead-4cf7-84e4-7ab0afdb3187",
-        "56759c82-a24b-4c85-ab49-626a7ab1a7a5",
-        "b6cd66f3-6ed8-4fe6-8828-2cf78e7c25d1",
-        "f33d6bb2-327d-4d4c-ab90-e9d5dfa2ff77"
-      ],
-      "settings": {
-        "title": "Frokost: Variert Helgepakke (mnd forbruk)",
-        "url": ""
-      }
-    },
     "163214335658905f1c": {
       "type": "small-product-list",
       "settings": {
@@ -119,23 +65,25 @@
         "my_collection": "vitamins-supplements"
       }
     },
-    "16323385873a3843ea": {
-      "type": "custom-liquid",
-      "disabled": true,
+    "1632739101ba910fee": {
+      "type": "small-product-list",
       "settings": {
-        "custom_liquid": "<div data-revy-bundle-id='d02d9c5c-2109-4f7d-92cc-875c8d5f325a'><\/div>"
+        "show_price": false,
+        "price_max": false,
+        "show_title": true,
+        "title": "",
+        "my_collection": "streams"
       }
     }
   },
   "order": [
     "main",
     "1632143888e10a17c8",
-    "16321217115b066941",
     "163214335658905f1c",
     "163214598466e33f14",
     "163221198614eedcc7",
     "16326690762de54a25",
     "1632670312760b5f68",
-    "16323385873a3843ea"
+    "1632739101ba910fee"
   ]
 }
