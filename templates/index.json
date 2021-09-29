@@ -5,7 +5,7 @@
       "settings": {
         "title": "Strøm tørre ting",
         "title_size": 80,
-        "subheading": "Bra. Enkelt. Bærekraftig.",
+        "subheading": "Bra. Enkelt. Billig.",
         "link_text": "Hvordan virker det?",
         "link": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "text_align": "vertical-bottom horizontal-left",
@@ -177,58 +177,6 @@
       "settings": {
       }
     },
-    "1631292413cc3473f7": {
-      "type": "fading-images",
-      "disabled": true,
-      "blocks": {
-        "1631292413cc3473f7-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Bright_Future.jpg",
-            "focal_point": "center center",
-            "slide_title1": "Vårt tankesett",
-            "slide_title2": "Moderne med tanke på fremtiden."
-          }
-        },
-        "1631292413cc3473f7-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/family-eating.jpg",
-            "focal_point": "center center",
-            "slide_title1": "Use this section",
-            "slide_title2": "to impress customers"
-          }
-        },
-        "1631292413cc3473f7-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/presentation.jpg",
-            "focal_point": "center center",
-            "slide_title1": "And highlight",
-            "slide_title2": "important details"
-          }
-        }
-      },
-      "block_order": [
-        "1631292413cc3473f7-0",
-        "1631292413cc3473f7-1",
-        "1631292413cc3473f7-2"
-      ],
-      "settings": {
-        "title_lines": "2",
-        "title_font": "heading",
-        "title_size": 45,
-        "title_color": "#fdfaf2",
-        "title_bg_color": "rgba(0,0,0,0)",
-        "text_align": "vertical-center horizontal-center",
-        "link": "",
-        "slide_speed": 5,
-        "color_overlay": "#000000",
-        "color_overlay_opacity": 30,
-        "desktop_height": "650px",
-        "mobile_height": "auto"
-      }
-    },
     "1631292402be865091": {
       "type": "testimonials",
       "blocks": {
@@ -343,7 +291,6 @@
     "16313839067904c324",
     "1631386419433636c0",
     "1631386419433636c8",
-    "1631292413cc3473f7",
     "1631292402be865091",
     "1631388073a336ab82",
     "1631462133a3619aee"
