@@ -27,7 +27,6 @@
     },
     "163214598466e33f14": {
       "type": "small-product-list",
-      "disabled": true,
       "settings": {
         "show_price": true,
         "price_max": true,
@@ -38,7 +37,6 @@
     },
     "163221198614eedcc7": {
       "type": "small-product-list",
-      "disabled": true,
       "settings": {
         "show_price": true,
         "price_max": true,
@@ -49,7 +47,6 @@
     },
     "16326690762de54a25": {
       "type": "small-product-list",
-      "disabled": true,
       "settings": {
         "show_price": true,
         "price_max": true,
@@ -60,7 +57,6 @@
     },
     "1632670312760b5f68": {
       "type": "small-product-list",
-      "disabled": true,
       "settings": {
         "show_price": true,
         "price_max": true,
@@ -71,7 +67,6 @@
     },
     "1632739101ba910fee": {
       "type": "small-product-list",
-      "disabled": true,
       "settings": {
         "show_price": true,
         "price_max": true,
