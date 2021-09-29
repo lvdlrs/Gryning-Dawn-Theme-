@@ -7,40 +7,114 @@
         "show_collection_image": true
       }
     },
+    "163291854154d946cf": {
+      "type": "rich-text",
+      "blocks": {
+        "163291854154d946cf-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Frokostvarer",
+            "heading_size": "h1"
+          }
+        },
+        "163291854154d946cf-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Havre, kokkos, chia og rosiner går med til hverdagsgrøten. Barna tar den med kanel og syltetøy, de voksne går for nøtter og lønnesirup.<\/p>"
+          }
+        },
+        "163291854154d946cf-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "163291854154d946cf-0",
+        "163291854154d946cf-1",
+        "163291854154d946cf-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "product-grid1": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 16,
+        "products_per_page": 8,
         "image_ratio": "portrait",
         "show_secondary_image": true,
         "add_image_padding": false,
         "show_image_outline": false,
         "show_vendor": true,
         "show_rating": false,
-        "enable_filtering": true,
-        "enable_sorting": true,
+        "enable_filtering": false,
+        "enable_sorting": false,
         "collapse_on_larger_devices": false
+      }
+    },
+    "16329186720d437aa3": {
+      "type": "rich-text",
+      "blocks": {
+        "16329186720d437aa3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Snacks",
+            "heading_size": "h1"
+          }
+        },
+        "16329186720d437aa3-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vi har valgt mango og et utvalg av nøtter for strømming. Gjør det enklere å ta sunne valg.<\/p>"
+          }
+        },
+        "16329186720d437aa3-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "16329186720d437aa3-0",
+        "16329186720d437aa3-1",
+        "16329186720d437aa3-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
       }
     },
     "product-grid2": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 16,
+        "products_per_page": 8,
         "image_ratio": "portrait",
         "show_secondary_image": true,
         "add_image_padding": false,
         "show_image_outline": false,
         "show_vendor": true,
         "show_rating": false,
-        "enable_filtering": true,
-        "enable_sorting": true,
+        "enable_filtering": false,
+        "enable_sorting": false,
         "collapse_on_larger_devices": false
       }
     }
   },
   "order": [
     "banner",
+    "163291854154d946cf",
     "product-grid1",
+    "16329186720d437aa3",
     "product-grid2"
   ]
 }
