@@ -108,6 +108,42 @@
         "enable_sorting": false,
         "collapse_on_larger_devices": false
       }
+    },
+    "1633073279a1175225": {
+      "type": "collection-list",
+      "blocks": {
+        "1633073279a1175225-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1633073279a1175225-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1633073279a1175225-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "1633073279a1175225-0",
+        "1633073279a1175225-1",
+        "1633073279a1175225-2"
+      ],
+      "settings": {
+        "title": "Oppskrifter jeg bruker",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": true,
+        "image_padding": false,
+        "show_view_all": false
+      }
     }
   },
   "order": [
@@ -115,6 +151,7 @@
     "163291854154d946cf",
     "product-grid1",
     "16329186720d437aa3",
-    "product-grid2"
+    "product-grid2",
+    "1633073279a1175225"
   ]
 }
