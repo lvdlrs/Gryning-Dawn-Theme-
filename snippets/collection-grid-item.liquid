@@ -30,7 +30,7 @@
         class="skrim__overlay grid__image">
         {%- assign img_url = collection_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
         <img class="image-fit lazyload"
-          src="{{ collection_image | img_url: '300x' }}"
+          src="{{ collection_image | img_url: '800x' }}"
           data-src="{{ img_url }}"
           data-aspectratio="{{ collection_image.aspect_ratio }}"
           data-sizes="auto"
