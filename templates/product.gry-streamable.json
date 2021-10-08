@@ -54,6 +54,34 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "d38b682d-3bf5-4955-a0fe-d309dc698ef4": {
+          "type": "text",
+          "settings": {
+            "text": "Vekt av innhold: {{ product.metafields.gry.weightOfContents.value }}g",
+            "text_style": "body"
+          }
+        },
+        "789f1831-22e8-45a6-b24a-f32ca133325a": {
+          "type": "text",
+          "settings": {
+            "text": "Strømmer hver: {{ product.metafields.gry.defaultStreamCadence.value }}",
+            "text_style": "body"
+          }
+        },
+        "d6adc37b-1d87-47f6-9524-0443f65a20b3": {
+          "type": "text",
+          "settings": {
+            "text": "Visningsvolum: {{ product.metafields.gry.volumeDisplayType.value }}",
+            "text_style": "body"
+          }
+        },
+        "79b2857d-df7f-47bb-bed6-ae31517d52bd": {
+          "type": "text",
+          "settings": {
+            "text": "Volum: {{ product.metafields.gry.volume.value }}",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
@@ -65,7 +93,11 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "d38b682d-3bf5-4955-a0fe-d309dc698ef4",
+        "789f1831-22e8-45a6-b24a-f32ca133325a",
+        "d6adc37b-1d87-47f6-9524-0443f65a20b3",
+        "79b2857d-df7f-47bb-bed6-ae31517d52bd"
       ],
       "settings": {
         "enable_sticky_info": false,
@@ -75,6 +107,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "image_ratio": "adapt",
