@@ -29,19 +29,21 @@
         },
         "variant_picker": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "picker_type": "button"
           }
         },
         "quantity_selector": {
           "type": "quantity_selector",
+          "disabled": true,
           "settings": {
           }
         },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": false
           }
         },
         "description": {
@@ -55,6 +57,15 @@
             "share_label": "Share"
           }
         },
+        "2bec11af-3218-4b83-ad4d-f24603e7102a": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Gryning Metafields",
+            "content": "<p>Vekt av innhold: {{ product.metafields.gry.weightOfContents.value }}<\/p>",
+            "page": "",
+            "icon": "question_mark"
+          }
+        },
         "d38b682d-3bf5-4955-a0fe-d309dc698ef4": {
           "type": "text",
           "settings": {
@@ -65,7 +76,7 @@
         "9aa33299-4466-4bfd-9c94-386e22856d11": {
           "type": "text",
           "settings": {
-            "text": "Vekt:",
+            "text": "Vekt: HOW TO INSERT THE DEFAULT PRODUCT.WEIGHT PROPERTY HERE?",
             "text_style": "body"
           }
         },
@@ -96,15 +107,6 @@
             "text": "Volum av innhold: {{ product.metafields.gry.volumeOfContents.value }}",
             "text_style": "body"
           }
-        },
-        "2bec11af-3218-4b83-ad4d-f24603e7102a": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Gryning Metafields",
-            "content": "<p>Vekt av innhold: {{ product.metafields.gry.weightOfContents.value }}<\/p>",
-            "page": "",
-            "icon": "question_mark"
-          }
         }
       },
       "block_order": [
@@ -117,13 +119,13 @@
         "buy_buttons",
         "description",
         "share",
+        "2bec11af-3218-4b83-ad4d-f24603e7102a",
         "d38b682d-3bf5-4955-a0fe-d309dc698ef4",
         "9aa33299-4466-4bfd-9c94-386e22856d11",
         "789f1831-22e8-45a6-b24a-f32ca133325a",
         "d6adc37b-1d87-47f6-9524-0443f65a20b3",
         "79b2857d-df7f-47bb-bed6-ae31517d52bd",
-        "f6e75cd2-e46f-47e7-9351-1a0f4d8d1c95",
-        "2bec11af-3218-4b83-ad4d-f24603e7102a"
+        "f6e75cd2-e46f-47e7-9351-1a0f4d8d1c95"
       ],
       "settings": {
         "enable_sticky_info": false,
